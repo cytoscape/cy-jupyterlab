@@ -15,7 +15,8 @@ import { ReactCytoscape } from 'react-cytoscape';
 
 export interface JGraph {
 //  data: string;
-  elements: string;
+  elements: any;
+  style: any;
 //  cxData: string;
 }
 
@@ -65,8 +66,8 @@ export class Component extends React.Component<IProps, IState> {
   }
 
   render() {
-    const { data } = this.props;
-    console.log(data.elements);
+    const { elements, style } = this.props.data;
+    console.log(elements);
 
     return (
 
@@ -97,7 +98,8 @@ export class Component extends React.Component<IProps, IState> {
       placeholder="Filter..."
       />
       <ReactCytoscape containerID="cy"
-      elements={data.elements}
+      elements={elements}
+      style={style}
       layout={{name: 'circle'}}
       />
 

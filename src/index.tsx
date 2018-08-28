@@ -12,7 +12,7 @@ import * as React from 'react';
 
 import * as ReactDOM from 'react-dom';
 
-import { Component } from './component';
+import { Component, JGraph } from './component';
 
 
 /**
@@ -44,7 +44,7 @@ export class cy2js{
     const attributeNameMap = {};
     //これを返す予定
     const elements = cx2Js.cyElementsFromNiceCX(niceCX, attributeNameMap);
-    const style = cx2Js.cyStyleFromNiceCX(niceCX,attributeNameMap;)
+    const style = cx2Js.cyStyleFromNiceCX(niceCX,attributeNameMap);
     //fs.writeFileSync('small_graph_elements.json', JSON.stringify(elements, null, 2))
     //console.log('Elements:')
     return [elements,style];
@@ -74,11 +74,11 @@ export class OutputWidget extends Widget implements IRenderMime.IRenderer {
    */
   renderModel(model: IRenderMime.IMimeModel): Promise<void> {
     //データ作成
-    let data = model.data[this._mimeType] as JSONObject;
-    console.log('CX renderer called: ', data)
+    let data_row = model.data[this._mimeType] as JSONObject;
+    console.log('CX renderer called: ', data_row)
 
     //データ内のオブジェクトの個数を取得
-    const dataSize = data.length
+    const dataSize = data_row.length
     //console.log(data[4]);
     //use loop
 
@@ -88,21 +88,22 @@ export class OutputWidget extends Widget implements IRenderMime.IRenderer {
     //this.node.textContent = 'test' + data +'is';
 
     //ここでCytscapeが読み込める形にする
-    const Tr = new cy2js(data);
+    const Tr = new cy2js(data_row);
     const [data_js,style_js] = Tr.transportation();
 
     console.log(data_js);
-    //const metadata = (model.metadata[this._mimeType] as any) || {};
-    //const props = { data_js, metadata, theme: 'cm-s-jupyter' };
-
+    
     //0828for react-cytoscape
     //return Promise.resolve();
     //props(描画用の変数)の定義
-    const props={
-      element:{data_js},
-      style:{style_js},
+    const data: JGraph ={
+      elements: data_js,
+      style: style_js
       //theme: 'cm-s-jupyter'
     }
+    const metadata = (model.metadata[this._mimeType] as any) || {};
+    const props = { data, metadata, theme: 'cm-s-jupyter' };
+
     return new Promise<void>((resolve, reject) => {
       const component = <Component {...props} />;
 
