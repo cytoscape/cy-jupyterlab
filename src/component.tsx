@@ -71,7 +71,7 @@ export class Component extends React.Component<IProps, IState> {
 
     return (
 
-      <div style={{ width: '100%', height: 500}}>
+      <div style={{ width: '67%', height: '100%', background: 'red'}}>
       <input
       ref={ref => (this.input = ref)}
       onChange={event => {
@@ -102,6 +102,11 @@ export class Component extends React.Component<IProps, IState> {
       style={style}
       layout={{name: 'circle'}}
       />
+      <div style={{ width: '33%', height: '100%', position: 'absolute', right: 0, top:0}}>
+      <div style={{ width: '100%', height: '50%', background: 'blue'}}>
+      </div>
+      <div style={{ width: '100%', height: '50%', background: 'yellow'}}>
+      </div>
 
       </div>
     );
