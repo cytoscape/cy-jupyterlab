@@ -1,12 +1,14 @@
-# mime-rend1
+# cy-jupyterlab
 
-A JupyterLab extension for rendering cx files.
+Jupyter lab widget for rendering graphs (networks:.cx, .json) using cytoscape.js
 
 ## Prerequisites
 
 * JupyterLab
 
 ## Installation
+
+(still can not.)
 
 ```bash
 jupyter labextension install mime-rend1
