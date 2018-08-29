@@ -5,7 +5,7 @@ import '../style/index.css';
 export declare class cy2js {
     DATA: JSONObject;
     constructor(content: JSONObject);
-    transportation(): any;
+    transportation(): any[];
 }
 /**
  * A widget for rendering cx.
