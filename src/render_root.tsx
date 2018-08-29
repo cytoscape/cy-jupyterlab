@@ -10,6 +10,9 @@ import { /*JSONArray,*/ JSONObject/*, JSONValue*/ } from '@phosphor/coreutils';
 
 import { ReactCytoscape } from 'react-cytoscape';
 
+import Button from "./Components/Buttons";
+
+
 /**
  * The properties for the JSON tree component.
  */
@@ -99,6 +102,7 @@ export class Component extends React.Component<IProps, IState> {
       />
       <ReactCytoscape containerID="cy"
       elements={elements}
+      cyRef={(cy) =>{this.cy=cy;console.log(this.cy)}}
       style={style}
       layout={{name: 'cose'}}
       />
@@ -106,7 +110,8 @@ export class Component extends React.Component<IProps, IState> {
       
       <div style={{ width: '100%', height: '50%', background: 'blue'}}>
       </div>
-      <div style={{ width: '100%', height: '50%', background: 'yellow'}}>
+      <div style={{ width: '100%', height: '50%'}}>
+      <Button/>
       </div>
       </div>
 
