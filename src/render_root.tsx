@@ -4,6 +4,7 @@ import * as React from 'react';
 
 import * as ReactDOM from 'react-dom';
 
+import '../style/index.css';
 
 import { /*JSONArray,*/ JSONObject/*, JSONValue*/ } from '@phosphor/coreutils';
 
@@ -70,8 +71,8 @@ export class Component extends React.Component<IProps, IState> {
     console.log(elements);
 
     return (
-
-      <div style={{ width: '67%', height: '100%', background: 'red'}}>
+      //画面を分けるもの
+      <div style={{ width: '67%', height: '100%', background: 'green'}}>
       <input
       ref={ref => (this.input = ref)}
       onChange={event => {
@@ -86,7 +87,6 @@ export class Component extends React.Component<IProps, IState> {
       }}
       style={{
         position: 'absolute',
-          //            top: 0,
           right: 0,
           width: '33%',
           maxWidth: 150,
@@ -100,12 +100,14 @@ export class Component extends React.Component<IProps, IState> {
       <ReactCytoscape containerID="cy"
       elements={elements}
       style={style}
-      layout={{name: 'circle'}}
+      layout={{name: 'cose'}}
       />
       <div style={{ width: '33%', height: '100%', position: 'absolute', right: 0, top:0}}>
+      
       <div style={{ width: '100%', height: '50%', background: 'blue'}}>
       </div>
       <div style={{ width: '100%', height: '50%', background: 'yellow'}}>
+      </div>
       </div>
 
       </div>

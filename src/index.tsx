@@ -12,7 +12,7 @@ import * as React from 'react';
 
 import * as ReactDOM from 'react-dom';
 
-import { Component, JGraph } from './component';
+import { Component, JGraph } from './render_root';
 
 
 /**
@@ -105,6 +105,7 @@ export class OutputWidget extends Widget implements IRenderMime.IRenderer {
     const props = { data, metadata, theme: 'cm-s-jupyter' };
 
     return new Promise<void>((resolve, reject) => {
+      //ここで描画
       const component = <Component {...props} />;
 
       ReactDOM.render(component, this.node, () => {
@@ -137,13 +138,13 @@ const extension: IRenderMime.IExtension = {
     {
       name: 'cx',
       mimeTypes: [MIME_TYPE],
-      extensions: ['.cx']
+      extensions: ['.cx','.json']
     }
   ],
   documentWidgetFactoryOptions: {
     name: 'My Viewer',
     primaryFileType: 'cx',
-    fileTypes: ['cx'],
+    fileTypes: ['cx','json'],
     defaultFor: ['cx']
   }
 };
