@@ -27,6 +27,24 @@ const MIME_TYPE = 'application/cx';
 const CLASS_NAME = 'mimerenderer-cx';
 
 
+//0830 for json file input
+/*const TYPES: {
+  [key: string]: { name: string; extensions: string[] };
+} = {
+  'application/cx': {
+    name: 'cx',
+    extensions: ['.cx'],
+    //reader: msa.io.fasta
+  },
+  'application/json': {
+    name: 'json',
+    extensions: ['.json'],
+    //reader: msa.io.clustal
+  }
+};*/
+
+
+
 //the class translation from cx to json
 export class cy2js{
   
@@ -78,20 +96,20 @@ export class OutputWidget extends Widget implements IRenderMime.IRenderer {
     console.log('CX renderer called: ', data_row)
 
     //データ内のオブジェクトの個数を取得
-    const dataSize = data_row.length
+    //const dataSize = data_row.length
     //console.log(data[4]);
     //use loop
 
     //const nodeArray = nodesValue['nodes']
     //console.log(nodeArray.indexOf[1])
-    this.node.textContent = 'This file contains ' + dataSize + ' entries.';
+    //this.node.textContent = 'This file contains ' + dataSize + ' entries.';
     //this.node.textContent = 'test' + data +'is';
 
     //ここでCytscapeが読み込める形にする
     const Tr = new cy2js(data_row);
     const [data_js,style_js] = Tr.transportation();
 
-    console.log(data_js);
+    //console.log(data_js);
     
     //0828for react-cytoscape
     //return Promise.resolve();
@@ -103,6 +121,7 @@ export class OutputWidget extends Widget implements IRenderMime.IRenderer {
     }
     const metadata = (model.metadata[this._mimeType] as any) || {};
     const props = { data, metadata, theme: 'cm-s-jupyter' };
+    console.log('hennkango data',data);
 
     return new Promise<void>((resolve, reject) => {
       //ここで描画
@@ -148,5 +167,39 @@ const extension: IRenderMime.IExtension = {
     defaultFor: ['cx']
   }
 };
+
+
+/*const extension = Object.keys(TYPES).map(k => {
+  //TYPES[k]のメンバーでkeyがnameのものをとりだす
+  //const { name } = TYPES[k];
+  console.log('const extensions');
+  console.log(Object.keys(TYPES));
+  //console.log(TYPES['application/cx'].extensions)
+  console.log(TYPES[k].extensions)
+
+  return {
+    id: `mime-rend1:plugin`,
+    rendererFactory,
+    rank: 0,
+    dataType: 'json',
+    fileTypes: [
+      {
+        name: 'cx',
+        displayName: 'CX',
+        extensions: TYPES[k].extensions,
+        //TYPESのkeyの値を配列にして渡す["application/cx"]
+        mimeTypes: [k],
+        //iconClass: 'jp-MaterialIcon jp-MSAIcon'
+      }
+    ],
+    documentWidgetFactoryOptions: {
+      name: 'My Viewer',
+      dataType:'json',
+      primaryFileType: 'cx',
+      fileTypes: ['cx','json'],
+      defaultFor: ['cx']
+    }
+  } as IRenderMime.IExtension;
+});*/
 
 export default extension;

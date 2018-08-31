@@ -36,15 +36,35 @@ export interface IProps {
  */
 export interface IState {
   filter?: string;
+  CyRef?: any;
 }
+
+
+/*const cyreference = (cy:any)=>{
+  status =cy
+}*/
+//export var status:any;
 
 /**
  * A component that renders JSON data as a collapsible tree.
  */
 export class Component extends React.Component<IProps, IState> {
-  state = { filter: '' };
+  //status:null
+  constructor(props:any){
+    super(props);
+    this.state = { filter: '',
+    CyRef: null};
+  }
+  
+
   input: Element = null;
   timer: number = 0;
+
+
+  //
+  cyreference = (cy:any)=>{
+    this.setState({CyRef:cy})
+  }
 
   componentDidMount() {
     /**
@@ -102,16 +122,21 @@ export class Component extends React.Component<IProps, IState> {
       />
       <ReactCytoscape containerID="cy"
       elements={elements}
-      cyRef={(cy) =>{this.cy=cy;console.log(this.cy)}}
+      cyRef={(cy:any) => { 
+        console.log('cy test',cy) 
+        this.cyreference(cy)
+      }}
       style={style}
-      layout={{name: 'cose'}}
+      layout={{name: 'preset'}}
       />
       <div style={{ width: '33%', height: '100%', position: 'absolute', right: 0, top:0}}>
+      cy.layout
       
       <div style={{ width: '100%', height: '50%', background: 'blue'}}>
       </div>
       <div style={{ width: '100%', height: '50%'}}>
-      <Button/>
+      <Button cy = {this.state.CyRef}>
+      </Button>
       </div>
       </div>
 
