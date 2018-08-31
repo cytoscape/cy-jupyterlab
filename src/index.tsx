@@ -32,7 +32,6 @@ export class cy2js{
   
   DATA: JSONObject
   constructor(content: JSONObject) {
-    console.log('Instanciated_cy2jsclass');
     this.DATA = content;
   }
   
@@ -78,15 +77,13 @@ export class OutputWidget extends Widget implements IRenderMime.IRenderer {
     console.log('CX renderer called: ', data_row)
 
     //データ内のオブジェクトの個数を取得
-    const dataSize = data_row.length
+    //const dataSize = data_row.length
     //console.log(data[4]);
     //use loop
-
     //const nodeArray = nodesValue['nodes']
     //console.log(nodeArray.indexOf[1])
-    this.node.textContent = 'This file contains ' + dataSize + ' entries.';
+    //this.node.textContent = 'This file contains ' + dataSize + ' entries.';
     //this.node.textContent = 'test' + data +'is';
-
     //ここでCytscapeが読み込める形にする
     const Tr = new cy2js(data_row);
     const [data_js,style_js] = Tr.transportation();
@@ -130,7 +127,7 @@ export const rendererFactory: IRenderMime.IRendererFactory = {
  * Extension definition.
  */
 const extension: IRenderMime.IExtension = {
-  id: 'mime-rend1:plugin',
+  id: 'cy-jupyterlab',
   rendererFactory,
   rank: 0,
   dataType: 'json',

@@ -1,6 +1,7 @@
 # cy-jupyterlab
 
-Jupyter lab widget for rendering graphs (networks:.cx, .json) using cytoscape.js
+Jupyter lab widget for rendering praphs (network:.cx, .json) using cytoscape.js.
+
 
 ## Prerequisites
 
@@ -8,10 +9,9 @@ Jupyter lab widget for rendering graphs (networks:.cx, .json) using cytoscape.js
 
 ## Installation
 
-(still can not.)
-
+(still cannot.)
 ```bash
-jupyter labextension install mime-rend1
+jupyter labextension install cy-jupyterlab
 ```
 
 ## Development
@@ -20,6 +20,7 @@ For a development install (requires npm version 4 or later), do the following in
 
 ```bash
 npm install
+npm run build
 jupyter labextension link .
 ```
 
