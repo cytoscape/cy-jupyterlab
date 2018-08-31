@@ -3,7 +3,7 @@ import React from 'react';
 import { withStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 //import { ReactCytoscape } from 'react-cytoscape';
-//import {status} from '../render_root'
+import {status} from '../render_root'
 //import { ClickAwayListener } from '@material-ui/core';
 
 
@@ -17,14 +17,15 @@ const styles  = (theme:any) => ({
 });
 
 const handleClick = () => {
-    var result = prompt('好きな食べ物');
+    /*var result = prompt('好きな食べ物');
     if (result){
         alert(result)
     }
-    else{}
+    else{}*/
+    status.fit();
 }
 
-
+//onClick={()=>handleclick(cy)}
 function TextButtons(props:any) {
   const { classes } = props;
   //const {cy} = props.cy
@@ -35,7 +36,7 @@ function TextButtons(props:any) {
       <Button onClick={handleClick} color="primary" className={classes.button}>
         Layout
       </Button>
-      <Button onClick = {props.cy.fit()} color="secondary" className={classes.button}>
+      <Button /*onClick = {props.cy.fit()}*/ color="secondary" className={classes.button}>
         Secondary
       </Button>
       <Button disabled className={classes.button}>
