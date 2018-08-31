@@ -12,6 +12,8 @@ import { ReactCytoscape } from 'react-cytoscape';
 
 import Button from "./Components/Buttons";
 
+import Layout from "./Components/layout";
+
 
 /**
  * The properties for the JSON tree component.
@@ -95,7 +97,7 @@ export class Component extends React.Component<IProps, IState> {
 
     return (
       //画面を分けるもの
-      <div style={{ width: '67%', height: '100%', background: 'green'}}>
+      <div style={{ width: '67%', height: '100%'}}>
       <input
       ref={ref => (this.input = ref)}
       onChange={event => {
@@ -108,31 +110,26 @@ export class Component extends React.Component<IProps, IState> {
           this.timer = 0;
         }, 300);
       }}
-      style={{
-        position: 'absolute',
-          right: 0,
-          width: '33%',
-          maxWidth: 150,
-          zIndex: 10,
-          fontSize: 13,
-          padding: '4px 2px'
-      }}
-      type="text"
-      placeholder="Filter..."
       />
       <ReactCytoscape containerID="cy"
       elements={elements}
+<<<<<<< HEAD
       cyRef={(cy:any) => { 
         console.log('cy test',cy) 
         this.cyreference(cy)
       }}
       style={style}
       layout={{name: 'preset'}}
+=======
+      style={style}
+      layout={{name: 'grid'}}
+>>>>>>> 67ad99348bac5f76ff1b1944e882cca229445c00
       />
       <div style={{ width: '33%', height: '100%', position: 'absolute', right: 0, top:0}}>
       cy.layout
       
-      <div style={{ width: '100%', height: '50%', background: 'blue'}}>
+      <div style={{ width: '100%', height: '50%'}}>
+      <Layout/>
       </div>
       <div style={{ width: '100%', height: '50%'}}>
       <Button cy = {this.state.CyRef}>
