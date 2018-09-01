@@ -12,7 +12,7 @@ import { ReactCytoscape } from "react-cytoscape";
 
 import Button from "./Components/Buttons";
 
-import Layout from "./Components/layout";
+import SimpleSelect from "./Components/layout";
 
 /**
  * The properties for the JSON tree component.
@@ -92,7 +92,6 @@ export class Component extends React.Component<IProps, IState> {
 
   render() {
     const { elements, style } = this.props.data;
-    console.log(elements);
 
     return (
       //画面を分けるもの
@@ -104,6 +103,7 @@ export class Component extends React.Component<IProps, IState> {
               window.clearTimeout(this.timer);
             }
             const filter = event.target.value;
+            console.log(filter);
             this.timer = window.setTimeout(() => {
               this.setState({ filter } as IState);
               this.timer = 0;
@@ -119,11 +119,11 @@ export class Component extends React.Component<IProps, IState> {
             cyreference(cy)
           }}
           style={style}
-          layout={{ name: "preset" }}
+          layout={{ name: "grid" }}
         />
         <div style={{ width: '33%', height: '100%', position: 'absolute', right: 0, top:0}}>
           <div style={{ width: "100%", height: "50%"}} >
-            <Layout/>
+            <SimpleSelect/>
           </div>
           <div style={{ width: "100%", height: "50%" }}>
             <Button scy={this.state.CyRef} />
