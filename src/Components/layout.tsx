@@ -1,46 +1,78 @@
 import React from 'react';
 //import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
-import Button from '@material-ui/core/Button';
+//import Input from '@material-ui/core/Input';
+import InputLabel from '@material-ui/core/InputLabel';
+import MenuItem from '@material-ui/core/MenuItem';
+import FormHelperText from '@material-ui/core/FormHelperText';
+//import FormControl from '@material-ui/core/FormControl';
 import Select from '@material-ui/core/Select';
+import {status} from '../render_root'
 
-const styles  = (theme:any) => ({
+const styles = (theme:any) => ({
   button: {
     margin: theme.spacing.unit,
   },
   input: {
     display: 'none',
   },
+/*  root: {
+    display: 'flex',
+    flexWrap: 'wrap',
+  },
+  formControl: {
+    margin: theme.spacing.unit,
+    minWidth: 120,
+  },
+  selectEmpty: {
+    marginTop: theme.spacing.unit * 2,
+  },*/
 });
 
-const handleClick = () => {
-    alert("This layout still can't be applied.");
+export class SimpleSelect extends React.Component {
+  state = {
+    layout: '',
+    name: 'hai',
+  };
+
+  handleChange = (event:any) => {
+  const layout = status.layout({ name: event.target.value });
+  layout.run();
+  };
+
+  render() {
+
+    return (
+      <div>
+          <h3>select layouts</h3>
+          <InputLabel htmlFor="layout-simple">Layouts</InputLabel>
+          <Select
+            value={'layputs'}
+            displayEmpty
+            onChange={this.handleChange}
+            inputProps={{
+              name: 'layouts',
+              id: 'layout-simple',
+            }}
+          >
+            <MenuItem value="">
+              <em>Placeholder</em>
+            </MenuItem>
+            <MenuItem value={'random'}>random</MenuItem>
+            <MenuItem value={'grid'}>grid</MenuItem>
+            <MenuItem value={'circle'}>circle</MenuItem>
+            <MenuItem value={'concentric'}>concentric</MenuItem>
+            <MenuItem value={'breadthfirst'}>breadthfirst</MenuItem>
+            <MenuItem value={'cose'}>cose</MenuItem>
+          </Select> 
+          <FormHelperText>Required</FormHelperText>
+      </div>
+    );
+  }
 }
-
-function Layout(props:any) {
-  const { classes } = props;
-
-  
-  return (
-    <div>
-      <h3>Select Layout</h3>
-      <Select native onChange={handleClick}>
-        <option>preset</option>
-        <option>grid</option>
-        <option>circle</option>
-        <option>concentric</option>
-        <option>breadthfirst</option>
-        <option>cose</option>
-      </Select>
-      <Button onClick={handleClick} color="primary" className={classes.button}>
-        apply
-      </Button>
-    </div>
-  );
-}
-
-/*TextButtons.propTypes = {
+/*
+SimpleSelect.propTypes = {
   classes: PropTypes.object.isRequired,
 };*/
 
-export default withStyles(styles)(Layout);
+export default withStyles(styles)(SimpleSelect);

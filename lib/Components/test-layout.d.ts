@@ -1,7 +1,7 @@
 import React from 'react';
 export declare class SimpleSelect extends React.Component {
     state: {
-        layout: string;
+        age: string;
         name: string;
     };
     handleChange: (event: any) => void;
