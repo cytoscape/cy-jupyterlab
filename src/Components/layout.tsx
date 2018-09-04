@@ -5,7 +5,7 @@ import { withStyles } from '@material-ui/core/styles';
 import InputLabel from '@material-ui/core/InputLabel';
 import MenuItem from '@material-ui/core/MenuItem';
 import FormHelperText from '@material-ui/core/FormHelperText';
-//import FormControl from '@material-ui/core/FormControl';
+import FormControl from '@material-ui/core/FormControl';
 import Select from '@material-ui/core/Select';
 import {status} from '../render_root'
 
@@ -37,26 +37,27 @@ export class SimpleSelect extends React.Component {
 
   handleChange = (event:any) => {
   const layout = status.layout({ name: event.target.value });
+  this.setState({ [event.target.name]: event.target.value });
   layout.run();
   };
 
   render() {
-
     return (
       <div>
           <h3>select layouts</h3>
-          <InputLabel htmlFor="layout-simple">Layouts</InputLabel>
+          <FormControl fullWidth >
+          <InputLabel shrink htmlFor="layout-simple">Layouts</InputLabel>
           <Select
-            value={'layputs'}
-            displayEmpty
+            value={this.state.layout}
             onChange={this.handleChange}
+            displayEmpty
             inputProps={{
-              name: 'layouts',
+              name: 'layout',
               id: 'layout-simple',
             }}
           >
-            <MenuItem value="">
-              <em>Placeholder</em>
+            <MenuItem value=''>
+              <em>default</em>
             </MenuItem>
             <MenuItem value={'random'}>random</MenuItem>
             <MenuItem value={'grid'}>grid</MenuItem>
@@ -65,7 +66,8 @@ export class SimpleSelect extends React.Component {
             <MenuItem value={'breadthfirst'}>breadthfirst</MenuItem>
             <MenuItem value={'cose'}>cose</MenuItem>
           </Select> 
-          <FormHelperText>Required</FormHelperText>
+         <FormHelperText>Required</FormHelperText>
+          </FormControl>
       </div>
     );
   }
