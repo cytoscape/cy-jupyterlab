@@ -119,7 +119,6 @@ export class Component extends React.Component<IProps, IState> {
             cyreference(cy)
           }}
           style={style}
-         // layout={{ name: "grid" }}
         />
         <div style={{ width: '33%', height: '100%', position: 'absolute', right: 0, top:0}}>
           <div style={{ width: "100%", height: "50%"}} >

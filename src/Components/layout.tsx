@@ -46,25 +46,23 @@ export class SimpleSelect extends React.Component {
       <div>
           <h3>select layouts</h3>
           <FormControl fullWidth >
-          <InputLabel shrink htmlFor="layout-simple">Layouts</InputLabel>
+          <InputLabel htmlFor="layout-simple">Layouts</InputLabel>
           <Select
             value={this.state.layout}
             onChange={this.handleChange}
-            displayEmpty
             inputProps={{
               name: 'layout',
               id: 'layout-simple',
             }}
           >
-            <MenuItem value=''>
-              <em>default</em>
-            </MenuItem>
+            <MenuItem value={'cola'}>preset</MenuItem>
             <MenuItem value={'random'}>random</MenuItem>
             <MenuItem value={'grid'}>grid</MenuItem>
             <MenuItem value={'circle'}>circle</MenuItem>
             <MenuItem value={'concentric'}>concentric</MenuItem>
             <MenuItem value={'breadthfirst'}>breadthfirst</MenuItem>
             <MenuItem value={'cose'}>cose</MenuItem>
+            <MenuItem value={'dagre'}>dagre</MenuItem>
           </Select> 
          <FormHelperText>Required</FormHelperText>
           </FormControl>
