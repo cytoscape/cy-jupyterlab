@@ -105,7 +105,7 @@ export class Component extends React.Component<IProps, IState> {
             const filter = event.target.value;
             console.log(filter);
             this.timer = window.setTimeout(() => {
-              this.setState({ filter } as IState);
+              //this.setState({ filter } as IState);
               this.timer = 0;
             }, 300);
           }}
@@ -119,7 +119,7 @@ export class Component extends React.Component<IProps, IState> {
             cyreference(cy)
           }}
           style={style}
-          layout={{ name: "grid" }}
+         // layout={{ name: "grid" }}
         />
         <div style={{ width: '33%', height: '100%', position: 'absolute', right: 0, top:0}}>
           <div style={{ width: "100%", height: "50%"}} >

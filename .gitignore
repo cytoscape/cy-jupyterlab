@@ -61,6 +61,6 @@ typings/
 .next
 
 *.ipynb
-.ipynb/
+.ipynb_checkpoints/
 package-lock.json
 *.cx
