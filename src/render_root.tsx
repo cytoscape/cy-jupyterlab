@@ -14,10 +14,10 @@ import Button from "./Components/Buttons";
 
 import SimpleSelect from "./Components/layout";
 
+import Annote from "./Components/annote";
 /**
  * The properties for the JSON tree component.
  */
-
 export interface JGraph {
   //  data: string;
   elements: any;
@@ -50,7 +50,6 @@ export var status:any;
  * A component that renders JSON data as a collapsible tree.
  */
 export class Component extends React.Component<IProps, IState> {
-  //status:null
   constructor(props: any) {
     super(props);
     this.state = {
@@ -62,7 +61,6 @@ export class Component extends React.Component<IProps, IState> {
   input: Element = null;
   timer: number = 0;
 
-  //
   cyreference = (cy: any) => {
     this.setState({ CyRef: cy });
   };
@@ -94,7 +92,6 @@ export class Component extends React.Component<IProps, IState> {
     const { elements, style } = this.props.data;
 
     return (
-      //画面を分けるもの
       <div style={{ width: "67%", height: "100%" }}>
         <input
           ref={ref => (this.input = ref)}
@@ -114,8 +111,7 @@ export class Component extends React.Component<IProps, IState> {
           containerID="cy"
           elements={elements}
           cyRef={(cy: any) => {
-            console.log("cy test", cy);
-            //this.cyreference(cy);
+            console.log("cy test", cy.nodes().size());
             cyreference(cy)
           }}
           style={style}
@@ -126,6 +122,10 @@ export class Component extends React.Component<IProps, IState> {
           </div>
           <div style={{ width: "100%", height: "50%" }}>
             <Button scy={this.state.CyRef} />
+            <Annote
+              nodes={elements.nodes.length}
+              edges={elements.edges.length} 
+            />
           </div>
         </div>
       </div>
