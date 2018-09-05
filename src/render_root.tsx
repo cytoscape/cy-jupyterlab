@@ -40,30 +40,23 @@ export interface IState {
   CyRef?: any;
 }
 
-//cyreferenceはrender内のコンポーネントからCyRefを受け取ってそれをグルーバル変数に代入
-const cyreference = (cy:any)=>{
-  status =cy
-}
-export var status:any;
-
-/**
- * A component that renders JSON data as a collapsible tree.
- */
 export class Component extends React.Component<IProps, IState> {
   constructor(props: any) {
     super(props);
     this.state = {
       filter: "",
-      CyRef: null
     };
   }
 
   input: Element = null;
   timer: number = 0;
+  cy: any = null;
 
-  cyreference = (cy: any) => {
-    this.setState({ CyRef: cy });
-  };
+  applyLayout = (layoutName: string) => {
+    console.log("apply " + layoutName)
+    const layout = this.cy.layout({name: layoutName})
+    layout.run()
+  }
 
   componentDidMount() {
     /**
@@ -87,7 +80,13 @@ export class Component extends React.Component<IProps, IState> {
       false
     );
   }
-
+/*
+  clickNode = (event:any) => {
+    this.cy.on('tap', 'node', function(evt:any){
+    console.log( 'tapped ' + evt.target.id() );
+    });
+  };
+*/
   render() {
     const { elements, style } = this.props.data;
 
@@ -99,8 +98,7 @@ export class Component extends React.Component<IProps, IState> {
             if (this.timer) {
               window.clearTimeout(this.timer);
             }
-            const filter = event.target.value;
-            console.log(filter);
+            //const filter = event.target.value;
             this.timer = window.setTimeout(() => {
               //this.setState({ filter } as IState);
               this.timer = 0;
@@ -111,14 +109,16 @@ export class Component extends React.Component<IProps, IState> {
           containerID="cy"
           elements={elements}
           cyRef={(cy: any) => {
-            console.log("cy test", cy.nodes().size());
-            cyreference(cy)
+            console.log('bbb');
+            this.cy = cy;
           }}
           style={style}
         />
         <div style={{ width: '33%', height: '100%', position: 'absolute', right: 0, top:0}}>
           <div style={{ width: "100%", height: "50%"}} >
-            <SimpleSelect/>
+            <SimpleSelect
+              layoutHandler={this.applyLayout}
+            />
           </div>
           <div style={{ width: "100%", height: "50%" }}>
             <Button scy={this.state.CyRef} />

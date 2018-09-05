@@ -1,5 +1,5 @@
 import React from 'react';
-export declare class SimpleSelect extends React.Component {
+export declare class SimpleSelect extends React.Component<any, any> {
     state: {
         layout: string;
         name: string;
@@ -7,5 +7,5 @@ export declare class SimpleSelect extends React.Component {
     handleChange: (event: any) => void;
     render(): JSX.Element;
 }
-declare const _default: React.ComponentType<import("../../../../../../../Users/akazawa/UCSD/research/cy-jupyterlab/node_modules/@material-ui/core").Overwrite<Pick<{}, never>, import("../../../../../../../Users/akazawa/UCSD/research/cy-jupyterlab/node_modules/@material-ui/core/styles/withStyles").StyledComponentProps<"input" | "button">>>;
+declare const _default: React.ComponentType<import("../../../../../../../Users/akazawa/UCSD/research/cy-jupyterlab/node_modules/@material-ui/core").Overwrite<Pick<any, string | number | symbol>, import("../../../../../../../Users/akazawa/UCSD/research/cy-jupyterlab/node_modules/@material-ui/core/styles/withStyles").StyledComponentProps<"input" | "button">>>;
 export default _default;

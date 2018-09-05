@@ -3,7 +3,7 @@ import React from 'react';
 import { withStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 //import { ReactCytoscape } from 'react-cytoscape';
-import {status} from '../render_root'
+//import {status} from '../render_root'
 //import { ClickAwayListener } from '@material-ui/core';
 
 
@@ -16,8 +16,9 @@ const styles  = (theme:any) => ({
   },
 });
 
+
 const handleClick = () => {
-    status.fit();
+//    status.fit();
 }
 
 function TextButtons(props:any) {
