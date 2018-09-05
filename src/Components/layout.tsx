@@ -7,7 +7,7 @@ import MenuItem from '@material-ui/core/MenuItem';
 import FormHelperText from '@material-ui/core/FormHelperText';
 import FormControl from '@material-ui/core/FormControl';
 import Select from '@material-ui/core/Select';
-import {status} from '../render_root'
+//import {status} from '../render_root'
 
 const styles = (theme:any) => ({
   button: {
@@ -16,29 +16,18 @@ const styles = (theme:any) => ({
   input: {
     display: 'none',
   },
-/*  root: {
-    display: 'flex',
-    flexWrap: 'wrap',
-  },
-  formControl: {
-    margin: theme.spacing.unit,
-    minWidth: 120,
-  },
-  selectEmpty: {
-    marginTop: theme.spacing.unit * 2,
-  },*/
 });
 
-export class SimpleSelect extends React.Component {
+export class SimpleSelect extends React.Component<any, any> {
   state = {
     layout: '',
     name: 'hai',
   };
 
   handleChange = (event:any) => {
-  const layout = status.layout({ name: event.target.value });
-  this.setState({ [event.target.name]: event.target.value });
-  layout.run();
+    const layout = this.props.layoutHandler(event.target.value );
+     this.setState({ [event.target.name]: event.target.value });
+     layout.run();
   };
 
   render() {
@@ -64,15 +53,11 @@ export class SimpleSelect extends React.Component {
             <MenuItem value={'cose'}>cose</MenuItem>
             <MenuItem value={'dagre'}>dagre</MenuItem>
           </Select> 
-         <FormHelperText>Required</FormHelperText>
+          <FormHelperText>Required</FormHelperText>
           </FormControl>
       </div>
     );
   }
 }
-/*
-SimpleSelect.propTypes = {
-  classes: PropTypes.object.isRequired,
-};*/
 
 export default withStyles(styles)(SimpleSelect);

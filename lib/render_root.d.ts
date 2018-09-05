@@ -20,15 +20,12 @@ export interface IState {
     filter?: string;
     CyRef?: any;
 }
-export declare var status: any;
-/**
- * A component that renders JSON data as a collapsible tree.
- */
 export declare class Component extends React.Component<IProps, IState> {
     constructor(props: any);
     input: Element;
     timer: number;
-    cyreference: (cy: any) => void;
+    cy: any;
+    applyLayout: (layoutName: string) => void;
     componentDidMount(): void;
     componentWillUnmount(): void;
     render(): JSX.Element;
