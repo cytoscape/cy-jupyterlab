@@ -1,7 +1,7 @@
-import { IRenderMime } from '@jupyterlab/rendermime-interfaces';
-import { JSONObject } from '@phosphor/coreutils';
-import { Widget } from '@phosphor/widgets';
-import '../style/index.css';
+import { IRenderMime } from "@jupyterlab/rendermime-interfaces";
+import { JSONObject } from "@phosphor/coreutils";
+import { Widget } from "@phosphor/widgets";
+import "../style/index.css";
 export declare class cy2js {
     DATA: JSONObject;
     constructor(content: JSONObject);
@@ -15,6 +15,7 @@ export declare class OutputWidget extends Widget implements IRenderMime.IRendere
      * Construct a new output widget.
      */
     constructor(options: IRenderMime.IRendererOptions);
+    convertData: (data: any) => any[];
     /**
      * Render cx into this widget's node.
      */
