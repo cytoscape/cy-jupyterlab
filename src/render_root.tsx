@@ -52,6 +52,7 @@ export class Component extends React.Component<IProps, IState> {
   timer: number = 0;
   cy: any = null;
   foo: any = null;
+  cyjs: any = null;
 
   applyLayout = (layoutName: string) => {
     const layout = this.cy.layout({name: layoutName})
@@ -65,61 +66,53 @@ export class Component extends React.Component<IProps, IState> {
     console.log("This should be called once")
     const self = this
     try {
-    cy.on('tap', 'node', function(evt:any){
-      const selectedId: string = evt.target.id()
-      console.log( 'last tapped ', self.foo );
-      console.log( 'tapped ', selectedId, self );
-      self.foo = selectedId
-      self.setState({selectedId})
-    });} catch(e) {
-      console.log("err:" , e)
-    }
+      cy.on('tap', 'node', function(evt:any){
+        const selectedId: string = evt.target.id()
+        console.log( 'last tapped ', self.foo );
+        console.log( 'tapped ', selectedId, self );
+        self.foo = selectedId
+        self.setState({selectedId})
+      });} catch(e) {
+        console.log("err:" , e)
+      }
 
   }
 
+  applyStyle = () =>{
+    console.log("Style invoked!!");
+    this.cy.style().selector('node').style({'background-color': 'black'}).update();
+  }
 
   render() {
     const { elements, style } = this.props.data;
 
     return (
-      <div style={{ width: "67%", height: "100%" }}>
-      <input
-      ref={ref => (this.input = ref)}
-      onChange={event => {
-        if (this.timer) {
-          window.clearTimeout(this.timer);
-        }
-        //const filter = event.target.value;
-        this.timer = window.setTimeout(() => {
-          //this.setState({ filter } as IState);
-          this.timer = 0;
-        }, 300);
-      }}
-      />
+      <div style={{ width: "500px", height: "500px"}}>
       <ReactCytoscape
       containerID="cy"
       elements={elements}
       cyRef={(cy: any) => {
-          this.setEventhandlers(cy)
-          this.cy = cy;
+        this.setEventhandlers(cy)
+        this.cy = cy;
       }}
       style={style}
       />
-      <div style={{ width: '33%', height: '100%', position: 'absolute', right: 0, top:0}}>
-      <div style={{ width: "100%", height: "50%"}} >
-      <SimpleSelect
-      layoutHandler={this.applyLayout}
-      />
-      </div>
-      <div style={{ width: "100%", height: "50%" }}>
-      <Button scy={this.state.CyRef} />
-      <Annote
-      selectedNodeId={this.state.selectedId}
-      nodes={elements.nodes.length}
-      edges={elements.edges.length} 
-      />
-      </div>
-      </div>
+      { <div style={{ width: '200px', height: '300px', position: 'absolute', right: 0, top:0}}>
+        <div style={{ width: "100px", height: "50px",position:"fixed",bottom: "200px"}} >
+        <SimpleSelect
+        layoutHandler={this.applyLayout}
+        />
+        </div>
+        <div style={{ width: "100px", height: "50px" }}>
+        <Button styleHandler={this.applyStyle} />
+        <Annote
+        selectedNodeId={this.state.selectedId}
+        nodes={elements.nodes.length}
+        edges={elements.edges.length} 
+        />
+        </div>
+        </div> 
+      }
       </div>
     );
   }

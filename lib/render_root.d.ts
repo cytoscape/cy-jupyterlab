@@ -27,8 +27,10 @@ export declare class Component extends React.Component<IProps, IState> {
     timer: number;
     cy: any;
     foo: any;
+    cyjs: any;
     applyLayout: (layoutName: string) => void;
     componentDidMount(): void;
     setEventhandlers: (cy: any) => void;
+    applyStyle: () => void;
     render(): JSX.Element;
 }
