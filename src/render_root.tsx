@@ -51,6 +51,7 @@ export class Component extends React.Component<IProps, IState> {
   input: Element = null;
   timer: number = 0;
   cy: any = null;
+  cyjs: any = null;
 
   applyLayout = (layoutName: string) => {
     console.log("apply " + layoutName)
@@ -58,28 +59,22 @@ export class Component extends React.Component<IProps, IState> {
     layout.run()
   }
 
-  componentDidMount() {
-    /**
-     * Stop propagation of keyboard events to JupyterLab
-     */
-    ReactDOM.findDOMNode(this.input).addEventListener(
-      "keydown",
-      (event: Event) => {
-        event.stopPropagation();
-      },
-      false
-    );
+  applyStyle = () =>{
+    console.log("Style invoked!!");
+    this.cy.style().selector('node').style({'background-color': 'black'}).update();
   }
 
-  componentWillUnmount() {
-    ReactDOM.findDOMNode(this.input).removeEventListener(
-      "keydown",
-      (event: Event) => {
-        event.stopPropagation();
-      },
-      false
-    );
+  componentDidMount() {
+
+    // this.cy.container().setAttribute('style', 'width: "100%"')
+    // this.cy.container().setAttribute('style', 'height: "100%"')
+    // this.cy.resize()
+
+    // this.cy.fit()
+    
   }
+
+
 /*
   clickNode = (event:any) => {
     this.cy.on('tap', 'node', function(evt:any){
@@ -91,8 +86,8 @@ export class Component extends React.Component<IProps, IState> {
     const { elements, style } = this.props.data;
 
     return (
-      <div style={{ width: "67%", height: "100%" }}>
-        <input
+      <div style={{ width: "1000px", height: "1000px"}}>
+        {/* <input
           ref={ref => (this.input = ref)}
           onChange={event => {
             if (this.timer) {
@@ -104,30 +99,31 @@ export class Component extends React.Component<IProps, IState> {
               this.timer = 0;
             }, 300);
           }}
-        />
+        /> */}
         <ReactCytoscape
           containerID="cy"
           elements={elements}
+          layout={{name: 'preset'}}
           cyRef={(cy: any) => {
             console.log('bbb');
             this.cy = cy;
           }}
           style={style}
         />
-        <div style={{ width: '33%', height: '100%', position: 'absolute', right: 0, top:0}}>
-          <div style={{ width: "100%", height: "50%"}} >
+        { <div style={{ width: '200px', height: '300px', position: 'absolute', right: 0, top:0}}>
+          <div style={{ width: "100px", height: "50px",position:"fixed",bottom: "0px"}} >
             <SimpleSelect
               layoutHandler={this.applyLayout}
             />
           </div>
-          <div style={{ width: "100%", height: "50%" }}>
-            <Button scy={this.state.CyRef} />
+          <div style={{ width: "100px", height: "50px" }}>
+            <Button styleHandler={this.applyStyle} />
             <Annote
               nodes={elements.nodes.length}
               edges={elements.edges.length} 
             />
           </div>
-        </div>
+        </div> }
       </div>
     );
   }
