@@ -161,7 +161,7 @@ const extension: IRenderMime.IExtension = {
     }
   ],
   documentWidgetFactoryOptions: {
-    name: 'My Viewer',
+    name: 'cx Viewer',
     primaryFileType: 'cx',
     fileTypes: ['cx','json'],
     defaultFor: ['cx']

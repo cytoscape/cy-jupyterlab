@@ -5824,7 +5824,6 @@
   "properties" : {
     "EDGE_CURVED" : "true",
     "EDGE_LABEL_COLOR" : "#000000",
-    "EDGE_LABEL_FONT_FACE" : "Dialog.plain,plain,10",
     "EDGE_LABEL_FONT_SIZE" : "10",
     "EDGE_LABEL_TRANSPARENCY" : "255",
     "EDGE_LABEL_WIDTH" : "200.0",

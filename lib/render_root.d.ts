@@ -19,14 +19,16 @@ export interface IProps {
 export interface IState {
     filter?: string;
     CyRef?: any;
+    selectedId?: string;
 }
 export declare class Component extends React.Component<IProps, IState> {
     constructor(props: any);
     input: Element;
     timer: number;
     cy: any;
+    foo: any;
     applyLayout: (layoutName: string) => void;
     componentDidMount(): void;
-    componentWillUnmount(): void;
+    setEventhandlers: (cy: any) => void;
     render(): JSX.Element;
 }
