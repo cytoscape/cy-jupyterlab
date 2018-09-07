@@ -1,9 +1,6 @@
 import * as React from "react";
 import "../style/index.css";
-import { /*JSONArray,*/ JSONObject } from "@phosphor/coreutils";
-/**
- * The properties for the JSON tree component.
- */
+import { JSONObject } from "@phosphor/coreutils";
 export interface JGraph {
     elements: any;
     style: any;
@@ -13,14 +10,13 @@ export interface IProps {
     metadata?: JSONObject;
     theme?: string;
 }
-/**
- * The state of the JSON tree component.
- */
 export interface IState {
     filter?: string;
     CyRef?: any;
-    selectedId?: string;
+    selectedNodeId?: string;
+    selectedNodeName?: string;
 }
+export declare var sat: any;
 export declare class Component extends React.Component<IProps, IState> {
     constructor(props: any);
     input: Element;
