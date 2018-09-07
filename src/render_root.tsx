@@ -39,6 +39,11 @@ export interface IState {
   selectedId?: string;
 }
 
+const cyexport = (cy:any) =>{
+  sat=cy;
+}
+export var sat:any;
+
 export class Component extends React.Component<IProps, IState> {
   constructor(props: any) {
     super(props);
@@ -94,7 +99,9 @@ export class Component extends React.Component<IProps, IState> {
       cyRef={(cy: any) => {
         this.setEventhandlers(cy)
         this.cy = cy;
+        cyexport(cy)
       }}
+      layout={{name:'preset'}}
       style={style}
       />
       { <div style={{ width: '200px', height: '300px', position: 'absolute', right: 0, top:0}}>
