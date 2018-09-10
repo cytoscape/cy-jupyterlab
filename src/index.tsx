@@ -19,6 +19,7 @@ import { Component, JGraph } from "./render_root";
  */
 
 const MIME_TYPE = "application/cx";
+//onst MIME_TYPE2 = "application/json";
 
 /**
  * The class name added to the extension.
@@ -87,21 +88,29 @@ export class OutputWidget extends Widget implements IRenderMime.IRenderer {
   }
 
   convertData = (data: any) => {
-    const utils = new cyNetworkUtils();
+    let elements:any;
+    let style:any;
+    console.log("Data just cyjs type:", typeof data);
+    console.info("info",data)
+    console.log("length",data.lenght)
+    if(data.length == 13){
+      console.log("Data cx type:", typeof data);
 
-    console.log("Data type:", typeof data);
-
-    let jsonObject = data;
-    // console.info(jsonObject);
-    console.log("Result type: ", typeof jsonObject);
-
-    const niceCX = utils.rawCXtoNiceCX(jsonObject);
-
-    const cx2Js = new cxToJs(utils);
-    const attributeNameMap = {};
-    // //これを返す予定
-    const elements = cx2Js.cyElementsFromNiceCX(niceCX, attributeNameMap);
-    const style = cx2Js.cyStyleFromNiceCX(niceCX, attributeNameMap);
+      const utils = new cyNetworkUtils();
+      let jsonObject = data;
+      const niceCX = utils.rawCXtoNiceCX(jsonObject);
+      const cx2Js = new cxToJs(utils);
+      const attributeNameMap = {};
+      elements = cx2Js.cyElementsFromNiceCX(niceCX, attributeNameMap);
+      style = cx2Js.cyStyleFromNiceCX(niceCX, attributeNameMap);
+     
+      
+    }
+    else{
+      console.log("Data cyjs type:", typeof data);
+      elements = data.elements
+      style = data.style
+    }    
     return [elements, style];
   };
 
@@ -115,6 +124,7 @@ export class OutputWidget extends Widget implements IRenderMime.IRenderer {
     return new Promise<void>((resolve, reject) => {
       let data_row = model.data[this._mimeType] as any;
       const metadata = (model.metadata[this._mimeType] as any) || {};
+      
       const [data_js, style_js] = this.convertData(data_row);
       const data: JGraph = {
         elements: data_js,
@@ -157,13 +167,13 @@ const extension: IRenderMime.IExtension = {
     {
       name: "cx",
       mimeTypes: [MIME_TYPE],
-      extensions: [".cx", ".json"]
+      extensions: [".cx", ".cyjs"]
     }
   ],
   documentWidgetFactoryOptions: {
    name: "cx Viewer",
     primaryFileType: "cx",
-    fileTypes: ["cx", "json"],
+    fileTypes: ["cx", "cyjs"],
     defaultFor: ["cx"]
   }
 };
