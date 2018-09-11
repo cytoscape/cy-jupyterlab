@@ -11,8 +11,7 @@
         // lanunchまたはattachを指定
         "request": "launch",
         //URL
-        "url":"http://localhost:8919/?token=a50178e87327478ba29afc284557b445b24087952bcb2279
-        ",
+        "url":"http://localhost:8919/?token=a50178e87327478ba29afc284557b445b24087952bcb2279",
         // 読み込むHTMLファイルを指定（プロジェクトからのパスを指定）
         "webRoot": "${workspaceFolder}",
           "sourceMapPathOverrides": {

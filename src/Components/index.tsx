@@ -34,11 +34,17 @@ const controlPanelStyle = {
 class RootComponent extends React.Component<any, any> {
   state = {
     counter: 0,
-    selected: {}
+    selected: {},
+    cy: {}
   };
 
   nodeClickAction = (selected: any) => {
     this.setState({ selected });
+  };
+
+  //uemura
+  setcy = (cy: any) => {
+    this.setState({ cy:cy });
   };
 
   render() {
@@ -49,10 +55,15 @@ class RootComponent extends React.Component<any, any> {
           elements={this.props.data.elements}
           visualStyle={this.props.data.style}
           nodeClickAction={this.nodeClickAction}
+          //uemura
+          setcy={this.setcy}
         />
         <ControlPanel
           style={controlPanelStyle}
           selectedNode={this.state.selected}
+          networkname={this.props.networkname}
+          //uemura
+          fit={this.state.cy.fit()}
         />
       </div>
     );
