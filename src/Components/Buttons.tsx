@@ -1,37 +1,29 @@
-import React from 'react';
-import { withStyles } from '@material-ui/core/styles';
-import Button from '@material-ui/core/Button';
-import {sat} from "../render_root"
+import React from "react";
+import { withStyles } from "@material-ui/core/styles";
+import Button from "@material-ui/core/Button";
 
-const styles  = (theme:any) => ({
+const styles = (theme: any) => ({
   button: {
-    margin: theme.spacing.unit,
+    margin: theme.spacing.unit
   },
   input: {
-    display: 'none',
-  },
+    display: "none"
+  }
 });
 
-
-
-/*TextButtons.propTypes = {
-  classes: PropTypes.object.isRequired,
-};*/
-export class styleButtons extends React.Component<any, any> {
-  Stylechange = () => {
-    this.props.StyleHandler();
-  };
-  fit = () => {
-    sat.fit();
-  }
+class styleButtons extends React.Component<any, any> {
   render() {
     return (
       <div>
-      <Button onClick={this.Stylechange} color="primary" className={this.props.classes.button}>
-        Styleeeeee
-      </Button>
-      <Button onClick={this.fit}>Fitt</Button>
-    </div>
+        <Button
+          onClick={this.props.updateStyle}
+          color="primary"
+          className={this.props.classes.button}
+        >
+          Style
+        </Button>
+        <Button onClick={this.props.fit}>Fit</Button>
+      </div>
     );
   }
 }

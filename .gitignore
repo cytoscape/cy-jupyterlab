@@ -64,3 +64,6 @@ typings/
 .ipynb_checkpoints/
 package-lock.json
 *.cx
+
+.idea
+lib/
