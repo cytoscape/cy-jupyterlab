@@ -12,35 +12,18 @@ import * as React from "react";
 
 import * as ReactDOM from "react-dom";
 
-import { Component, JGraph } from "./render_root";
+import RootComponent, { JGraph } from "./Components";
 
 /**
  * The default mime type for the extension.
  */
 
 const MIME_TYPE = "application/cx";
-//onst MIME_TYPE2 = "application/json";
 
 /**
  * The class name added to the extension.
  */
 const CLASS_NAME = "mimerenderer-cx";
-
-//0830 for json file input
-/*const TYPES: {
-  [key: string]: { name: string; extensions: string[] };
-} = {
-  'application/cx': {
-    name: 'cx',
-    extensions: ['.cx'],
-    //reader: msa.io.fasta
-  },
-  'application/json': {
-    name: 'json',
-    extensions: ['.json'],
-    //reader: msa.io.clustal
-  }
-};*/
 
 //the class translation from cx to json
 export class cy2js {
@@ -88,12 +71,12 @@ export class OutputWidget extends Widget implements IRenderMime.IRenderer {
   }
 
   convertData = (data: any) => {
-    let elements:any;
-    let style:any;
+    let elements: any;
+    let style: any;
     console.log("Data just cyjs type:", typeof data);
-    console.info("info",data)
-    console.log("length",data.lenght)
-    if(data.length == 13){
+    console.info("info", data);
+    console.log("length", data.lenght);
+    if (data.length == 13) {
       console.log("Data cx type:", typeof data);
 
       const utils = new cyNetworkUtils();
@@ -103,14 +86,11 @@ export class OutputWidget extends Widget implements IRenderMime.IRenderer {
       const attributeNameMap = {};
       elements = cx2Js.cyElementsFromNiceCX(niceCX, attributeNameMap);
       style = cx2Js.cyStyleFromNiceCX(niceCX, attributeNameMap);
-     
-      
-    }
-    else{
+    } else {
       console.log("Data cyjs type:", typeof data);
-      elements = data.elements
-      style = data.style
-    }    
+      elements = data.elements;
+      style = data.style;
+    }
     return [elements, style];
   };
 
@@ -119,23 +99,24 @@ export class OutputWidget extends Widget implements IRenderMime.IRenderer {
    */
   renderModel(model: IRenderMime.IMimeModel): Promise<void> {
     //データ作成
-    
 
     return new Promise<void>((resolve, reject) => {
       let data_row = model.data[this._mimeType] as any;
       const metadata = (model.metadata[this._mimeType] as any) || {};
-      
+
       const [data_js, style_js] = this.convertData(data_row);
       const data: JGraph = {
         elements: data_js,
         style: style_js
       };
-      const props = { data, metadata, theme: "cm-s-jupyter" };
-      console.log("Final: ", data);
-
-      //ここで描画
-      const component = <Component {...props} />;
-
+      const props = {
+        data,
+        metadata,
+        theme: "cm-s-jupyter",
+        registerCy,
+        selection
+      };
+      const component = <RootComponent {...props} />;
       ReactDOM.render(component, this.node, () => {
         resolve();
       });
@@ -145,6 +126,18 @@ export class OutputWidget extends Widget implements IRenderMime.IRenderer {
   private _mimeType: string;
   // private _resolver: IRenderMime.IResolver;
 }
+
+let cyRef: any = null;
+let selection: any = null;
+const registerCy = (cy: any) => {
+  cyRef = cy;
+  console.log("Register called", cyRef);
+
+  cyRef.on("tap", "node", (evt: any) => {
+    selection = evt.target.data();
+    console.log("* Node Selected30: ", selection);
+  });
+};
 
 /**
  * A mime renderer factory for cx data.
@@ -171,7 +164,7 @@ const extension: IRenderMime.IExtension = {
     }
   ],
   documentWidgetFactoryOptions: {
-   name: "cx Viewer",
+    name: "cx Viewer",
     primaryFileType: "cx",
     fileTypes: ["cx", "cyjs"],
     defaultFor: ["cx"]
