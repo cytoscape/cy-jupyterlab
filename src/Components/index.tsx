@@ -42,7 +42,7 @@ class RootComponent extends React.Component<any, any> {
     };
   }
 
-  nodeClickAction = (selected: any) => {
+  clickAction = (selected: any) => {
     this.setState({ selected });
   };
 
@@ -66,12 +66,18 @@ class RootComponent extends React.Component<any, any> {
           style={networkPanelStyle}
           elements={this.props.data.elements}
           visualStyle={this.props.data.style}
+<<<<<<< HEAD
           nodeClickAction={this.nodeClickAction}
           addCyRefAction={this.addCyRefAction}
+=======
+          clickAction={this.clickAction}
+      addCyRefAction={this.addCyRefAction}
+>>>>>>> 3d576c14a349e370614fdff82e73fe1e8c2d7767
         />
         <ControlPanel
           style={controlPanelStyle}
-          selectedNode={this.state.selected}
+          elements={this.props.data.elements}
+          selected={this.state.selected}
           networkname={this.props.networkname}
           fitAction={this.fitAction}
           layoutAction={this.layoutAction}
