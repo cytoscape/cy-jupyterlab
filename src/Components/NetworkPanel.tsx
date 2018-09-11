@@ -24,7 +24,7 @@ class NetworkPanel extends React.Component<any, any> {
         }
       })
     );
-    //this.props.setcy(cy);
+    this.props.addCyRefAction(cy)
 
     cy.on("click", (evt: any) => {
       const selected = evt.target.data();
@@ -32,10 +32,6 @@ class NetworkPanel extends React.Component<any, any> {
 
       this.props.nodeClickAction(selected);
     });
-    this.setState({ cy: cy });
-    console.log(cy);
-    cy.fit()
-    this.props.setcy(cy);
   }
 
   cyjs: any = null;

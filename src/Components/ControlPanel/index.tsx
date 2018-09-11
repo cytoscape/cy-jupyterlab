@@ -1,13 +1,12 @@
 import React from "react";
 import TitleBar from "./TitleBar";
 import Button from "@material-ui/core/Button";
+import LayoutSelector from "./LayoutSelector";
 
 const ControlPanel = (props: any) => {
-  console.log("## CP rendering", props);
-
   const selectedNode = props.selectedNode;
 
-  let name = "--";
+  let name = "Not selected";
   if (selectedNode) {
     name = selectedNode.name;
   }
@@ -19,8 +18,9 @@ const ControlPanel = (props: any) => {
       <div>
         <h1>SELECTION = {name}</h1>
       </div>
+      <LayoutSelector layoutAction={props.layoutAction} />
       <div>
-        <Button onClick={this.props.fit}>Fit</Button>
+        <Button onClick={() => props.fitAction()}>Fit</Button>
       </div>
     </div>
   );

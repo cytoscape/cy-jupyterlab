@@ -24,7 +24,7 @@ class LayoutSelector extends React.Component<any, any> {
     console.log(event);
     const val = event.target.value;
     this.setState({ layoutName: val });
-    this.props.applyLayout(val);
+    this.props.layoutAction(val);
   };
 
   render() {
