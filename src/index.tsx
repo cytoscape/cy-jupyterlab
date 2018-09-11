@@ -13,6 +13,7 @@ import * as React from "react";
 import * as ReactDOM from "react-dom";
 
 import RootComponent, { JGraph } from "./Components";
+import { element } from "prop-types";
 
 /**
  * The default mime type for the extension.
@@ -24,6 +25,8 @@ const MIME_TYPE = "application/cx";
  * The class name added to the extension.
  */
 const CLASS_NAME = "mimerenderer-cx";
+
+let NetworkName: any = null;
 
 //the class translation from cx to json
 export class cy2js {
@@ -101,10 +104,13 @@ export class OutputWidget extends Widget implements IRenderMime.IRenderer {
     //データ作成
 
     return new Promise<void>((resolve, reject) => {
-      let data_row = model.data[this._mimeType] as any;
+      let data_raw = model.data[this._mimeType] as any;
       const metadata = (model.metadata[this._mimeType] as any) || {};
 
-      const [data_js, style_js] = this.convertData(data_row);
+      const [data_js, style_js] = this.convertData(data_raw);
+
+      //uemura
+      const networkname = data_raw[6].networkAttributes[0].v;
       const data: JGraph = {
         elements: data_js,
         style: style_js
@@ -114,7 +120,8 @@ export class OutputWidget extends Widget implements IRenderMime.IRenderer {
         metadata,
         theme: "cm-s-jupyter",
         registerCy,
-        selection
+        selection,
+        networkname
       };
       const component = <RootComponent {...props} />;
       ReactDOM.render(component, this.node, () => {
@@ -124,7 +131,6 @@ export class OutputWidget extends Widget implements IRenderMime.IRenderer {
   }
 
   private _mimeType: string;
-  // private _resolver: IRenderMime.IResolver;
 }
 
 let cyRef: any = null;
