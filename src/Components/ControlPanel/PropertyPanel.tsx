@@ -9,23 +9,16 @@ const containerStyle = {
 
 class PropertyPanel extends React.Component<any, any> {
 
-
   render() {
-    console.log("!!Rendering called props: ", this.props);
-
-    const selected = this.props.selectedNode
-
+    const elements = this.props.elements
+    console.log("!!Rendering called props: ", elements);
     return (
       <div style={containerStyle}>
         <Typography variant="subheading">
-          Number of nodes: {this.props.nodeCount}
+          Number of nodes: {elements.nodes.length}
         </Typography>
         <Typography variant="subheading">
-          Number of edges: {this.props.edgeCount}
-        </Typography>
-
-        <Typography variant="subheading">
-          Selected Node Name: {!selected ? "-" : selected.name}
+          Number of edges: {elements.edges.length}
         </Typography>
       </div>
     );

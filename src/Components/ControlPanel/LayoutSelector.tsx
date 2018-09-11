@@ -17,7 +17,7 @@ const styles = (theme: any) => ({
 
 class LayoutSelector extends React.Component<any, any> {
   state = {
-    layoutName: "grid"
+    layoutName: ""
   };
 
   handleChange(event: any) {
@@ -32,21 +32,19 @@ class LayoutSelector extends React.Component<any, any> {
 
     return (
       <div>
-        <h3>select layouts</h3>
+        <h3>SELECT LAYOUTS</h3>
         <FormControl fullWidth>
           <InputLabel htmlFor="layout-simple">Layouts</InputLabel>
           <Select
             value={layoutName}
             onChange={(event: any) => this.handleChange(event)}
           >
-            <MenuItem value={"cola"}>preset</MenuItem>
             <MenuItem value={"random"}>random</MenuItem>
             <MenuItem value={"grid"}>grid</MenuItem>
             <MenuItem value={"circle"}>circle</MenuItem>
             <MenuItem value={"concentric"}>concentric</MenuItem>
             <MenuItem value={"breadthfirst"}>breadthfirst</MenuItem>
             <MenuItem value={"cose"}>cose</MenuItem>
-            <MenuItem value={"dagre"}>dagre</MenuItem>
           </Select>
           <FormHelperText>Required</FormHelperText>
         </FormControl>

@@ -30,7 +30,7 @@ class NetworkPanel extends React.Component<any, any> {
       const selected = evt.target.data();
       console.log("set selected", selected);
 
-      this.props.nodeClickAction(selected);
+      this.props.clickAction(selected);
     });
   }
 
