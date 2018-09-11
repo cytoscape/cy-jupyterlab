@@ -32,19 +32,31 @@ const controlPanelStyle = {
 };
 
 class RootComponent extends React.Component<any, any> {
-  state = {
-    counter: 0,
-    selected: {},
-    cy: {}
-  };
+  constructor(props: any) {
+    super(props);
+
+    this.state = {
+      counter: 0,
+      selected: {},
+      cy: null
+    };
+  }
 
   nodeClickAction = (selected: any) => {
     this.setState({ selected });
   };
 
-  //uemura
-  setcy = (cy: any) => {
-    this.setState({ cy:cy });
+  addCyRefAction = (cy: any) => {
+    this.setState({ cy });
+  };
+
+  fitAction = () => {
+    this.state.cy.fit();
+  };
+
+  layoutAction = (layoutName: string) => {
+    const layout = this.state.cy.layout({ name: layoutName });
+    layout.run();
   };
 
   render() {
@@ -55,15 +67,14 @@ class RootComponent extends React.Component<any, any> {
           elements={this.props.data.elements}
           visualStyle={this.props.data.style}
           nodeClickAction={this.nodeClickAction}
-          //uemura
-          setcy={this.setcy}
+          addCyRefAction={this.addCyRefAction}
         />
         <ControlPanel
           style={controlPanelStyle}
           selectedNode={this.state.selected}
           networkname={this.props.networkname}
-          //uemura
-          fit={this.state.cy.fit()}
+          fitAction={this.fitAction}
+          layoutAction={this.layoutAction}
         />
       </div>
     );
