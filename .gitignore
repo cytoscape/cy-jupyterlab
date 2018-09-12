@@ -60,10 +60,8 @@ typings/
 # next.js build output
 .next
 
-*.ipynb
 .ipynb_checkpoints/
 package-lock.json
-*.cx
 
 .idea
 lib/
