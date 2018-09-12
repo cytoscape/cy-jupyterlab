@@ -1,4 +1,4 @@
-# cy-jupyterlab
+# @iau/cy-jupyterlab
 
 Jupyter lab extension (widget) for rendering graphs (network: [.cx](http://www.home.ndexbio.org/data-model/), .cyjs) using cytoscape.js. 
 ![tab](https://github.com/idekerlab/cy-jupyterlab/blob/images/screenshot-01.png)  
@@ -22,7 +22,7 @@ Jupyter lab extension (widget) for rendering graphs (network: [.cx](http://www.h
 ## Installation
 
 ```bash
-jupyter labextension install cy-jupyterlab
+jupyter labextension install @iau/cy-jupyterlab
 ```
 
 ## Development

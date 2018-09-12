@@ -1,8 +1,9 @@
 {
-  "name": "cy-jupyterlab",
+  "name": "@iau/cy-jupyterlab",
   "version": "0.1.0",
-  "description": "A JupyterLab extension for rendering cx files.",
-  "author": "Keiichiro Ono <>",
+  "description": "A JupyterLab extension for rendering cx (a network exchange format, designed as a flexible structure for transmission of networks) and cyjs files.",
+  "author": "Hideki Akazawa <>" ,
+  "contributors": ["Kaito Uemura <>", "Keiichiro Ono <>"],
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "license": "MIT",
@@ -13,7 +14,8 @@
   "keywords": [
     "jupyter",
     "jupyterlab",
-    "jupyterlab-extension"
+    "jupyterlab-extension",
+    "cytoscape"
   ],
   "files": [
     "lib/**/*.{d.ts,eot,gif,html,jpg,js,js.map,json,png,svg,woff2,ttf}",
@@ -27,10 +29,10 @@
     "build": "tsc",
     "prepare": "npm run clean && npm run build",
     "watch": "tsc -w",
-    "extension:install": "jupyter labextension install mime-rend1",
-    "extension:uninstall": "jupyter labextension uninstall  mime-rend1",
-    "extension:enable": "jupyter labextension enable mime-rend1",
-    "extension:disable": "jupyter labextension disable mime-rend1"
+    "extension:install": "jupyter labextension install @iau/cy-jupyterlab",
+    "extension:uninstall": "jupyter labextension uninstall @iau/cy-jupyterlab",
+    "extension:enable": "jupyter labextension enable @iau/cy-jupyterlab",
+    "extension:disable": "jupyter labextension disable @iau/cy-jupyterlab"
   },
   "dependencies": {
     "@jupyterlab/rendermime-interfaces": "^1.0.0",
