@@ -37,20 +37,12 @@ export class cy2js {
   }
 
   transportation() {
-    //rowdata
     const utils = new cyNetworkUtils();
-
     console.info(this.DATA);
     console.log(typeof this.DATA);
-
-    // const jsonObject = JSON.parse(this.DATA.toString())
-    // console.info(jsonObject);
-
     const niceCX = utils.rawCXtoNiceCX(this.DATA);
-
     const cx2Js = new cxToJs(utils);
     const attributeNameMap = {};
-    //これを返す予定
     const elements = cx2Js.cyElementsFromNiceCX(niceCX, attributeNameMap);
     const style = cx2Js.cyStyleFromNiceCX(niceCX, attributeNameMap);
     return [elements, style];
@@ -66,22 +58,19 @@ export class OutputWidget extends Widget implements IRenderMime.IRenderer {
    */
   constructor(options: IRenderMime.IRendererOptions) {
     super();
-
     console.log("Instanciated");
     this._mimeType = options.mimeType;
-    // this._resolver = options.resolver;
     this.addClass(CLASS_NAME);
   }
 
   convertData = (data: any) => {
     let elements: any;
     let style: any;
-    console.log("Data just cyjs type:", typeof data);
     console.info("info", data);
-    console.log("length", data.lenght);
-    if (data.length == 13) {
-      console.log("Data cx type:", typeof data);
+    console.log("length", data.length);
+    const L = data.length;
 
+    if (L == 13 || L == 12) {
       const utils = new cyNetworkUtils();
       let jsonObject = data;
       const niceCX = utils.rawCXtoNiceCX(jsonObject);
@@ -90,7 +79,6 @@ export class OutputWidget extends Widget implements IRenderMime.IRenderer {
       elements = cx2Js.cyElementsFromNiceCX(niceCX, attributeNameMap);
       style = cx2Js.cyStyleFromNiceCX(niceCX, attributeNameMap);
     } else {
-      console.log("Data cyjs type:", typeof data);
       elements = data.elements;
       style = data.style;
     }
@@ -108,13 +96,18 @@ export class OutputWidget extends Widget implements IRenderMime.IRenderer {
       const metadata = (model.metadata[this._mimeType] as any) || {};
 
       const [data_js, style_js] = this.convertData(data_raw);
+      let networkname = null;
+      var keys = Object.keys(data_raw);
+      for (let i = 0; i < keys.length; i++) {
+        if ("networkAttributes" in data_raw[i]) {networkname = data_raw[i].networkAttributes[0].v; }
+      }
 
-      //uemura
-      const networkname = data_raw[6].networkAttributes[0].v;
       const data: JGraph = {
         elements: data_js,
         style: style_js
       };
+      
+      console.log("kokodayo");
       const props = {
         data,
         metadata,
