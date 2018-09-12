@@ -19,6 +19,8 @@ Jupyter lab extension (widget) for rendering graphs (network: [.cx](http://www.h
 
 - JupyterLab
 
+- ndex2 (this is a python library as data imorting )
+
 ## Installation
 
 ```bash
