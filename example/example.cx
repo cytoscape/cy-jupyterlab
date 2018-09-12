@@ -1,0 +1,5981 @@
+[{"numberVerification":[{"longNumber":281474976710655}]},{"metaData":[{"name":"provenanceHistory","elementCount":1,"version":"1.0","consistencyGroup":1,"properties":[]},{"name":"nodes","elementCount":125,"idCounter":2618,"version":"1.0","consistencyGroup":1,"properties":[]},{"name":"edges","elementCount":250,"idCounter":2619,"version":"1.0","consistencyGroup":1,"properties":[]},{"name":"networkAttributes","elementCount":8,"version":"1.0","consistencyGroup":1,"properties":[]},{"name":"nodeAttributes","elementCount":146,"version":"1.0","consistencyGroup":1,"properties":[]},{"name":"edgeAttributes","elementCount":750,"version":"1.0","consistencyGroup":1,"properties":[]},{"name":"cartesianLayout","elementCount":125,"version":"1.0","consistencyGroup":1,"properties":[]},{"name":"cyVisualProperties","elementCount":24,"version":"1.0","consistencyGroup":1,"properties":[]},{"name":"cyHiddenAttributes","elementCount":1,"version":"1.0","consistencyGroup":1,"properties":[]},{"name":"ndexStatus","elementCount":1,"version":"1.0","consistencyGroup":1,"properties":[]}]},
+{"ndexStatus":[{"externalId":"ddeae917-8b7e-11e8-a4bf-0ac135e8bacf","creationTime":1532023764010,"modificationTime":1532992401048,"visibility":"PUBLIC","published":false,"nodeCount":125,"edgeCount":250,"owner":"rebecasanz","ndexServerURI":"http://public.ndexbio.org","readOnly":false}]}, {"provenanceHistory":[{"entity":{"uri":"http://public.ndexbio.org/v2/network/ddeae917-8b7e-11e8-a4bf-0ac135e8bacf/summary","creationEvent":{"inputs":[{"uri":"http://public.ndexbio.org/v2/network/ddeae917-8b7e-11e8-a4bf-0ac135e8bacf/summary","creationEvent":{"inputs":[{"uri":"http://public.ndexbio.org/v2/network/ddeae917-8b7e-11e8-a4bf-0ac135e8bacf/summary","creationEvent":{"inputs":[{"uri":"http://public.ndexbio.org/v2/network/ddeae917-8b7e-11e8-a4bf-0ac135e8bacf/summary","creationEvent":{"inputs":[{"uri":"http://public.ndexbio.org/v2/network/ddeae917-8b7e-11e8-a4bf-0ac135e8bacf/summary","creationEvent":{"inputs":[{"uri":"http://public.ndexbio.org/v2/network/ddeae917-8b7e-11e8-a4bf-0ac135e8bacf/summary","creationEvent":{"inputs":[{"uri":null,"creationEvent":{"inputs":null,"startedAtTime":1532023763400,"endedAtTime":1532023763400,"eventType":"CyNDEx-2 Upload","properties":[{"name":"cyNDEx2 Version","value":"2.2.3.SNAPSHOT"},{"name":"Cytoscape Version","value":"3.6.1"},{"name":"dc:title","value":"ppi-AllPPI.sif"}]},"properties":[]}],"startedAtTime":1532023764010,"endedAtTime":1532023764010,"eventType":"Program Upload in CX","properties":[{"name":"user name","value":"rebecasanz"}]},"properties":[{"name":"dc:title","value":"ppi-AllPPI.sif"}]}],"startedAtTime":1532023871973,"endedAtTime":1532023871973,"eventType":"Update Network Profile","properties":[{"name":"user name","value":"rebecasanz"},{"name":"dc:title","value":"ppi-AllPPI.sif"}]},"properties":[{"name":"dc:title","value":"ppi-AllPPI.sif"},{"name":"description","value":""},{"name":"version","value":"MAR-2014"}]}],"startedAtTime":1532991788578,"endedAtTime":1532991788578,"eventType":"Update Network Profile","properties":[{"name":"user name","value":"rebecasanz"},{"name":"dc:title","value":"ppi-AllPPI.sif"}]},"properties":[{"name":"dc:title","value":"ppi-AllPPI.sif"},{"name":"description","value":"<div>Protein-protein interaction network showing the axis membrane receptors – AP-1 transcription factors, activated in adjacent mucosa. Seed proteins are colored in green (transcription factors) or brown (membrane receptors), and highlighted in grey. Inferred interacting proteins are colored in light purple.<br/></div>"},{"name":"version","value":"MAR-2014"}]}],"startedAtTime":1532992037037,"endedAtTime":1532992037037,"eventType":"Update Network Profile","properties":[{"name":"user name","value":"rebecasanz"},{"name":"dc:title","value":"ppin-Level1"}]},"properties":[{"name":"dc:title","value":"ppin-Level1"},{"name":"description","value":"<div>Protein-protein interaction network showing the axis membrane receptors – AP-1 transcription factors, activated in adjacent mucosa. Seed proteins are colored in green (transcription factors) or brown (membrane receptors), and highlighted in grey. Inferred interacting proteins are colored in light purple.<br/></div>"},{"name":"version","value":"MAR-2014"}]}],"startedAtTime":1532992363170,"endedAtTime":1532992363170,"eventType":"Update Network Profile","properties":[{"name":"user name","value":"rebecasanz"},{"name":"dc:title","value":"ppin-Level1"}]},"properties":[{"name":"dc:title","value":"ppin-Level1"},{"name":"description","value":"<div>Protein-protein interaction network showing the axis membrane receptors – AP-1 transcription factors, activated in adjacent mucosa. Seed proteins are colored in red and highlighted in grey. Inferred interacting proteins are colored in light purple.<br/></div><div><br/></div><div>This network refers to <b>Figure S5</b> and has been manually modified, hence it differs from the network presented in the paper's supplementary materials.</div>"},{"name":"version","value":"MAR-2014"}]}],"startedAtTime":1532992401046,"endedAtTime":1532992401046,"eventType":"Update Network Profile","properties":[{"name":"user name","value":"rebecasanz"},{"name":"dc:title","value":"ppin-Level1 - Fig. S5"}]},"properties":[{"name":"dc:title","value":"ppin-Level1 - Fig. S5"},{"name":"description","value":"<div>Protein-protein interaction network showing the axis membrane receptors – AP-1 transcription factors, activated in adjacent mucosa. Seed proteins are colored in red and highlighted in grey. Inferred interacting proteins are colored in light purple.<br/></div><div><br/></div><div>This network refers to <b>Figure S5</b> and has been manually modified, hence it differs from the network presented in the paper's supplementary materials.</div>"},{"name":"version","value":"MAR-2014"}]}}]}, {"nodes":[{
+  "@id" : 1990,
+  "n" : "ROR2"
+}, {
+  "@id" : 1989,
+  "n" : "NRP2"
+}, {
+  "@id" : 1988,
+  "n" : "DARC"
+}, {
+  "@id" : 1987,
+  "n" : "ERG"
+}, {
+  "@id" : 1986,
+  "n" : "MAP3K1"
+}, {
+  "@id" : 1985,
+  "n" : "MAP3K3"
+}, {
+  "@id" : 1984,
+  "n" : "TNFRSF1B"
+}, {
+  "@id" : 1983,
+  "n" : "CALD1"
+}, {
+  "@id" : 1982,
+  "n" : "TNC"
+}, {
+  "@id" : 1981,
+  "n" : "DIS3L2"
+}, {
+  "@id" : 1980,
+  "n" : "KHSRP"
+}, {
+  "@id" : 1979,
+  "n" : "PSME1"
+}, {
+  "@id" : 1978,
+  "n" : "UBE2I"
+}, {
+  "@id" : 1977,
+  "n" : "GPRASP1"
+}, {
+  "@id" : 1976,
+  "n" : "PRKCA"
+}, {
+  "@id" : 1975,
+  "n" : "SHC1"
+}, {
+  "@id" : 1974,
+  "n" : "PAK2"
+}, {
+  "@id" : 1973,
+  "n" : "CD93"
+}, {
+  "@id" : 1972,
+  "n" : "FOS"
+}, {
+  "@id" : 1971,
+  "n" : "DDR2"
+}, {
+  "@id" : 1970,
+  "n" : "TACR2"
+}, {
+  "@id" : 1969,
+  "n" : "TLN1"
+}, {
+  "@id" : 1968,
+  "n" : "RP13-122B23.3"
+}, {
+  "@id" : 1967,
+  "n" : "ITGA5"
+}, {
+  "@id" : 1966,
+  "n" : "ITGA9"
+}, {
+  "@id" : 1965,
+  "n" : "BRCA1"
+}, {
+  "@id" : 1964,
+  "n" : "MAFK"
+}, {
+  "@id" : 1963,
+  "n" : "MAFB"
+}, {
+  "@id" : 1962,
+  "n" : "MAFG"
+}, {
+  "@id" : 1961,
+  "n" : "FN1"
+}, {
+  "@id" : 1960,
+  "n" : "RUNX2"
+}, {
+  "@id" : 1959,
+  "n" : "RUNX1"
+}, {
+  "@id" : 1958,
+  "n" : "SRC"
+}, {
+  "@id" : 1957,
+  "n" : "ITGB1"
+}, {
+  "@id" : 1956,
+  "n" : "ITGB3"
+}, {
+  "@id" : 1955,
+  "n" : "GIPC1"
+}, {
+  "@id" : 1954,
+  "n" : "ITGB5"
+}, {
+  "@id" : 1953,
+  "n" : "GRB2"
+}, {
+  "@id" : 1952,
+  "n" : "RIPK2"
+}, {
+  "@id" : 1951,
+  "n" : "RIPK3"
+}, {
+  "@id" : 1950,
+  "n" : "PRKACA"
+}, {
+  "@id" : 1949,
+  "n" : "MAPK14"
+}, {
+  "@id" : 1948,
+  "n" : "FYN"
+}, {
+  "@id" : 1947,
+  "n" : "STAT3"
+}, {
+  "@id" : 1946,
+  "n" : "STAT1"
+}, {
+  "@id" : 1945,
+  "n" : "BCL6"
+}, {
+  "@id" : 1944,
+  "n" : "BCL3"
+}, {
+  "@id" : 1943,
+  "n" : "SUMO1"
+}, {
+  "@id" : 1942,
+  "n" : "SUMO2"
+}, {
+  "@id" : 1941,
+  "n" : "SUMO3"
+}, {
+  "@id" : 1940,
+  "n" : "SUMO4"
+}, {
+  "@id" : 1939,
+  "n" : "YWHAZ"
+}, {
+  "@id" : 1938,
+  "n" : "TUBB3"
+}, {
+  "@id" : 1937,
+  "n" : "NFKB1"
+}, {
+  "@id" : 1936,
+  "n" : "COPS5"
+}, {
+  "@id" : 1935,
+  "n" : "NCOR2"
+}, {
+  "@id" : 1934,
+  "n" : "ETS1"
+}, {
+  "@id" : 1933,
+  "n" : "NTRK3"
+}, {
+  "@id" : 1932,
+  "n" : "SMAD3"
+}, {
+  "@id" : 1931,
+  "n" : "SMAD4"
+}, {
+  "@id" : 1930,
+  "n" : "EPHB2"
+}, {
+  "@id" : 1929,
+  "n" : "PXN"
+}, {
+  "@id" : 1928,
+  "n" : "CD36"
+}, {
+  "@id" : 1927,
+  "n" : "APOE"
+}, {
+  "@id" : 1926,
+  "n" : "SNCA"
+}, {
+  "@id" : 1925,
+  "n" : "MAF"
+}, {
+  "@id" : 1924,
+  "n" : "NFATC2"
+}, {
+  "@id" : 1923,
+  "n" : "TSC22D3"
+}, {
+  "@id" : 1922,
+  "n" : "CD9"
+}, {
+  "@id" : 1921,
+  "n" : "PF4"
+}, {
+  "@id" : 1920,
+  "n" : "VIM"
+}, {
+  "@id" : 1919,
+  "n" : "MCC"
+}, {
+  "@id" : 1918,
+  "n" : "CNTN1"
+}, {
+  "@id" : 1917,
+  "n" : "UBC"
+}, {
+  "@id" : 1916,
+  "n" : "NCOA6"
+}, {
+  "@id" : 1915,
+  "n" : "NCOA1"
+}, {
+  "@id" : 1914,
+  "n" : "RB1"
+}, {
+  "@id" : 1913,
+  "n" : "ESR1"
+}, {
+  "@id" : 1912,
+  "n" : "FOSL1"
+}, {
+  "@id" : 1911,
+  "n" : "ALS2CR11"
+}, {
+  "@id" : 1910,
+  "n" : "SDC2"
+}, {
+  "@id" : 1909,
+  "n" : "UCHL1"
+}, {
+  "@id" : 1908,
+  "n" : "FOSL2"
+}, {
+  "@id" : 1907,
+  "n" : "MYH10"
+}, {
+  "@id" : 1906,
+  "n" : "IKBKG"
+}, {
+  "@id" : 1905,
+  "n" : "ATF7"
+}, {
+  "@id" : 1904,
+  "n" : "GTF2F2"
+}, {
+  "@id" : 1903,
+  "n" : "ATF3"
+}, {
+  "@id" : 1902,
+  "n" : "ATF4"
+}, {
+  "@id" : 1901,
+  "n" : "IKBKE"
+}, {
+  "@id" : 1900,
+  "n" : "TAF1"
+}, {
+  "@id" : 1899,
+  "n" : "JUND"
+}, {
+  "@id" : 1898,
+  "n" : "PTK2"
+}, {
+  "@id" : 1897,
+  "n" : "ATF2"
+}, {
+  "@id" : 1896,
+  "n" : "COL1A1"
+}, {
+  "@id" : 1895,
+  "n" : "NFE2L1"
+}, {
+  "@id" : 1894,
+  "n" : "COL1A2"
+}, {
+  "@id" : 1893,
+  "n" : "DDIT3"
+}, {
+  "@id" : 1892,
+  "n" : "JUNB"
+}, {
+  "@id" : 1891,
+  "n" : "RELA"
+}, {
+  "@id" : 1890,
+  "n" : "EGFR"
+}, {
+  "@id" : 1889,
+  "n" : "SMARCD1"
+}, {
+  "@id" : 1888,
+  "n" : "CSNK2A1"
+}, {
+  "@id" : 1887,
+  "n" : "BATF"
+}, {
+  "@id" : 1886,
+  "n" : "VCL"
+}, {
+  "@id" : 1885,
+  "n" : "JAG1"
+}, {
+  "@id" : 1884,
+  "n" : "TBP"
+}, {
+  "@id" : 1883,
+  "n" : "JDP2"
+}, {
+  "@id" : 1882,
+  "n" : "NRAP"
+}, {
+  "@id" : 1881,
+  "n" : "PKD1"
+}, {
+  "@id" : 1880,
+  "n" : "PML"
+}, {
+  "@id" : 1879,
+  "n" : "FOSB"
+}, {
+  "@id" : 1878,
+  "n" : "CDC2"
+}, {
+  "@id" : 1877,
+  "n" : "ACTA1"
+}, {
+  "@id" : 1876,
+  "n" : "BATF3"
+}, {
+  "@id" : 1875,
+  "n" : "LDLR"
+}, {
+  "@id" : 1874,
+  "n" : "PDIA3"
+}, {
+  "@id" : 1873,
+  "n" : "SPP1"
+}, {
+  "@id" : 1872,
+  "n" : "ERBB2"
+}, {
+  "@id" : 1871,
+  "n" : "MAPK8"
+}, {
+  "@id" : 1870,
+  "n" : "JUN"
+}, {
+  "@id" : 1869,
+  "n" : "MAPK1"
+}, {
+  "@id" : 1868,
+  "n" : "MYH9"
+}, {
+  "@id" : 1867,
+  "n" : "AGTR1"
+}, {
+  "@id" : 1866,
+  "n" : "L1CAM"
+}]},
+ {"edges":[{
+  "@id" : 2240,
+  "s" : 1987,
+  "t" : 1972,
+  "i" : "pp"
+}, {
+  "@id" : 2239,
+  "s" : 1987,
+  "t" : 1870,
+  "i" : "pp"
+}, {
+  "@id" : 2238,
+  "s" : 1986,
+  "t" : 1907,
+  "i" : "pp"
+}, {
+  "@id" : 2237,
+  "s" : 1986,
+  "t" : 1920,
+  "i" : "pp"
+}, {
+  "@id" : 2236,
+  "s" : 1985,
+  "t" : 1907,
+  "i" : "pp"
+}, {
+  "@id" : 2235,
+  "s" : 1985,
+  "t" : 1920,
+  "i" : "pp"
+}, {
+  "@id" : 2234,
+  "s" : 1984,
+  "t" : 1920,
+  "i" : "pp"
+}, {
+  "@id" : 2233,
+  "s" : 1983,
+  "t" : 1878,
+  "i" : "pp"
+}, {
+  "@id" : 2232,
+  "s" : 1982,
+  "t" : 1967,
+  "i" : "pp"
+}, {
+  "@id" : 2231,
+  "s" : 1981,
+  "t" : 1886,
+  "i" : "pp"
+}, {
+  "@id" : 2230,
+  "s" : 1981,
+  "t" : 1920,
+  "i" : "pp"
+}, {
+  "@id" : 2229,
+  "s" : 1979,
+  "t" : 1886,
+  "i" : "pp"
+}, {
+  "@id" : 2228,
+  "s" : 1979,
+  "t" : 1920,
+  "i" : "pp"
+}, {
+  "@id" : 2227,
+  "s" : 1978,
+  "t" : 1909,
+  "i" : "pp"
+}, {
+  "@id" : 2226,
+  "s" : 1976,
+  "t" : 1886,
+  "i" : "pp"
+}, {
+  "@id" : 2225,
+  "s" : 1976,
+  "t" : 1910,
+  "i" : "pp"
+}, {
+  "@id" : 2224,
+  "s" : 1975,
+  "t" : 1983,
+  "i" : "pp"
+}, {
+  "@id" : 2223,
+  "s" : 1974,
+  "t" : 1920,
+  "i" : "pp"
+}, {
+  "@id" : 2222,
+  "s" : 1972,
+  "t" : 1963,
+  "i" : "pp"
+}, {
+  "@id" : 2221,
+  "s" : 1972,
+  "t" : 1935,
+  "i" : "pp"
+}, {
+  "@id" : 2220,
+  "s" : 1972,
+  "t" : 1915,
+  "i" : "pp"
+}, {
+  "@id" : 2219,
+  "s" : 1972,
+  "t" : 1959,
+  "i" : "pp"
+}, {
+  "@id" : 2218,
+  "s" : 1972,
+  "t" : 1960,
+  "i" : "pp"
+}, {
+  "@id" : 2217,
+  "s" : 1972,
+  "t" : 1980,
+  "i" : "pp"
+}, {
+  "@id" : 2216,
+  "s" : 1972,
+  "t" : 1943,
+  "i" : "pp"
+}, {
+  "@id" : 2215,
+  "s" : 1972,
+  "t" : 1884,
+  "i" : "pp"
+}, {
+  "@id" : 2214,
+  "s" : 1972,
+  "t" : 1900,
+  "i" : "pp"
+}, {
+  "@id" : 2213,
+  "s" : 1972,
+  "t" : 1947,
+  "i" : "pp"
+}, {
+  "@id" : 2212,
+  "s" : 1972,
+  "t" : 1946,
+  "i" : "pp"
+}, {
+  "@id" : 2211,
+  "s" : 1972,
+  "t" : 1942,
+  "i" : "pp"
+}, {
+  "@id" : 2210,
+  "s" : 1972,
+  "t" : 1941,
+  "i" : "pp"
+}, {
+  "@id" : 2209,
+  "s" : 1972,
+  "t" : 1889,
+  "i" : "pp"
+}, {
+  "@id" : 2208,
+  "s" : 1972,
+  "t" : 1944,
+  "i" : "pp"
+}, {
+  "@id" : 2207,
+  "s" : 1972,
+  "t" : 1891,
+  "i" : "pp"
+}, {
+  "@id" : 2206,
+  "s" : 1972,
+  "t" : 1914,
+  "i" : "pp"
+}, {
+  "@id" : 2205,
+  "s" : 1972,
+  "t" : 1869,
+  "i" : "pp"
+}, {
+  "@id" : 2204,
+  "s" : 1972,
+  "t" : 1950,
+  "i" : "pp"
+}, {
+  "@id" : 2203,
+  "s" : 1972,
+  "t" : 1880,
+  "i" : "pp"
+}, {
+  "@id" : 2202,
+  "s" : 1972,
+  "t" : 1933,
+  "i" : "pp"
+}, {
+  "@id" : 2201,
+  "s" : 1972,
+  "t" : 1937,
+  "i" : "pp"
+}, {
+  "@id" : 2200,
+  "s" : 1972,
+  "t" : 1924,
+  "i" : "pp"
+}, {
+  "@id" : 2199,
+  "s" : 1972,
+  "t" : 1902,
+  "i" : "pp"
+}, {
+  "@id" : 2198,
+  "s" : 1972,
+  "t" : 1925,
+  "i" : "pp"
+}, {
+  "@id" : 2197,
+  "s" : 1972,
+  "t" : 1932,
+  "i" : "pp"
+}, {
+  "@id" : 2196,
+  "s" : 1972,
+  "t" : 1940,
+  "i" : "pp"
+}, {
+  "@id" : 2195,
+  "s" : 1972,
+  "t" : 1899,
+  "i" : "pp"
+}, {
+  "@id" : 2194,
+  "s" : 1972,
+  "t" : 1892,
+  "i" : "pp"
+}, {
+  "@id" : 2193,
+  "s" : 1972,
+  "t" : 1904,
+  "i" : "pp"
+}, {
+  "@id" : 2192,
+  "s" : 1972,
+  "t" : 1968,
+  "i" : "pp"
+}, {
+  "@id" : 2191,
+  "s" : 1972,
+  "t" : 1908,
+  "i" : "pp"
+}, {
+  "@id" : 2190,
+  "s" : 1972,
+  "t" : 1972,
+  "i" : "pp"
+}, {
+  "@id" : 2189,
+  "s" : 1972,
+  "t" : 1870,
+  "i" : "pp"
+}, {
+  "@id" : 2188,
+  "s" : 1971,
+  "t" : 1958,
+  "i" : "pp"
+}, {
+  "@id" : 2187,
+  "s" : 1971,
+  "t" : 1975,
+  "i" : "pp"
+}, {
+  "@id" : 2186,
+  "s" : 1970,
+  "t" : 1977,
+  "i" : "pp"
+}, {
+  "@id" : 2185,
+  "s" : 1969,
+  "t" : 1939,
+  "i" : "pp"
+}, {
+  "@id" : 2184,
+  "s" : 1969,
+  "t" : 1886,
+  "i" : "pp"
+}, {
+  "@id" : 2183,
+  "s" : 1968,
+  "t" : 1870,
+  "i" : "pp"
+}, {
+  "@id" : 2182,
+  "s" : 1967,
+  "t" : 1922,
+  "i" : "pp"
+}, {
+  "@id" : 2181,
+  "s" : 1967,
+  "t" : 1873,
+  "i" : "pp"
+}, {
+  "@id" : 2180,
+  "s" : 1967,
+  "t" : 1866,
+  "i" : "pp"
+}, {
+  "@id" : 2179,
+  "s" : 1967,
+  "t" : 1954,
+  "i" : "pp"
+}, {
+  "@id" : 2178,
+  "s" : 1967,
+  "t" : 1956,
+  "i" : "pp"
+}, {
+  "@id" : 2177,
+  "s" : 1967,
+  "t" : 1957,
+  "i" : "pp"
+}, {
+  "@id" : 2176,
+  "s" : 1966,
+  "t" : 1873,
+  "i" : "pp"
+}, {
+  "@id" : 2175,
+  "s" : 1966,
+  "t" : 1929,
+  "i" : "pp"
+}, {
+  "@id" : 2174,
+  "s" : 1966,
+  "t" : 1957,
+  "i" : "pp"
+}, {
+  "@id" : 2173,
+  "s" : 1966,
+  "t" : 1966,
+  "i" : "pp"
+}, {
+  "@id" : 2172,
+  "s" : 1962,
+  "t" : 1920,
+  "i" : "pp"
+}, {
+  "@id" : 2171,
+  "s" : 1961,
+  "t" : 1967,
+  "i" : "pp"
+}, {
+  "@id" : 2170,
+  "s" : 1961,
+  "t" : 1910,
+  "i" : "pp"
+}, {
+  "@id" : 2169,
+  "s" : 1958,
+  "t" : 1928,
+  "i" : "pp"
+}, {
+  "@id" : 2168,
+  "s" : 1958,
+  "t" : 1886,
+  "i" : "pp"
+}, {
+  "@id" : 2167,
+  "s" : 1957,
+  "t" : 1928,
+  "i" : "pp"
+}, {
+  "@id" : 2166,
+  "s" : 1957,
+  "t" : 1969,
+  "i" : "pp"
+}, {
+  "@id" : 2165,
+  "s" : 1956,
+  "t" : 1928,
+  "i" : "pp"
+}, {
+  "@id" : 2164,
+  "s" : 1956,
+  "t" : 1969,
+  "i" : "pp"
+}, {
+  "@id" : 2163,
+  "s" : 1955,
+  "t" : 1973,
+  "i" : "pp"
+}, {
+  "@id" : 2162,
+  "s" : 1955,
+  "t" : 1967,
+  "i" : "pp"
+}, {
+  "@id" : 2161,
+  "s" : 1954,
+  "t" : 1969,
+  "i" : "pp"
+}, {
+  "@id" : 2160,
+  "s" : 1953,
+  "t" : 1907,
+  "i" : "pp"
+}, {
+  "@id" : 2159,
+  "s" : 1953,
+  "t" : 1983,
+  "i" : "pp"
+}, {
+  "@id" : 2158,
+  "s" : 1951,
+  "t" : 1907,
+  "i" : "pp"
+}, {
+  "@id" : 2157,
+  "s" : 1951,
+  "t" : 1920,
+  "i" : "pp"
+}, {
+  "@id" : 2156,
+  "s" : 1950,
+  "t" : 1920,
+  "i" : "pp"
+}, {
+  "@id" : 2155,
+  "s" : 1949,
+  "t" : 1892,
+  "i" : "pp"
+}, {
+  "@id" : 2154,
+  "s" : 1949,
+  "t" : 1870,
+  "i" : "pp"
+}, {
+  "@id" : 2153,
+  "s" : 1948,
+  "t" : 1928,
+  "i" : "pp"
+}, {
+  "@id" : 2152,
+  "s" : 1942,
+  "t" : 1920,
+  "i" : "pp"
+}, {
+  "@id" : 2151,
+  "s" : 1941,
+  "t" : 1920,
+  "i" : "pp"
+}, {
+  "@id" : 2150,
+  "s" : 1938,
+  "t" : 1985,
+  "i" : "pp"
+}, {
+  "@id" : 2149,
+  "s" : 1938,
+  "t" : 1953,
+  "i" : "pp"
+}, {
+  "@id" : 2148,
+  "s" : 1937,
+  "t" : 1920,
+  "i" : "pp"
+}, {
+  "@id" : 2147,
+  "s" : 1936,
+  "t" : 1909,
+  "i" : "pp"
+}, {
+  "@id" : 2146,
+  "s" : 1936,
+  "t" : 1870,
+  "i" : "pp"
+}, {
+  "@id" : 2145,
+  "s" : 1934,
+  "t" : 1972,
+  "i" : "pp"
+}, {
+  "@id" : 2144,
+  "s" : 1934,
+  "t" : 1870,
+  "i" : "pp"
+}, {
+  "@id" : 2143,
+  "s" : 1932,
+  "t" : 1920,
+  "i" : "pp"
+}, {
+  "@id" : 2142,
+  "s" : 1930,
+  "t" : 1910,
+  "i" : "pp"
+}, {
+  "@id" : 2141,
+  "s" : 1930,
+  "t" : 1972,
+  "i" : "pp"
+}, {
+  "@id" : 2140,
+  "s" : 1929,
+  "t" : 1886,
+  "i" : "pp"
+}, {
+  "@id" : 2139,
+  "s" : 1929,
+  "t" : 1969,
+  "i" : "pp"
+}, {
+  "@id" : 2138,
+  "s" : 1927,
+  "t" : 1910,
+  "i" : "pp"
+}, {
+  "@id" : 2137,
+  "s" : 1927,
+  "t" : 1875,
+  "i" : "pp"
+}, {
+  "@id" : 2136,
+  "s" : 1926,
+  "t" : 1909,
+  "i" : "pp"
+}, {
+  "@id" : 2135,
+  "s" : 1926,
+  "t" : 1920,
+  "i" : "pp"
+}, {
+  "@id" : 2134,
+  "s" : 1924,
+  "t" : 1920,
+  "i" : "pp"
+}, {
+  "@id" : 2133,
+  "s" : 1923,
+  "t" : 1972,
+  "i" : "pp"
+}, {
+  "@id" : 2132,
+  "s" : 1923,
+  "t" : 1870,
+  "i" : "pp"
+}, {
+  "@id" : 2131,
+  "s" : 1922,
+  "t" : 1928,
+  "i" : "pp"
+}, {
+  "@id" : 2130,
+  "s" : 1921,
+  "t" : 1910,
+  "i" : "pp"
+}, {
+  "@id" : 2129,
+  "s" : 1920,
+  "t" : 1878,
+  "i" : "pp"
+}, {
+  "@id" : 2128,
+  "s" : 1920,
+  "t" : 1952,
+  "i" : "pp"
+}, {
+  "@id" : 2127,
+  "s" : 1920,
+  "t" : 1906,
+  "i" : "pp"
+}, {
+  "@id" : 2126,
+  "s" : 1920,
+  "t" : 1939,
+  "i" : "pp"
+}, {
+  "@id" : 2125,
+  "s" : 1920,
+  "t" : 1920,
+  "i" : "pp"
+}, {
+  "@id" : 2124,
+  "s" : 1919,
+  "t" : 1909,
+  "i" : "pp"
+}, {
+  "@id" : 2123,
+  "s" : 1919,
+  "t" : 1907,
+  "i" : "pp"
+}, {
+  "@id" : 2122,
+  "s" : 1918,
+  "t" : 1866,
+  "i" : "pp"
+}, {
+  "@id" : 2121,
+  "s" : 1918,
+  "t" : 1982,
+  "i" : "pp"
+}, {
+  "@id" : 2120,
+  "s" : 1918,
+  "t" : 1948,
+  "i" : "pp"
+}, {
+  "@id" : 2119,
+  "s" : 1918,
+  "t" : 1918,
+  "i" : "pp"
+}, {
+  "@id" : 2118,
+  "s" : 1917,
+  "t" : 1909,
+  "i" : "pp"
+}, {
+  "@id" : 2117,
+  "s" : 1917,
+  "t" : 1886,
+  "i" : "pp"
+}, {
+  "@id" : 2116,
+  "s" : 1916,
+  "t" : 1972,
+  "i" : "pp"
+}, {
+  "@id" : 2115,
+  "s" : 1916,
+  "t" : 1870,
+  "i" : "pp"
+}, {
+  "@id" : 2114,
+  "s" : 1913,
+  "t" : 1892,
+  "i" : "pp"
+}, {
+  "@id" : 2113,
+  "s" : 1913,
+  "t" : 1870,
+  "i" : "pp"
+}, {
+  "@id" : 2112,
+  "s" : 1911,
+  "t" : 1886,
+  "i" : "pp"
+}, {
+  "@id" : 2111,
+  "s" : 1911,
+  "t" : 1920,
+  "i" : "pp"
+}, {
+  "@id" : 2110,
+  "s" : 1909,
+  "t" : 1901,
+  "i" : "pp"
+}, {
+  "@id" : 2109,
+  "s" : 1908,
+  "t" : 1892,
+  "i" : "pp"
+}, {
+  "@id" : 2108,
+  "s" : 1908,
+  "t" : 1870,
+  "i" : "pp"
+}, {
+  "@id" : 2107,
+  "s" : 1907,
+  "t" : 1901,
+  "i" : "pp"
+}, {
+  "@id" : 2106,
+  "s" : 1907,
+  "t" : 1952,
+  "i" : "pp"
+}, {
+  "@id" : 2105,
+  "s" : 1907,
+  "t" : 1906,
+  "i" : "pp"
+}, {
+  "@id" : 2104,
+  "s" : 1907,
+  "t" : 1984,
+  "i" : "pp"
+}, {
+  "@id" : 2103,
+  "s" : 1907,
+  "t" : 1891,
+  "i" : "pp"
+}, {
+  "@id" : 2102,
+  "s" : 1907,
+  "t" : 1974,
+  "i" : "pp"
+}, {
+  "@id" : 2101,
+  "s" : 1907,
+  "t" : 1937,
+  "i" : "pp"
+}, {
+  "@id" : 2100,
+  "s" : 1905,
+  "t" : 1892,
+  "i" : "pp"
+}, {
+  "@id" : 2099,
+  "s" : 1905,
+  "t" : 1879,
+  "i" : "pp"
+}, {
+  "@id" : 2098,
+  "s" : 1905,
+  "t" : 1972,
+  "i" : "pp"
+}, {
+  "@id" : 2097,
+  "s" : 1905,
+  "t" : 1870,
+  "i" : "pp"
+}, {
+  "@id" : 2096,
+  "s" : 1904,
+  "t" : 1870,
+  "i" : "pp"
+}, {
+  "@id" : 2095,
+  "s" : 1898,
+  "t" : 1886,
+  "i" : "pp"
+}, {
+  "@id" : 2094,
+  "s" : 1898,
+  "t" : 1969,
+  "i" : "pp"
+}, {
+  "@id" : 2093,
+  "s" : 1897,
+  "t" : 1892,
+  "i" : "pp"
+}, {
+  "@id" : 2092,
+  "s" : 1897,
+  "t" : 1879,
+  "i" : "pp"
+}, {
+  "@id" : 2091,
+  "s" : 1897,
+  "t" : 1972,
+  "i" : "pp"
+}, {
+  "@id" : 2090,
+  "s" : 1897,
+  "t" : 1870,
+  "i" : "pp"
+}, {
+  "@id" : 2089,
+  "s" : 1896,
+  "t" : 1971,
+  "i" : "pp"
+}, {
+  "@id" : 2088,
+  "s" : 1896,
+  "t" : 1973,
+  "i" : "pp"
+}, {
+  "@id" : 2087,
+  "s" : 1896,
+  "t" : 1928,
+  "i" : "pp"
+}, {
+  "@id" : 2086,
+  "s" : 1896,
+  "t" : 1967,
+  "i" : "pp"
+}, {
+  "@id" : 2085,
+  "s" : 1894,
+  "t" : 1973,
+  "i" : "pp"
+}, {
+  "@id" : 2084,
+  "s" : 1894,
+  "t" : 1928,
+  "i" : "pp"
+}, {
+  "@id" : 2083,
+  "s" : 1893,
+  "t" : 1879,
+  "i" : "pp"
+}, {
+  "@id" : 2082,
+  "s" : 1893,
+  "t" : 1972,
+  "i" : "pp"
+}, {
+  "@id" : 2081,
+  "s" : 1893,
+  "t" : 1870,
+  "i" : "pp"
+}, {
+  "@id" : 2080,
+  "s" : 1892,
+  "t" : 1912,
+  "i" : "pp"
+}, {
+  "@id" : 2079,
+  "s" : 1892,
+  "t" : 1964,
+  "i" : "pp"
+}, {
+  "@id" : 2078,
+  "s" : 1892,
+  "t" : 1965,
+  "i" : "pp"
+}, {
+  "@id" : 2077,
+  "s" : 1892,
+  "t" : 1945,
+  "i" : "pp"
+}, {
+  "@id" : 2076,
+  "s" : 1892,
+  "t" : 1871,
+  "i" : "pp"
+}, {
+  "@id" : 2075,
+  "s" : 1892,
+  "t" : 1876,
+  "i" : "pp"
+}, {
+  "@id" : 2074,
+  "s" : 1892,
+  "t" : 1895,
+  "i" : "pp"
+}, {
+  "@id" : 2073,
+  "s" : 1892,
+  "t" : 1903,
+  "i" : "pp"
+}, {
+  "@id" : 2072,
+  "s" : 1892,
+  "t" : 1962,
+  "i" : "pp"
+}, {
+  "@id" : 2071,
+  "s" : 1892,
+  "t" : 1931,
+  "i" : "pp"
+}, {
+  "@id" : 2070,
+  "s" : 1892,
+  "t" : 1932,
+  "i" : "pp"
+}, {
+  "@id" : 2069,
+  "s" : 1892,
+  "t" : 1892,
+  "i" : "pp"
+}, {
+  "@id" : 2068,
+  "s" : 1891,
+  "t" : 1920,
+  "i" : "pp"
+}, {
+  "@id" : 2067,
+  "s" : 1890,
+  "t" : 1967,
+  "i" : "pp"
+}, {
+  "@id" : 2066,
+  "s" : 1890,
+  "t" : 1969,
+  "i" : "pp"
+}, {
+  "@id" : 2065,
+  "s" : 1890,
+  "t" : 1972,
+  "i" : "pp"
+}, {
+  "@id" : 2064,
+  "s" : 1888,
+  "t" : 1972,
+  "i" : "pp"
+}, {
+  "@id" : 2063,
+  "s" : 1888,
+  "t" : 1870,
+  "i" : "pp"
+}, {
+  "@id" : 2062,
+  "s" : 1887,
+  "t" : 1892,
+  "i" : "pp"
+}, {
+  "@id" : 2061,
+  "s" : 1887,
+  "t" : 1972,
+  "i" : "pp"
+}, {
+  "@id" : 2060,
+  "s" : 1887,
+  "t" : 1870,
+  "i" : "pp"
+}, {
+  "@id" : 2059,
+  "s" : 1886,
+  "t" : 1939,
+  "i" : "pp"
+}, {
+  "@id" : 2058,
+  "s" : 1886,
+  "t" : 1886,
+  "i" : "pp"
+}, {
+  "@id" : 2057,
+  "s" : 1886,
+  "t" : 1920,
+  "i" : "pp"
+}, {
+  "@id" : 2056,
+  "s" : 1885,
+  "t" : 1972,
+  "i" : "pp"
+}, {
+  "@id" : 2055,
+  "s" : 1885,
+  "t" : 1870,
+  "i" : "pp"
+}, {
+  "@id" : 2054,
+  "s" : 1883,
+  "t" : 1892,
+  "i" : "pp"
+}, {
+  "@id" : 2053,
+  "s" : 1883,
+  "t" : 1870,
+  "i" : "pp"
+}, {
+  "@id" : 2052,
+  "s" : 1882,
+  "t" : 1886,
+  "i" : "pp"
+}, {
+  "@id" : 2051,
+  "s" : 1882,
+  "t" : 1969,
+  "i" : "pp"
+}, {
+  "@id" : 2050,
+  "s" : 1881,
+  "t" : 1886,
+  "i" : "pp"
+}, {
+  "@id" : 2049,
+  "s" : 1881,
+  "t" : 1969,
+  "i" : "pp"
+}, {
+  "@id" : 2048,
+  "s" : 1881,
+  "t" : 1920,
+  "i" : "pp"
+}, {
+  "@id" : 2047,
+  "s" : 1879,
+  "t" : 1963,
+  "i" : "pp"
+}, {
+  "@id" : 2046,
+  "s" : 1879,
+  "t" : 1912,
+  "i" : "pp"
+}, {
+  "@id" : 2045,
+  "s" : 1879,
+  "t" : 1902,
+  "i" : "pp"
+}, {
+  "@id" : 2044,
+  "s" : 1879,
+  "t" : 1899,
+  "i" : "pp"
+}, {
+  "@id" : 2043,
+  "s" : 1879,
+  "t" : 1892,
+  "i" : "pp"
+}, {
+  "@id" : 2042,
+  "s" : 1879,
+  "t" : 1870,
+  "i" : "pp"
+}, {
+  "@id" : 2041,
+  "s" : 1877,
+  "t" : 1886,
+  "i" : "pp"
+}, {
+  "@id" : 2040,
+  "s" : 1877,
+  "t" : 1969,
+  "i" : "pp"
+}, {
+  "@id" : 2039,
+  "s" : 1875,
+  "t" : 1921,
+  "i" : "pp"
+}, {
+  "@id" : 2038,
+  "s" : 1875,
+  "t" : 1875,
+  "i" : "pp"
+}, {
+  "@id" : 2037,
+  "s" : 1874,
+  "t" : 1886,
+  "i" : "pp"
+}, {
+  "@id" : 2036,
+  "s" : 1874,
+  "t" : 1875,
+  "i" : "pp"
+}, {
+  "@id" : 2035,
+  "s" : 1872,
+  "t" : 1967,
+  "i" : "pp"
+}, {
+  "@id" : 2034,
+  "s" : 1872,
+  "t" : 1969,
+  "i" : "pp"
+}, {
+  "@id" : 2033,
+  "s" : 1870,
+  "t" : 1963,
+  "i" : "pp"
+}, {
+  "@id" : 2032,
+  "s" : 1870,
+  "t" : 1935,
+  "i" : "pp"
+}, {
+  "@id" : 2031,
+  "s" : 1870,
+  "t" : 1915,
+  "i" : "pp"
+}, {
+  "@id" : 2030,
+  "s" : 1870,
+  "t" : 1959,
+  "i" : "pp"
+}, {
+  "@id" : 2029,
+  "s" : 1870,
+  "t" : 1960,
+  "i" : "pp"
+}, {
+  "@id" : 2028,
+  "s" : 1870,
+  "t" : 1980,
+  "i" : "pp"
+}, {
+  "@id" : 2027,
+  "s" : 1870,
+  "t" : 1912,
+  "i" : "pp"
+}, {
+  "@id" : 2026,
+  "s" : 1870,
+  "t" : 1964,
+  "i" : "pp"
+}, {
+  "@id" : 2025,
+  "s" : 1870,
+  "t" : 1943,
+  "i" : "pp"
+}, {
+  "@id" : 2024,
+  "s" : 1870,
+  "t" : 1978,
+  "i" : "pp"
+}, {
+  "@id" : 2023,
+  "s" : 1870,
+  "t" : 1884,
+  "i" : "pp"
+}, {
+  "@id" : 2022,
+  "s" : 1870,
+  "t" : 1900,
+  "i" : "pp"
+}, {
+  "@id" : 2021,
+  "s" : 1870,
+  "t" : 1947,
+  "i" : "pp"
+}, {
+  "@id" : 2020,
+  "s" : 1870,
+  "t" : 1946,
+  "i" : "pp"
+}, {
+  "@id" : 2019,
+  "s" : 1870,
+  "t" : 1965,
+  "i" : "pp"
+}, {
+  "@id" : 2018,
+  "s" : 1870,
+  "t" : 1942,
+  "i" : "pp"
+}, {
+  "@id" : 2017,
+  "s" : 1870,
+  "t" : 1941,
+  "i" : "pp"
+}, {
+  "@id" : 2016,
+  "s" : 1870,
+  "t" : 1889,
+  "i" : "pp"
+}, {
+  "@id" : 2015,
+  "s" : 1870,
+  "t" : 1945,
+  "i" : "pp"
+}, {
+  "@id" : 2014,
+  "s" : 1870,
+  "t" : 1944,
+  "i" : "pp"
+}, {
+  "@id" : 2013,
+  "s" : 1870,
+  "t" : 1891,
+  "i" : "pp"
+}, {
+  "@id" : 2012,
+  "s" : 1870,
+  "t" : 1914,
+  "i" : "pp"
+}, {
+  "@id" : 2011,
+  "s" : 1870,
+  "t" : 1871,
+  "i" : "pp"
+}, {
+  "@id" : 2010,
+  "s" : 1870,
+  "t" : 1869,
+  "i" : "pp"
+}, {
+  "@id" : 2009,
+  "s" : 1870,
+  "t" : 1876,
+  "i" : "pp"
+}, {
+  "@id" : 2008,
+  "s" : 1870,
+  "t" : 1880,
+  "i" : "pp"
+}, {
+  "@id" : 2007,
+  "s" : 1870,
+  "t" : 1933,
+  "i" : "pp"
+}, {
+  "@id" : 2006,
+  "s" : 1870,
+  "t" : 1895,
+  "i" : "pp"
+}, {
+  "@id" : 2005,
+  "s" : 1870,
+  "t" : 1924,
+  "i" : "pp"
+}, {
+  "@id" : 2004,
+  "s" : 1870,
+  "t" : 1902,
+  "i" : "pp"
+}, {
+  "@id" : 2003,
+  "s" : 1870,
+  "t" : 1903,
+  "i" : "pp"
+}, {
+  "@id" : 2002,
+  "s" : 1870,
+  "t" : 1962,
+  "i" : "pp"
+}, {
+  "@id" : 2001,
+  "s" : 1870,
+  "t" : 1925,
+  "i" : "pp"
+}, {
+  "@id" : 2000,
+  "s" : 1870,
+  "t" : 1931,
+  "i" : "pp"
+}, {
+  "@id" : 1999,
+  "s" : 1870,
+  "t" : 1932,
+  "i" : "pp"
+}, {
+  "@id" : 1998,
+  "s" : 1870,
+  "t" : 1940,
+  "i" : "pp"
+}, {
+  "@id" : 1997,
+  "s" : 1870,
+  "t" : 1899,
+  "i" : "pp"
+}, {
+  "@id" : 1996,
+  "s" : 1870,
+  "t" : 1892,
+  "i" : "pp"
+}, {
+  "@id" : 1995,
+  "s" : 1870,
+  "t" : 1870,
+  "i" : "pp"
+}, {
+  "@id" : 1994,
+  "s" : 1868,
+  "t" : 1886,
+  "i" : "pp"
+}, {
+  "@id" : 1993,
+  "s" : 1868,
+  "t" : 1907,
+  "i" : "pp"
+}, {
+  "@id" : 1992,
+  "s" : 1867,
+  "t" : 1977,
+  "i" : "pp"
+}, {
+  "@id" : 1991,
+  "s" : 1867,
+  "t" : 1890,
+  "i" : "pp"
+}]},
+ {"networkAttributes":[{
+  "n" : "name",
+  "v" : "ppin-Level1 - Fig. S5"
+}, {
+  "n" : "description",
+  "v" : "<div>Protein-protein interaction network showing the axis membrane receptors – AP-1 transcription factors, activated in adjacent mucosa. Seed proteins are colored in red and highlighted in grey. Inferred interacting proteins are colored in light purple.<br/></div><div><br/></div><div>This network refers to <b>Figure S5</b> and has been manually modified, hence it differs from the network presented in the paper's supplementary materials.</div>"
+}, {
+  "n" : "version",
+  "v" : "MAR-2014"
+}, {
+  "n" : "author",
+  "v" : "Rebeca Sanz Pamplona et al."
+}, {
+  "n" : "disease",
+  "v" : "Colorectal cancer"
+}, {
+  "n" : "networkType",
+  "v" : "Protein-protein interaction"
+}, {
+  "n" : "organism",
+  "v" : "Human, 9606, Homo sapiens"
+}, {
+  "n" : "reference",
+  "v" : "<div style=\"font-size: 13.86px;\"><i>Sanz-Pamplona R, Berenguer A, Cordero D, Molleví DG, Crous-Bou M, Sole X, Paré-Brunet L, Guino E, Salazar R, Santos C, de Oca J, Sanjuan X, Rodriguez-Moranta F, Moreno V1</i>.</div><div style=\"font-size: 13.86px;\"><b>Aberrant gene expression in mucosa adjacent to tumor reveals a molecular crosstalk in colon cancer</b>.</div><div style=\"font-size: 13.86px;\">Mol Cancer. 2014 Mar 5;13:46.</div><div style=\"font-size: 13.86px;\"><a href=\"https://doi.org/10.1186/1476-4598-13-46\" target=\"\">doi: 10.1186/1476-4598-13-46</a></div>"
+}]},
+ {"nodeAttributes":[{
+  "po" : 1990,
+  "n" : "canonicalName",
+  "v" : "ROR2"
+}, {
+  "po" : 1989,
+  "n" : "node.fillColor",
+  "v" : "204,0,153"
+}, {
+  "po" : 1989,
+  "n" : "canonicalName",
+  "v" : "NRP2"
+}, {
+  "po" : 1988,
+  "n" : "node.fillColor",
+  "v" : "204,0,153"
+}, {
+  "po" : 1988,
+  "n" : "canonicalName",
+  "v" : "DARC"
+}, {
+  "po" : 1987,
+  "n" : "canonicalName",
+  "v" : "ERG"
+}, {
+  "po" : 1986,
+  "n" : "canonicalName",
+  "v" : "MAP3K1"
+}, {
+  "po" : 1985,
+  "n" : "canonicalName",
+  "v" : "MAP3K3"
+}, {
+  "po" : 1984,
+  "n" : "canonicalName",
+  "v" : "TNFRSF1B"
+}, {
+  "po" : 1983,
+  "n" : "node.fillColor",
+  "v" : "255,0,51"
+}, {
+  "po" : 1983,
+  "n" : "canonicalName",
+  "v" : "CALD1"
+}, {
+  "po" : 1982,
+  "n" : "canonicalName",
+  "v" : "TNC"
+}, {
+  "po" : 1981,
+  "n" : "canonicalName",
+  "v" : "DIS3L2"
+}, {
+  "po" : 1980,
+  "n" : "canonicalName",
+  "v" : "KHSRP"
+}, {
+  "po" : 1979,
+  "n" : "canonicalName",
+  "v" : "PSME1"
+}, {
+  "po" : 1978,
+  "n" : "canonicalName",
+  "v" : "UBE2I"
+}, {
+  "po" : 1977,
+  "n" : "canonicalName",
+  "v" : "GPRASP1"
+}, {
+  "po" : 1976,
+  "n" : "canonicalName",
+  "v" : "PRKCA"
+}, {
+  "po" : 1975,
+  "n" : "canonicalName",
+  "v" : "SHC1"
+}, {
+  "po" : 1974,
+  "n" : "canonicalName",
+  "v" : "PAK2"
+}, {
+  "po" : 1973,
+  "n" : "node.fillColor",
+  "v" : "255,0,51"
+}, {
+  "po" : 1973,
+  "n" : "canonicalName",
+  "v" : "CD93"
+}, {
+  "po" : 1972,
+  "n" : "node.fillColor",
+  "v" : "255,0,51"
+}, {
+  "po" : 1972,
+  "n" : "canonicalName",
+  "v" : "FOS"
+}, {
+  "po" : 1971,
+  "n" : "node.fillColor",
+  "v" : "255,0,51"
+}, {
+  "po" : 1971,
+  "n" : "canonicalName",
+  "v" : "DDR2"
+}, {
+  "po" : 1970,
+  "n" : "node.fillColor",
+  "v" : "255,0,51"
+}, {
+  "po" : 1970,
+  "n" : "canonicalName",
+  "v" : "TACR2"
+}, {
+  "po" : 1969,
+  "n" : "node.fillColor",
+  "v" : "255,0,51"
+}, {
+  "po" : 1969,
+  "n" : "canonicalName",
+  "v" : "TLN1"
+}, {
+  "po" : 1968,
+  "n" : "canonicalName",
+  "v" : "RP13-122B23.3"
+}, {
+  "po" : 1967,
+  "n" : "node.fillColor",
+  "v" : "255,0,51"
+}, {
+  "po" : 1967,
+  "n" : "canonicalName",
+  "v" : "ITGA5"
+}, {
+  "po" : 1966,
+  "n" : "node.fillColor",
+  "v" : "255,0,51"
+}, {
+  "po" : 1966,
+  "n" : "canonicalName",
+  "v" : "ITGA9"
+}, {
+  "po" : 1965,
+  "n" : "canonicalName",
+  "v" : "BRCA1"
+}, {
+  "po" : 1964,
+  "n" : "canonicalName",
+  "v" : "MAFK"
+}, {
+  "po" : 1963,
+  "n" : "canonicalName",
+  "v" : "MAFB"
+}, {
+  "po" : 1962,
+  "n" : "canonicalName",
+  "v" : "MAFG"
+}, {
+  "po" : 1961,
+  "n" : "canonicalName",
+  "v" : "FN1"
+}, {
+  "po" : 1960,
+  "n" : "canonicalName",
+  "v" : "RUNX2"
+}, {
+  "po" : 1959,
+  "n" : "canonicalName",
+  "v" : "RUNX1"
+}, {
+  "po" : 1958,
+  "n" : "canonicalName",
+  "v" : "SRC"
+}, {
+  "po" : 1957,
+  "n" : "canonicalName",
+  "v" : "ITGB1"
+}, {
+  "po" : 1956,
+  "n" : "canonicalName",
+  "v" : "ITGB3"
+}, {
+  "po" : 1955,
+  "n" : "canonicalName",
+  "v" : "GIPC1"
+}, {
+  "po" : 1954,
+  "n" : "canonicalName",
+  "v" : "ITGB5"
+}, {
+  "po" : 1953,
+  "n" : "canonicalName",
+  "v" : "GRB2"
+}, {
+  "po" : 1952,
+  "n" : "canonicalName",
+  "v" : "RIPK2"
+}, {
+  "po" : 1951,
+  "n" : "canonicalName",
+  "v" : "RIPK3"
+}, {
+  "po" : 1950,
+  "n" : "canonicalName",
+  "v" : "PRKACA"
+}, {
+  "po" : 1949,
+  "n" : "canonicalName",
+  "v" : "MAPK14"
+}, {
+  "po" : 1948,
+  "n" : "canonicalName",
+  "v" : "FYN"
+}, {
+  "po" : 1947,
+  "n" : "canonicalName",
+  "v" : "STAT3"
+}, {
+  "po" : 1946,
+  "n" : "canonicalName",
+  "v" : "STAT1"
+}, {
+  "po" : 1945,
+  "n" : "canonicalName",
+  "v" : "BCL6"
+}, {
+  "po" : 1944,
+  "n" : "canonicalName",
+  "v" : "BCL3"
+}, {
+  "po" : 1943,
+  "n" : "canonicalName",
+  "v" : "SUMO1"
+}, {
+  "po" : 1942,
+  "n" : "canonicalName",
+  "v" : "SUMO2"
+}, {
+  "po" : 1941,
+  "n" : "canonicalName",
+  "v" : "SUMO3"
+}, {
+  "po" : 1940,
+  "n" : "canonicalName",
+  "v" : "SUMO4"
+}, {
+  "po" : 1939,
+  "n" : "canonicalName",
+  "v" : "YWHAZ"
+}, {
+  "po" : 1938,
+  "n" : "node.fillColor",
+  "v" : "255,0,51"
+}, {
+  "po" : 1938,
+  "n" : "canonicalName",
+  "v" : "TUBB3"
+}, {
+  "po" : 1937,
+  "n" : "canonicalName",
+  "v" : "NFKB1"
+}, {
+  "po" : 1936,
+  "n" : "canonicalName",
+  "v" : "COPS5"
+}, {
+  "po" : 1935,
+  "n" : "canonicalName",
+  "v" : "NCOR2"
+}, {
+  "po" : 1934,
+  "n" : "canonicalName",
+  "v" : "ETS1"
+}, {
+  "po" : 1933,
+  "n" : "canonicalName",
+  "v" : "NTRK3"
+}, {
+  "po" : 1932,
+  "n" : "canonicalName",
+  "v" : "SMAD3"
+}, {
+  "po" : 1931,
+  "n" : "canonicalName",
+  "v" : "SMAD4"
+}, {
+  "po" : 1930,
+  "n" : "canonicalName",
+  "v" : "EPHB2"
+}, {
+  "po" : 1929,
+  "n" : "canonicalName",
+  "v" : "PXN"
+}, {
+  "po" : 1928,
+  "n" : "node.fillColor",
+  "v" : "255,0,51"
+}, {
+  "po" : 1928,
+  "n" : "canonicalName",
+  "v" : "CD36"
+}, {
+  "po" : 1927,
+  "n" : "canonicalName",
+  "v" : "APOE"
+}, {
+  "po" : 1926,
+  "n" : "canonicalName",
+  "v" : "SNCA"
+}, {
+  "po" : 1925,
+  "n" : "canonicalName",
+  "v" : "MAF"
+}, {
+  "po" : 1924,
+  "n" : "canonicalName",
+  "v" : "NFATC2"
+}, {
+  "po" : 1923,
+  "n" : "canonicalName",
+  "v" : "TSC22D3"
+}, {
+  "po" : 1922,
+  "n" : "canonicalName",
+  "v" : "CD9"
+}, {
+  "po" : 1921,
+  "n" : "canonicalName",
+  "v" : "PF4"
+}, {
+  "po" : 1920,
+  "n" : "node.fillColor",
+  "v" : "255,0,51"
+}, {
+  "po" : 1920,
+  "n" : "canonicalName",
+  "v" : "VIM"
+}, {
+  "po" : 1919,
+  "n" : "canonicalName",
+  "v" : "MCC"
+}, {
+  "po" : 1918,
+  "n" : "node.fillColor",
+  "v" : "255,0,51"
+}, {
+  "po" : 1918,
+  "n" : "canonicalName",
+  "v" : "CNTN1"
+}, {
+  "po" : 1917,
+  "n" : "canonicalName",
+  "v" : "UBC"
+}, {
+  "po" : 1916,
+  "n" : "canonicalName",
+  "v" : "NCOA6"
+}, {
+  "po" : 1915,
+  "n" : "canonicalName",
+  "v" : "NCOA1"
+}, {
+  "po" : 1914,
+  "n" : "canonicalName",
+  "v" : "RB1"
+}, {
+  "po" : 1913,
+  "n" : "canonicalName",
+  "v" : "ESR1"
+}, {
+  "po" : 1912,
+  "n" : "canonicalName",
+  "v" : "FOSL1"
+}, {
+  "po" : 1911,
+  "n" : "canonicalName",
+  "v" : "ALS2CR11"
+}, {
+  "po" : 1910,
+  "n" : "node.fillColor",
+  "v" : "255,0,51"
+}, {
+  "po" : 1910,
+  "n" : "canonicalName",
+  "v" : "SDC2"
+}, {
+  "po" : 1909,
+  "n" : "node.fillColor",
+  "v" : "255,0,51"
+}, {
+  "po" : 1909,
+  "n" : "canonicalName",
+  "v" : "UCHL1"
+}, {
+  "po" : 1908,
+  "n" : "canonicalName",
+  "v" : "FOSL2"
+}, {
+  "po" : 1907,
+  "n" : "node.fillColor",
+  "v" : "255,0,51"
+}, {
+  "po" : 1907,
+  "n" : "canonicalName",
+  "v" : "MYH10"
+}, {
+  "po" : 1906,
+  "n" : "canonicalName",
+  "v" : "IKBKG"
+}, {
+  "po" : 1905,
+  "n" : "canonicalName",
+  "v" : "ATF7"
+}, {
+  "po" : 1904,
+  "n" : "canonicalName",
+  "v" : "GTF2F2"
+}, {
+  "po" : 1903,
+  "n" : "canonicalName",
+  "v" : "ATF3"
+}, {
+  "po" : 1902,
+  "n" : "canonicalName",
+  "v" : "ATF4"
+}, {
+  "po" : 1901,
+  "n" : "canonicalName",
+  "v" : "IKBKE"
+}, {
+  "po" : 1900,
+  "n" : "canonicalName",
+  "v" : "TAF1"
+}, {
+  "po" : 1899,
+  "n" : "canonicalName",
+  "v" : "JUND"
+}, {
+  "po" : 1898,
+  "n" : "canonicalName",
+  "v" : "PTK2"
+}, {
+  "po" : 1897,
+  "n" : "canonicalName",
+  "v" : "ATF2"
+}, {
+  "po" : 1896,
+  "n" : "canonicalName",
+  "v" : "COL1A1"
+}, {
+  "po" : 1895,
+  "n" : "canonicalName",
+  "v" : "NFE2L1"
+}, {
+  "po" : 1894,
+  "n" : "canonicalName",
+  "v" : "COL1A2"
+}, {
+  "po" : 1893,
+  "n" : "canonicalName",
+  "v" : "DDIT3"
+}, {
+  "po" : 1892,
+  "n" : "canonicalName",
+  "v" : "JUNB"
+}, {
+  "po" : 1891,
+  "n" : "canonicalName",
+  "v" : "RELA"
+}, {
+  "po" : 1890,
+  "n" : "canonicalName",
+  "v" : "EGFR"
+}, {
+  "po" : 1889,
+  "n" : "canonicalName",
+  "v" : "SMARCD1"
+}, {
+  "po" : 1888,
+  "n" : "canonicalName",
+  "v" : "CSNK2A1"
+}, {
+  "po" : 1887,
+  "n" : "canonicalName",
+  "v" : "BATF"
+}, {
+  "po" : 1886,
+  "n" : "node.fillColor",
+  "v" : "255,0,51"
+}, {
+  "po" : 1886,
+  "n" : "canonicalName",
+  "v" : "VCL"
+}, {
+  "po" : 1885,
+  "n" : "canonicalName",
+  "v" : "JAG1"
+}, {
+  "po" : 1884,
+  "n" : "canonicalName",
+  "v" : "TBP"
+}, {
+  "po" : 1883,
+  "n" : "canonicalName",
+  "v" : "JDP2"
+}, {
+  "po" : 1882,
+  "n" : "canonicalName",
+  "v" : "NRAP"
+}, {
+  "po" : 1881,
+  "n" : "canonicalName",
+  "v" : "PKD1"
+}, {
+  "po" : 1880,
+  "n" : "canonicalName",
+  "v" : "PML"
+}, {
+  "po" : 1879,
+  "n" : "canonicalName",
+  "v" : "FOSB"
+}, {
+  "po" : 1878,
+  "n" : "canonicalName",
+  "v" : "CDC2"
+}, {
+  "po" : 1877,
+  "n" : "canonicalName",
+  "v" : "ACTA1"
+}, {
+  "po" : 1876,
+  "n" : "canonicalName",
+  "v" : "BATF3"
+}, {
+  "po" : 1875,
+  "n" : "node.fillColor",
+  "v" : "255,0,51"
+}, {
+  "po" : 1875,
+  "n" : "canonicalName",
+  "v" : "LDLR"
+}, {
+  "po" : 1874,
+  "n" : "canonicalName",
+  "v" : "PDIA3"
+}, {
+  "po" : 1873,
+  "n" : "canonicalName",
+  "v" : "SPP1"
+}, {
+  "po" : 1872,
+  "n" : "canonicalName",
+  "v" : "ERBB2"
+}, {
+  "po" : 1871,
+  "n" : "canonicalName",
+  "v" : "MAPK8"
+}, {
+  "po" : 1870,
+  "n" : "node.fillColor",
+  "v" : "255,0,51"
+}, {
+  "po" : 1870,
+  "n" : "canonicalName",
+  "v" : "JUN"
+}, {
+  "po" : 1869,
+  "n" : "canonicalName",
+  "v" : "MAPK1"
+}, {
+  "po" : 1868,
+  "n" : "canonicalName",
+  "v" : "MYH9"
+}, {
+  "po" : 1867,
+  "n" : "node.fillColor",
+  "v" : "255,0,51"
+}, {
+  "po" : 1867,
+  "n" : "canonicalName",
+  "v" : "AGTR1"
+}, {
+  "po" : 1866,
+  "n" : "canonicalName",
+  "v" : "L1CAM"
+}]},
+ {"edgeAttributes":[{
+  "po" : 2240,
+  "n" : "name",
+  "v" : "ERG (pp) FOS"
+}, {
+  "po" : 2240,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2240,
+  "n" : "canonicalName",
+  "v" : "ERG (pp) FOS"
+}, {
+  "po" : 2239,
+  "n" : "name",
+  "v" : "ERG (pp) JUN"
+}, {
+  "po" : 2239,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2239,
+  "n" : "canonicalName",
+  "v" : "ERG (pp) JUN"
+}, {
+  "po" : 2238,
+  "n" : "name",
+  "v" : "MAP3K1 (pp) MYH10"
+}, {
+  "po" : 2238,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2238,
+  "n" : "canonicalName",
+  "v" : "MAP3K1 (pp) MYH10"
+}, {
+  "po" : 2237,
+  "n" : "name",
+  "v" : "MAP3K1 (pp) VIM"
+}, {
+  "po" : 2237,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2237,
+  "n" : "canonicalName",
+  "v" : "MAP3K1 (pp) VIM"
+}, {
+  "po" : 2236,
+  "n" : "name",
+  "v" : "MAP3K3 (pp) MYH10"
+}, {
+  "po" : 2236,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2236,
+  "n" : "canonicalName",
+  "v" : "MAP3K3 (pp) MYH10"
+}, {
+  "po" : 2235,
+  "n" : "name",
+  "v" : "MAP3K3 (pp) VIM"
+}, {
+  "po" : 2235,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2235,
+  "n" : "canonicalName",
+  "v" : "MAP3K3 (pp) VIM"
+}, {
+  "po" : 2234,
+  "n" : "name",
+  "v" : "TNFRSF1B (pp) VIM"
+}, {
+  "po" : 2234,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2234,
+  "n" : "canonicalName",
+  "v" : "TNFRSF1B (pp) VIM"
+}, {
+  "po" : 2233,
+  "n" : "name",
+  "v" : "CALD1 (pp) CDC2"
+}, {
+  "po" : 2233,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2233,
+  "n" : "canonicalName",
+  "v" : "CALD1 (pp) CDC2"
+}, {
+  "po" : 2232,
+  "n" : "name",
+  "v" : "TNC (pp) ITGA5"
+}, {
+  "po" : 2232,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2232,
+  "n" : "canonicalName",
+  "v" : "TNC (pp) ITGA5"
+}, {
+  "po" : 2231,
+  "n" : "name",
+  "v" : "DIS3L2 (pp) VCL"
+}, {
+  "po" : 2231,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2231,
+  "n" : "canonicalName",
+  "v" : "DIS3L2 (pp) VCL"
+}, {
+  "po" : 2230,
+  "n" : "name",
+  "v" : "DIS3L2 (pp) VIM"
+}, {
+  "po" : 2230,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2230,
+  "n" : "canonicalName",
+  "v" : "DIS3L2 (pp) VIM"
+}, {
+  "po" : 2229,
+  "n" : "name",
+  "v" : "PSME1 (pp) VCL"
+}, {
+  "po" : 2229,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2229,
+  "n" : "canonicalName",
+  "v" : "PSME1 (pp) VCL"
+}, {
+  "po" : 2228,
+  "n" : "name",
+  "v" : "PSME1 (pp) VIM"
+}, {
+  "po" : 2228,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2228,
+  "n" : "canonicalName",
+  "v" : "PSME1 (pp) VIM"
+}, {
+  "po" : 2227,
+  "n" : "name",
+  "v" : "UBE2I (pp) UCHL1"
+}, {
+  "po" : 2227,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2227,
+  "n" : "canonicalName",
+  "v" : "UBE2I (pp) UCHL1"
+}, {
+  "po" : 2226,
+  "n" : "name",
+  "v" : "PRKCA (pp) VCL"
+}, {
+  "po" : 2226,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2226,
+  "n" : "canonicalName",
+  "v" : "PRKCA (pp) VCL"
+}, {
+  "po" : 2225,
+  "n" : "name",
+  "v" : "PRKCA (pp) SDC2"
+}, {
+  "po" : 2225,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2225,
+  "n" : "canonicalName",
+  "v" : "PRKCA (pp) SDC2"
+}, {
+  "po" : 2224,
+  "n" : "name",
+  "v" : "SHC1 (pp) CALD1"
+}, {
+  "po" : 2224,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2224,
+  "n" : "canonicalName",
+  "v" : "SHC1 (pp) CALD1"
+}, {
+  "po" : 2223,
+  "n" : "name",
+  "v" : "PAK2 (pp) VIM"
+}, {
+  "po" : 2223,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2223,
+  "n" : "canonicalName",
+  "v" : "PAK2 (pp) VIM"
+}, {
+  "po" : 2222,
+  "n" : "name",
+  "v" : "FOS (pp) MAFB"
+}, {
+  "po" : 2222,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2222,
+  "n" : "canonicalName",
+  "v" : "FOS (pp) MAFB"
+}, {
+  "po" : 2221,
+  "n" : "name",
+  "v" : "FOS (pp) NCOR2"
+}, {
+  "po" : 2221,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2221,
+  "n" : "canonicalName",
+  "v" : "FOS (pp) NCOR2"
+}, {
+  "po" : 2220,
+  "n" : "name",
+  "v" : "FOS (pp) NCOA1"
+}, {
+  "po" : 2220,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2220,
+  "n" : "canonicalName",
+  "v" : "FOS (pp) NCOA1"
+}, {
+  "po" : 2219,
+  "n" : "name",
+  "v" : "FOS (pp) RUNX1"
+}, {
+  "po" : 2219,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2219,
+  "n" : "canonicalName",
+  "v" : "FOS (pp) RUNX1"
+}, {
+  "po" : 2218,
+  "n" : "name",
+  "v" : "FOS (pp) RUNX2"
+}, {
+  "po" : 2218,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2218,
+  "n" : "canonicalName",
+  "v" : "FOS (pp) RUNX2"
+}, {
+  "po" : 2217,
+  "n" : "name",
+  "v" : "FOS (pp) KHSRP"
+}, {
+  "po" : 2217,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2217,
+  "n" : "canonicalName",
+  "v" : "FOS (pp) KHSRP"
+}, {
+  "po" : 2216,
+  "n" : "name",
+  "v" : "FOS (pp) SUMO1"
+}, {
+  "po" : 2216,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2216,
+  "n" : "canonicalName",
+  "v" : "FOS (pp) SUMO1"
+}, {
+  "po" : 2215,
+  "n" : "name",
+  "v" : "FOS (pp) TBP"
+}, {
+  "po" : 2215,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2215,
+  "n" : "canonicalName",
+  "v" : "FOS (pp) TBP"
+}, {
+  "po" : 2214,
+  "n" : "name",
+  "v" : "FOS (pp) TAF1"
+}, {
+  "po" : 2214,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2214,
+  "n" : "canonicalName",
+  "v" : "FOS (pp) TAF1"
+}, {
+  "po" : 2213,
+  "n" : "name",
+  "v" : "FOS (pp) STAT3"
+}, {
+  "po" : 2213,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2213,
+  "n" : "canonicalName",
+  "v" : "FOS (pp) STAT3"
+}, {
+  "po" : 2212,
+  "n" : "name",
+  "v" : "FOS (pp) STAT1"
+}, {
+  "po" : 2212,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2212,
+  "n" : "canonicalName",
+  "v" : "FOS (pp) STAT1"
+}, {
+  "po" : 2211,
+  "n" : "name",
+  "v" : "FOS (pp) SUMO2"
+}, {
+  "po" : 2211,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2211,
+  "n" : "canonicalName",
+  "v" : "FOS (pp) SUMO2"
+}, {
+  "po" : 2210,
+  "n" : "name",
+  "v" : "FOS (pp) SUMO3"
+}, {
+  "po" : 2210,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2210,
+  "n" : "canonicalName",
+  "v" : "FOS (pp) SUMO3"
+}, {
+  "po" : 2209,
+  "n" : "name",
+  "v" : "FOS (pp) SMARCD1"
+}, {
+  "po" : 2209,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2209,
+  "n" : "canonicalName",
+  "v" : "FOS (pp) SMARCD1"
+}, {
+  "po" : 2208,
+  "n" : "name",
+  "v" : "FOS (pp) BCL3"
+}, {
+  "po" : 2208,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2208,
+  "n" : "canonicalName",
+  "v" : "FOS (pp) BCL3"
+}, {
+  "po" : 2207,
+  "n" : "name",
+  "v" : "FOS (pp) RELA"
+}, {
+  "po" : 2207,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2207,
+  "n" : "canonicalName",
+  "v" : "FOS (pp) RELA"
+}, {
+  "po" : 2206,
+  "n" : "name",
+  "v" : "FOS (pp) RB1"
+}, {
+  "po" : 2206,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2206,
+  "n" : "canonicalName",
+  "v" : "FOS (pp) RB1"
+}, {
+  "po" : 2205,
+  "n" : "name",
+  "v" : "FOS (pp) MAPK1"
+}, {
+  "po" : 2205,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2205,
+  "n" : "canonicalName",
+  "v" : "FOS (pp) MAPK1"
+}, {
+  "po" : 2204,
+  "n" : "name",
+  "v" : "FOS (pp) PRKACA"
+}, {
+  "po" : 2204,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2204,
+  "n" : "canonicalName",
+  "v" : "FOS (pp) PRKACA"
+}, {
+  "po" : 2203,
+  "n" : "name",
+  "v" : "FOS (pp) PML"
+}, {
+  "po" : 2203,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2203,
+  "n" : "canonicalName",
+  "v" : "FOS (pp) PML"
+}, {
+  "po" : 2202,
+  "n" : "name",
+  "v" : "FOS (pp) NTRK3"
+}, {
+  "po" : 2202,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2202,
+  "n" : "canonicalName",
+  "v" : "FOS (pp) NTRK3"
+}, {
+  "po" : 2201,
+  "n" : "name",
+  "v" : "FOS (pp) NFKB1"
+}, {
+  "po" : 2201,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2201,
+  "n" : "canonicalName",
+  "v" : "FOS (pp) NFKB1"
+}, {
+  "po" : 2200,
+  "n" : "name",
+  "v" : "FOS (pp) NFATC2"
+}, {
+  "po" : 2200,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2200,
+  "n" : "canonicalName",
+  "v" : "FOS (pp) NFATC2"
+}, {
+  "po" : 2199,
+  "n" : "name",
+  "v" : "FOS (pp) ATF4"
+}, {
+  "po" : 2199,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2199,
+  "n" : "canonicalName",
+  "v" : "FOS (pp) ATF4"
+}, {
+  "po" : 2198,
+  "n" : "name",
+  "v" : "FOS (pp) MAF"
+}, {
+  "po" : 2198,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2198,
+  "n" : "canonicalName",
+  "v" : "FOS (pp) MAF"
+}, {
+  "po" : 2197,
+  "n" : "name",
+  "v" : "FOS (pp) SMAD3"
+}, {
+  "po" : 2197,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2197,
+  "n" : "canonicalName",
+  "v" : "FOS (pp) SMAD3"
+}, {
+  "po" : 2196,
+  "n" : "name",
+  "v" : "FOS (pp) SUMO4"
+}, {
+  "po" : 2196,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2196,
+  "n" : "canonicalName",
+  "v" : "FOS (pp) SUMO4"
+}, {
+  "po" : 2195,
+  "n" : "name",
+  "v" : "FOS (pp) JUND"
+}, {
+  "po" : 2195,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2195,
+  "n" : "canonicalName",
+  "v" : "FOS (pp) JUND"
+}, {
+  "po" : 2194,
+  "n" : "name",
+  "v" : "FOS (pp) JUNB"
+}, {
+  "po" : 2194,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2194,
+  "n" : "canonicalName",
+  "v" : "FOS (pp) JUNB"
+}, {
+  "po" : 2193,
+  "n" : "name",
+  "v" : "FOS (pp) GTF2F2"
+}, {
+  "po" : 2193,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2193,
+  "n" : "canonicalName",
+  "v" : "FOS (pp) GTF2F2"
+}, {
+  "po" : 2192,
+  "n" : "name",
+  "v" : "FOS (pp) RP13-122B23.3"
+}, {
+  "po" : 2192,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2192,
+  "n" : "canonicalName",
+  "v" : "FOS (pp) RP13-122B23.3"
+}, {
+  "po" : 2191,
+  "n" : "name",
+  "v" : "FOS (pp) FOSL2"
+}, {
+  "po" : 2191,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2191,
+  "n" : "canonicalName",
+  "v" : "FOS (pp) FOSL2"
+}, {
+  "po" : 2190,
+  "n" : "name",
+  "v" : "FOS (pp) FOS"
+}, {
+  "po" : 2190,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2190,
+  "n" : "canonicalName",
+  "v" : "FOS (pp) FOS"
+}, {
+  "po" : 2189,
+  "n" : "name",
+  "v" : "FOS (pp) JUN"
+}, {
+  "po" : 2189,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2189,
+  "n" : "canonicalName",
+  "v" : "FOS (pp) JUN"
+}, {
+  "po" : 2188,
+  "n" : "name",
+  "v" : "DDR2 (pp) SRC"
+}, {
+  "po" : 2188,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2188,
+  "n" : "canonicalName",
+  "v" : "DDR2 (pp) SRC"
+}, {
+  "po" : 2187,
+  "n" : "name",
+  "v" : "DDR2 (pp) SHC1"
+}, {
+  "po" : 2187,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2187,
+  "n" : "canonicalName",
+  "v" : "DDR2 (pp) SHC1"
+}, {
+  "po" : 2186,
+  "n" : "name",
+  "v" : "TACR2 (pp) GPRASP1"
+}, {
+  "po" : 2186,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2186,
+  "n" : "canonicalName",
+  "v" : "TACR2 (pp) GPRASP1"
+}, {
+  "po" : 2185,
+  "n" : "name",
+  "v" : "TLN1 (pp) YWHAZ"
+}, {
+  "po" : 2185,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2185,
+  "n" : "canonicalName",
+  "v" : "TLN1 (pp) YWHAZ"
+}, {
+  "po" : 2184,
+  "n" : "name",
+  "v" : "TLN1 (pp) VCL"
+}, {
+  "po" : 2184,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2184,
+  "n" : "canonicalName",
+  "v" : "TLN1 (pp) VCL"
+}, {
+  "po" : 2183,
+  "n" : "name",
+  "v" : "RP13-122B23.3 (pp) JUN"
+}, {
+  "po" : 2183,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2183,
+  "n" : "canonicalName",
+  "v" : "RP13-122B23.3 (pp) JUN"
+}, {
+  "po" : 2182,
+  "n" : "name",
+  "v" : "ITGA5 (pp) CD9"
+}, {
+  "po" : 2182,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2182,
+  "n" : "canonicalName",
+  "v" : "ITGA5 (pp) CD9"
+}, {
+  "po" : 2181,
+  "n" : "name",
+  "v" : "ITGA5 (pp) SPP1"
+}, {
+  "po" : 2181,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2181,
+  "n" : "canonicalName",
+  "v" : "ITGA5 (pp) SPP1"
+}, {
+  "po" : 2180,
+  "n" : "name",
+  "v" : "ITGA5 (pp) L1CAM"
+}, {
+  "po" : 2180,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2180,
+  "n" : "canonicalName",
+  "v" : "ITGA5 (pp) L1CAM"
+}, {
+  "po" : 2179,
+  "n" : "name",
+  "v" : "ITGA5 (pp) ITGB5"
+}, {
+  "po" : 2179,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2179,
+  "n" : "canonicalName",
+  "v" : "ITGA5 (pp) ITGB5"
+}, {
+  "po" : 2178,
+  "n" : "name",
+  "v" : "ITGA5 (pp) ITGB3"
+}, {
+  "po" : 2178,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2178,
+  "n" : "canonicalName",
+  "v" : "ITGA5 (pp) ITGB3"
+}, {
+  "po" : 2177,
+  "n" : "name",
+  "v" : "ITGA5 (pp) ITGB1"
+}, {
+  "po" : 2177,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2177,
+  "n" : "canonicalName",
+  "v" : "ITGA5 (pp) ITGB1"
+}, {
+  "po" : 2176,
+  "n" : "name",
+  "v" : "ITGA9 (pp) SPP1"
+}, {
+  "po" : 2176,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2176,
+  "n" : "canonicalName",
+  "v" : "ITGA9 (pp) SPP1"
+}, {
+  "po" : 2175,
+  "n" : "name",
+  "v" : "ITGA9 (pp) PXN"
+}, {
+  "po" : 2175,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2175,
+  "n" : "canonicalName",
+  "v" : "ITGA9 (pp) PXN"
+}, {
+  "po" : 2174,
+  "n" : "name",
+  "v" : "ITGA9 (pp) ITGB1"
+}, {
+  "po" : 2174,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2174,
+  "n" : "canonicalName",
+  "v" : "ITGA9 (pp) ITGB1"
+}, {
+  "po" : 2173,
+  "n" : "name",
+  "v" : "ITGA9 (pp) ITGA9"
+}, {
+  "po" : 2173,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2173,
+  "n" : "canonicalName",
+  "v" : "ITGA9 (pp) ITGA9"
+}, {
+  "po" : 2172,
+  "n" : "name",
+  "v" : "MAFG (pp) VIM"
+}, {
+  "po" : 2172,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2172,
+  "n" : "canonicalName",
+  "v" : "MAFG (pp) VIM"
+}, {
+  "po" : 2171,
+  "n" : "name",
+  "v" : "FN1 (pp) ITGA5"
+}, {
+  "po" : 2171,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2171,
+  "n" : "canonicalName",
+  "v" : "FN1 (pp) ITGA5"
+}, {
+  "po" : 2170,
+  "n" : "name",
+  "v" : "FN1 (pp) SDC2"
+}, {
+  "po" : 2170,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2170,
+  "n" : "canonicalName",
+  "v" : "FN1 (pp) SDC2"
+}, {
+  "po" : 2169,
+  "n" : "name",
+  "v" : "SRC (pp) CD36"
+}, {
+  "po" : 2169,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2169,
+  "n" : "canonicalName",
+  "v" : "SRC (pp) CD36"
+}, {
+  "po" : 2168,
+  "n" : "name",
+  "v" : "SRC (pp) VCL"
+}, {
+  "po" : 2168,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2168,
+  "n" : "canonicalName",
+  "v" : "SRC (pp) VCL"
+}, {
+  "po" : 2167,
+  "n" : "name",
+  "v" : "ITGB1 (pp) CD36"
+}, {
+  "po" : 2167,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2167,
+  "n" : "canonicalName",
+  "v" : "ITGB1 (pp) CD36"
+}, {
+  "po" : 2166,
+  "n" : "name",
+  "v" : "ITGB1 (pp) TLN1"
+}, {
+  "po" : 2166,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2166,
+  "n" : "canonicalName",
+  "v" : "ITGB1 (pp) TLN1"
+}, {
+  "po" : 2165,
+  "n" : "name",
+  "v" : "ITGB3 (pp) CD36"
+}, {
+  "po" : 2165,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2165,
+  "n" : "canonicalName",
+  "v" : "ITGB3 (pp) CD36"
+}, {
+  "po" : 2164,
+  "n" : "name",
+  "v" : "ITGB3 (pp) TLN1"
+}, {
+  "po" : 2164,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2164,
+  "n" : "canonicalName",
+  "v" : "ITGB3 (pp) TLN1"
+}, {
+  "po" : 2163,
+  "n" : "name",
+  "v" : "GIPC1 (pp) CD93"
+}, {
+  "po" : 2163,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2163,
+  "n" : "canonicalName",
+  "v" : "GIPC1 (pp) CD93"
+}, {
+  "po" : 2162,
+  "n" : "name",
+  "v" : "GIPC1 (pp) ITGA5"
+}, {
+  "po" : 2162,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2162,
+  "n" : "canonicalName",
+  "v" : "GIPC1 (pp) ITGA5"
+}, {
+  "po" : 2161,
+  "n" : "name",
+  "v" : "ITGB5 (pp) TLN1"
+}, {
+  "po" : 2161,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2161,
+  "n" : "canonicalName",
+  "v" : "ITGB5 (pp) TLN1"
+}, {
+  "po" : 2160,
+  "n" : "name",
+  "v" : "GRB2 (pp) MYH10"
+}, {
+  "po" : 2160,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2160,
+  "n" : "canonicalName",
+  "v" : "GRB2 (pp) MYH10"
+}, {
+  "po" : 2159,
+  "n" : "name",
+  "v" : "GRB2 (pp) CALD1"
+}, {
+  "po" : 2159,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2159,
+  "n" : "canonicalName",
+  "v" : "GRB2 (pp) CALD1"
+}, {
+  "po" : 2158,
+  "n" : "name",
+  "v" : "RIPK3 (pp) MYH10"
+}, {
+  "po" : 2158,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2158,
+  "n" : "canonicalName",
+  "v" : "RIPK3 (pp) MYH10"
+}, {
+  "po" : 2157,
+  "n" : "name",
+  "v" : "RIPK3 (pp) VIM"
+}, {
+  "po" : 2157,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2157,
+  "n" : "canonicalName",
+  "v" : "RIPK3 (pp) VIM"
+}, {
+  "po" : 2156,
+  "n" : "name",
+  "v" : "PRKACA (pp) VIM"
+}, {
+  "po" : 2156,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2156,
+  "n" : "canonicalName",
+  "v" : "PRKACA (pp) VIM"
+}, {
+  "po" : 2155,
+  "n" : "name",
+  "v" : "MAPK14 (pp) JUNB"
+}, {
+  "po" : 2155,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2155,
+  "n" : "canonicalName",
+  "v" : "MAPK14 (pp) JUNB"
+}, {
+  "po" : 2154,
+  "n" : "name",
+  "v" : "MAPK14 (pp) JUN"
+}, {
+  "po" : 2154,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2154,
+  "n" : "canonicalName",
+  "v" : "MAPK14 (pp) JUN"
+}, {
+  "po" : 2153,
+  "n" : "name",
+  "v" : "FYN (pp) CD36"
+}, {
+  "po" : 2153,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2153,
+  "n" : "canonicalName",
+  "v" : "FYN (pp) CD36"
+}, {
+  "po" : 2152,
+  "n" : "name",
+  "v" : "SUMO2 (pp) VIM"
+}, {
+  "po" : 2152,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2152,
+  "n" : "canonicalName",
+  "v" : "SUMO2 (pp) VIM"
+}, {
+  "po" : 2151,
+  "n" : "name",
+  "v" : "SUMO3 (pp) VIM"
+}, {
+  "po" : 2151,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2151,
+  "n" : "canonicalName",
+  "v" : "SUMO3 (pp) VIM"
+}, {
+  "po" : 2150,
+  "n" : "name",
+  "v" : "TUBB3 (pp) MAP3K3"
+}, {
+  "po" : 2150,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2150,
+  "n" : "canonicalName",
+  "v" : "TUBB3 (pp) MAP3K3"
+}, {
+  "po" : 2149,
+  "n" : "name",
+  "v" : "TUBB3 (pp) GRB2"
+}, {
+  "po" : 2149,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2149,
+  "n" : "canonicalName",
+  "v" : "TUBB3 (pp) GRB2"
+}, {
+  "po" : 2148,
+  "n" : "name",
+  "v" : "NFKB1 (pp) VIM"
+}, {
+  "po" : 2148,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2148,
+  "n" : "canonicalName",
+  "v" : "NFKB1 (pp) VIM"
+}, {
+  "po" : 2147,
+  "n" : "name",
+  "v" : "COPS5 (pp) UCHL1"
+}, {
+  "po" : 2147,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2147,
+  "n" : "canonicalName",
+  "v" : "COPS5 (pp) UCHL1"
+}, {
+  "po" : 2146,
+  "n" : "name",
+  "v" : "COPS5 (pp) JUN"
+}, {
+  "po" : 2146,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2146,
+  "n" : "canonicalName",
+  "v" : "COPS5 (pp) JUN"
+}, {
+  "po" : 2145,
+  "n" : "name",
+  "v" : "ETS1 (pp) FOS"
+}, {
+  "po" : 2145,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2145,
+  "n" : "canonicalName",
+  "v" : "ETS1 (pp) FOS"
+}, {
+  "po" : 2144,
+  "n" : "name",
+  "v" : "ETS1 (pp) JUN"
+}, {
+  "po" : 2144,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2144,
+  "n" : "canonicalName",
+  "v" : "ETS1 (pp) JUN"
+}, {
+  "po" : 2143,
+  "n" : "name",
+  "v" : "SMAD3 (pp) VIM"
+}, {
+  "po" : 2143,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2143,
+  "n" : "canonicalName",
+  "v" : "SMAD3 (pp) VIM"
+}, {
+  "po" : 2142,
+  "n" : "name",
+  "v" : "EPHB2 (pp) SDC2"
+}, {
+  "po" : 2142,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2142,
+  "n" : "canonicalName",
+  "v" : "EPHB2 (pp) SDC2"
+}, {
+  "po" : 2141,
+  "n" : "name",
+  "v" : "EPHB2 (pp) FOS"
+}, {
+  "po" : 2141,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2141,
+  "n" : "canonicalName",
+  "v" : "EPHB2 (pp) FOS"
+}, {
+  "po" : 2140,
+  "n" : "name",
+  "v" : "PXN (pp) VCL"
+}, {
+  "po" : 2140,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2140,
+  "n" : "canonicalName",
+  "v" : "PXN (pp) VCL"
+}, {
+  "po" : 2139,
+  "n" : "name",
+  "v" : "PXN (pp) TLN1"
+}, {
+  "po" : 2139,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2139,
+  "n" : "canonicalName",
+  "v" : "PXN (pp) TLN1"
+}, {
+  "po" : 2138,
+  "n" : "name",
+  "v" : "APOE (pp) SDC2"
+}, {
+  "po" : 2138,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2138,
+  "n" : "canonicalName",
+  "v" : "APOE (pp) SDC2"
+}, {
+  "po" : 2137,
+  "n" : "name",
+  "v" : "APOE (pp) LDLR"
+}, {
+  "po" : 2137,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2137,
+  "n" : "canonicalName",
+  "v" : "APOE (pp) LDLR"
+}, {
+  "po" : 2136,
+  "n" : "name",
+  "v" : "SNCA (pp) UCHL1"
+}, {
+  "po" : 2136,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2136,
+  "n" : "canonicalName",
+  "v" : "SNCA (pp) UCHL1"
+}, {
+  "po" : 2135,
+  "n" : "name",
+  "v" : "SNCA (pp) VIM"
+}, {
+  "po" : 2135,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2135,
+  "n" : "canonicalName",
+  "v" : "SNCA (pp) VIM"
+}, {
+  "po" : 2134,
+  "n" : "name",
+  "v" : "NFATC2 (pp) VIM"
+}, {
+  "po" : 2134,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2134,
+  "n" : "canonicalName",
+  "v" : "NFATC2 (pp) VIM"
+}, {
+  "po" : 2133,
+  "n" : "name",
+  "v" : "TSC22D3 (pp) FOS"
+}, {
+  "po" : 2133,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2133,
+  "n" : "canonicalName",
+  "v" : "TSC22D3 (pp) FOS"
+}, {
+  "po" : 2132,
+  "n" : "name",
+  "v" : "TSC22D3 (pp) JUN"
+}, {
+  "po" : 2132,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2132,
+  "n" : "canonicalName",
+  "v" : "TSC22D3 (pp) JUN"
+}, {
+  "po" : 2131,
+  "n" : "name",
+  "v" : "CD9 (pp) CD36"
+}, {
+  "po" : 2131,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2131,
+  "n" : "canonicalName",
+  "v" : "CD9 (pp) CD36"
+}, {
+  "po" : 2130,
+  "n" : "name",
+  "v" : "PF4 (pp) SDC2"
+}, {
+  "po" : 2130,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2130,
+  "n" : "canonicalName",
+  "v" : "PF4 (pp) SDC2"
+}, {
+  "po" : 2129,
+  "n" : "name",
+  "v" : "VIM (pp) CDC2"
+}, {
+  "po" : 2129,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2129,
+  "n" : "canonicalName",
+  "v" : "VIM (pp) CDC2"
+}, {
+  "po" : 2128,
+  "n" : "name",
+  "v" : "VIM (pp) RIPK2"
+}, {
+  "po" : 2128,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2128,
+  "n" : "canonicalName",
+  "v" : "VIM (pp) RIPK2"
+}, {
+  "po" : 2127,
+  "n" : "name",
+  "v" : "VIM (pp) IKBKG"
+}, {
+  "po" : 2127,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2127,
+  "n" : "canonicalName",
+  "v" : "VIM (pp) IKBKG"
+}, {
+  "po" : 2126,
+  "n" : "name",
+  "v" : "VIM (pp) YWHAZ"
+}, {
+  "po" : 2126,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2126,
+  "n" : "canonicalName",
+  "v" : "VIM (pp) YWHAZ"
+}, {
+  "po" : 2125,
+  "n" : "name",
+  "v" : "VIM (pp) VIM"
+}, {
+  "po" : 2125,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2125,
+  "n" : "canonicalName",
+  "v" : "VIM (pp) VIM"
+}, {
+  "po" : 2124,
+  "n" : "name",
+  "v" : "MCC (pp) UCHL1"
+}, {
+  "po" : 2124,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2124,
+  "n" : "canonicalName",
+  "v" : "MCC (pp) UCHL1"
+}, {
+  "po" : 2123,
+  "n" : "name",
+  "v" : "MCC (pp) MYH10"
+}, {
+  "po" : 2123,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2123,
+  "n" : "canonicalName",
+  "v" : "MCC (pp) MYH10"
+}, {
+  "po" : 2122,
+  "n" : "name",
+  "v" : "CNTN1 (pp) L1CAM"
+}, {
+  "po" : 2122,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2122,
+  "n" : "canonicalName",
+  "v" : "CNTN1 (pp) L1CAM"
+}, {
+  "po" : 2121,
+  "n" : "name",
+  "v" : "CNTN1 (pp) TNC"
+}, {
+  "po" : 2121,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2121,
+  "n" : "canonicalName",
+  "v" : "CNTN1 (pp) TNC"
+}, {
+  "po" : 2120,
+  "n" : "name",
+  "v" : "CNTN1 (pp) FYN"
+}, {
+  "po" : 2120,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2120,
+  "n" : "canonicalName",
+  "v" : "CNTN1 (pp) FYN"
+}, {
+  "po" : 2119,
+  "n" : "name",
+  "v" : "CNTN1 (pp) CNTN1"
+}, {
+  "po" : 2119,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2119,
+  "n" : "canonicalName",
+  "v" : "CNTN1 (pp) CNTN1"
+}, {
+  "po" : 2118,
+  "n" : "name",
+  "v" : "UBC (pp) UCHL1"
+}, {
+  "po" : 2118,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2118,
+  "n" : "canonicalName",
+  "v" : "UBC (pp) UCHL1"
+}, {
+  "po" : 2117,
+  "n" : "name",
+  "v" : "UBC (pp) VCL"
+}, {
+  "po" : 2117,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2117,
+  "n" : "canonicalName",
+  "v" : "UBC (pp) VCL"
+}, {
+  "po" : 2116,
+  "n" : "name",
+  "v" : "NCOA6 (pp) FOS"
+}, {
+  "po" : 2116,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2116,
+  "n" : "canonicalName",
+  "v" : "NCOA6 (pp) FOS"
+}, {
+  "po" : 2115,
+  "n" : "name",
+  "v" : "NCOA6 (pp) JUN"
+}, {
+  "po" : 2115,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2115,
+  "n" : "canonicalName",
+  "v" : "NCOA6 (pp) JUN"
+}, {
+  "po" : 2114,
+  "n" : "name",
+  "v" : "ESR1 (pp) JUNB"
+}, {
+  "po" : 2114,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2114,
+  "n" : "canonicalName",
+  "v" : "ESR1 (pp) JUNB"
+}, {
+  "po" : 2113,
+  "n" : "name",
+  "v" : "ESR1 (pp) JUN"
+}, {
+  "po" : 2113,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2113,
+  "n" : "canonicalName",
+  "v" : "ESR1 (pp) JUN"
+}, {
+  "po" : 2112,
+  "n" : "name",
+  "v" : "ALS2CR11 (pp) VCL"
+}, {
+  "po" : 2112,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2112,
+  "n" : "canonicalName",
+  "v" : "ALS2CR11 (pp) VCL"
+}, {
+  "po" : 2111,
+  "n" : "name",
+  "v" : "ALS2CR11 (pp) VIM"
+}, {
+  "po" : 2111,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2111,
+  "n" : "canonicalName",
+  "v" : "ALS2CR11 (pp) VIM"
+}, {
+  "po" : 2110,
+  "n" : "name",
+  "v" : "UCHL1 (pp) IKBKE"
+}, {
+  "po" : 2110,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2110,
+  "n" : "canonicalName",
+  "v" : "UCHL1 (pp) IKBKE"
+}, {
+  "po" : 2109,
+  "n" : "name",
+  "v" : "FOSL2 (pp) JUNB"
+}, {
+  "po" : 2109,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2109,
+  "n" : "canonicalName",
+  "v" : "FOSL2 (pp) JUNB"
+}, {
+  "po" : 2108,
+  "n" : "name",
+  "v" : "FOSL2 (pp) JUN"
+}, {
+  "po" : 2108,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2108,
+  "n" : "canonicalName",
+  "v" : "FOSL2 (pp) JUN"
+}, {
+  "po" : 2107,
+  "n" : "name",
+  "v" : "MYH10 (pp) IKBKE"
+}, {
+  "po" : 2107,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2107,
+  "n" : "canonicalName",
+  "v" : "MYH10 (pp) IKBKE"
+}, {
+  "po" : 2106,
+  "n" : "name",
+  "v" : "MYH10 (pp) RIPK2"
+}, {
+  "po" : 2106,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2106,
+  "n" : "canonicalName",
+  "v" : "MYH10 (pp) RIPK2"
+}, {
+  "po" : 2105,
+  "n" : "name",
+  "v" : "MYH10 (pp) IKBKG"
+}, {
+  "po" : 2105,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2105,
+  "n" : "canonicalName",
+  "v" : "MYH10 (pp) IKBKG"
+}, {
+  "po" : 2104,
+  "n" : "name",
+  "v" : "MYH10 (pp) TNFRSF1B"
+}, {
+  "po" : 2104,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2104,
+  "n" : "canonicalName",
+  "v" : "MYH10 (pp) TNFRSF1B"
+}, {
+  "po" : 2103,
+  "n" : "name",
+  "v" : "MYH10 (pp) RELA"
+}, {
+  "po" : 2103,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2103,
+  "n" : "canonicalName",
+  "v" : "MYH10 (pp) RELA"
+}, {
+  "po" : 2102,
+  "n" : "name",
+  "v" : "MYH10 (pp) PAK2"
+}, {
+  "po" : 2102,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2102,
+  "n" : "canonicalName",
+  "v" : "MYH10 (pp) PAK2"
+}, {
+  "po" : 2101,
+  "n" : "name",
+  "v" : "MYH10 (pp) NFKB1"
+}, {
+  "po" : 2101,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2101,
+  "n" : "canonicalName",
+  "v" : "MYH10 (pp) NFKB1"
+}, {
+  "po" : 2100,
+  "n" : "name",
+  "v" : "ATF7 (pp) JUNB"
+}, {
+  "po" : 2100,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2100,
+  "n" : "canonicalName",
+  "v" : "ATF7 (pp) JUNB"
+}, {
+  "po" : 2099,
+  "n" : "name",
+  "v" : "ATF7 (pp) FOSB"
+}, {
+  "po" : 2099,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2099,
+  "n" : "canonicalName",
+  "v" : "ATF7 (pp) FOSB"
+}, {
+  "po" : 2098,
+  "n" : "name",
+  "v" : "ATF7 (pp) FOS"
+}, {
+  "po" : 2098,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2098,
+  "n" : "canonicalName",
+  "v" : "ATF7 (pp) FOS"
+}, {
+  "po" : 2097,
+  "n" : "name",
+  "v" : "ATF7 (pp) JUN"
+}, {
+  "po" : 2097,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2097,
+  "n" : "canonicalName",
+  "v" : "ATF7 (pp) JUN"
+}, {
+  "po" : 2096,
+  "n" : "name",
+  "v" : "GTF2F2 (pp) JUN"
+}, {
+  "po" : 2096,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2096,
+  "n" : "canonicalName",
+  "v" : "GTF2F2 (pp) JUN"
+}, {
+  "po" : 2095,
+  "n" : "name",
+  "v" : "PTK2 (pp) VCL"
+}, {
+  "po" : 2095,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2095,
+  "n" : "canonicalName",
+  "v" : "PTK2 (pp) VCL"
+}, {
+  "po" : 2094,
+  "n" : "name",
+  "v" : "PTK2 (pp) TLN1"
+}, {
+  "po" : 2094,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2094,
+  "n" : "canonicalName",
+  "v" : "PTK2 (pp) TLN1"
+}, {
+  "po" : 2093,
+  "n" : "name",
+  "v" : "ATF2 (pp) JUNB"
+}, {
+  "po" : 2093,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2093,
+  "n" : "canonicalName",
+  "v" : "ATF2 (pp) JUNB"
+}, {
+  "po" : 2092,
+  "n" : "name",
+  "v" : "ATF2 (pp) FOSB"
+}, {
+  "po" : 2092,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2092,
+  "n" : "canonicalName",
+  "v" : "ATF2 (pp) FOSB"
+}, {
+  "po" : 2091,
+  "n" : "name",
+  "v" : "ATF2 (pp) FOS"
+}, {
+  "po" : 2091,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2091,
+  "n" : "canonicalName",
+  "v" : "ATF2 (pp) FOS"
+}, {
+  "po" : 2090,
+  "n" : "name",
+  "v" : "ATF2 (pp) JUN"
+}, {
+  "po" : 2090,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2090,
+  "n" : "canonicalName",
+  "v" : "ATF2 (pp) JUN"
+}, {
+  "po" : 2089,
+  "n" : "name",
+  "v" : "COL1A1 (pp) DDR2"
+}, {
+  "po" : 2089,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2089,
+  "n" : "canonicalName",
+  "v" : "COL1A1 (pp) DDR2"
+}, {
+  "po" : 2088,
+  "n" : "name",
+  "v" : "COL1A1 (pp) CD93"
+}, {
+  "po" : 2088,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2088,
+  "n" : "canonicalName",
+  "v" : "COL1A1 (pp) CD93"
+}, {
+  "po" : 2087,
+  "n" : "name",
+  "v" : "COL1A1 (pp) CD36"
+}, {
+  "po" : 2087,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2087,
+  "n" : "canonicalName",
+  "v" : "COL1A1 (pp) CD36"
+}, {
+  "po" : 2086,
+  "n" : "name",
+  "v" : "COL1A1 (pp) ITGA5"
+}, {
+  "po" : 2086,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2086,
+  "n" : "canonicalName",
+  "v" : "COL1A1 (pp) ITGA5"
+}, {
+  "po" : 2085,
+  "n" : "name",
+  "v" : "COL1A2 (pp) CD93"
+}, {
+  "po" : 2085,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2085,
+  "n" : "canonicalName",
+  "v" : "COL1A2 (pp) CD93"
+}, {
+  "po" : 2084,
+  "n" : "name",
+  "v" : "COL1A2 (pp) CD36"
+}, {
+  "po" : 2084,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2084,
+  "n" : "canonicalName",
+  "v" : "COL1A2 (pp) CD36"
+}, {
+  "po" : 2083,
+  "n" : "name",
+  "v" : "DDIT3 (pp) FOSB"
+}, {
+  "po" : 2083,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2083,
+  "n" : "canonicalName",
+  "v" : "DDIT3 (pp) FOSB"
+}, {
+  "po" : 2082,
+  "n" : "name",
+  "v" : "DDIT3 (pp) FOS"
+}, {
+  "po" : 2082,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2082,
+  "n" : "canonicalName",
+  "v" : "DDIT3 (pp) FOS"
+}, {
+  "po" : 2081,
+  "n" : "name",
+  "v" : "DDIT3 (pp) JUN"
+}, {
+  "po" : 2081,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2081,
+  "n" : "canonicalName",
+  "v" : "DDIT3 (pp) JUN"
+}, {
+  "po" : 2080,
+  "n" : "name",
+  "v" : "JUNB (pp) FOSL1"
+}, {
+  "po" : 2080,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2080,
+  "n" : "canonicalName",
+  "v" : "JUNB (pp) FOSL1"
+}, {
+  "po" : 2079,
+  "n" : "name",
+  "v" : "JUNB (pp) MAFK"
+}, {
+  "po" : 2079,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2079,
+  "n" : "canonicalName",
+  "v" : "JUNB (pp) MAFK"
+}, {
+  "po" : 2078,
+  "n" : "name",
+  "v" : "JUNB (pp) BRCA1"
+}, {
+  "po" : 2078,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2078,
+  "n" : "canonicalName",
+  "v" : "JUNB (pp) BRCA1"
+}, {
+  "po" : 2077,
+  "n" : "name",
+  "v" : "JUNB (pp) BCL6"
+}, {
+  "po" : 2077,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2077,
+  "n" : "canonicalName",
+  "v" : "JUNB (pp) BCL6"
+}, {
+  "po" : 2076,
+  "n" : "name",
+  "v" : "JUNB (pp) MAPK8"
+}, {
+  "po" : 2076,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2076,
+  "n" : "canonicalName",
+  "v" : "JUNB (pp) MAPK8"
+}, {
+  "po" : 2075,
+  "n" : "name",
+  "v" : "JUNB (pp) BATF3"
+}, {
+  "po" : 2075,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2075,
+  "n" : "canonicalName",
+  "v" : "JUNB (pp) BATF3"
+}, {
+  "po" : 2074,
+  "n" : "name",
+  "v" : "JUNB (pp) NFE2L1"
+}, {
+  "po" : 2074,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2074,
+  "n" : "canonicalName",
+  "v" : "JUNB (pp) NFE2L1"
+}, {
+  "po" : 2073,
+  "n" : "name",
+  "v" : "JUNB (pp) ATF3"
+}, {
+  "po" : 2073,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2073,
+  "n" : "canonicalName",
+  "v" : "JUNB (pp) ATF3"
+}, {
+  "po" : 2072,
+  "n" : "name",
+  "v" : "JUNB (pp) MAFG"
+}, {
+  "po" : 2072,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2072,
+  "n" : "canonicalName",
+  "v" : "JUNB (pp) MAFG"
+}, {
+  "po" : 2071,
+  "n" : "name",
+  "v" : "JUNB (pp) SMAD4"
+}, {
+  "po" : 2071,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2071,
+  "n" : "canonicalName",
+  "v" : "JUNB (pp) SMAD4"
+}, {
+  "po" : 2070,
+  "n" : "name",
+  "v" : "JUNB (pp) SMAD3"
+}, {
+  "po" : 2070,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2070,
+  "n" : "canonicalName",
+  "v" : "JUNB (pp) SMAD3"
+}, {
+  "po" : 2069,
+  "n" : "name",
+  "v" : "JUNB (pp) JUNB"
+}, {
+  "po" : 2069,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2069,
+  "n" : "canonicalName",
+  "v" : "JUNB (pp) JUNB"
+}, {
+  "po" : 2068,
+  "n" : "name",
+  "v" : "RELA (pp) VIM"
+}, {
+  "po" : 2068,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2068,
+  "n" : "canonicalName",
+  "v" : "RELA (pp) VIM"
+}, {
+  "po" : 2067,
+  "n" : "name",
+  "v" : "EGFR (pp) ITGA5"
+}, {
+  "po" : 2067,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2067,
+  "n" : "canonicalName",
+  "v" : "EGFR (pp) ITGA5"
+}, {
+  "po" : 2066,
+  "n" : "name",
+  "v" : "EGFR (pp) TLN1"
+}, {
+  "po" : 2066,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2066,
+  "n" : "canonicalName",
+  "v" : "EGFR (pp) TLN1"
+}, {
+  "po" : 2065,
+  "n" : "name",
+  "v" : "EGFR (pp) FOS"
+}, {
+  "po" : 2065,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2065,
+  "n" : "canonicalName",
+  "v" : "EGFR (pp) FOS"
+}, {
+  "po" : 2064,
+  "n" : "name",
+  "v" : "CSNK2A1 (pp) FOS"
+}, {
+  "po" : 2064,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2064,
+  "n" : "canonicalName",
+  "v" : "CSNK2A1 (pp) FOS"
+}, {
+  "po" : 2063,
+  "n" : "name",
+  "v" : "CSNK2A1 (pp) JUN"
+}, {
+  "po" : 2063,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2063,
+  "n" : "canonicalName",
+  "v" : "CSNK2A1 (pp) JUN"
+}, {
+  "po" : 2062,
+  "n" : "name",
+  "v" : "BATF (pp) JUNB"
+}, {
+  "po" : 2062,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2062,
+  "n" : "canonicalName",
+  "v" : "BATF (pp) JUNB"
+}, {
+  "po" : 2061,
+  "n" : "name",
+  "v" : "BATF (pp) FOS"
+}, {
+  "po" : 2061,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2061,
+  "n" : "canonicalName",
+  "v" : "BATF (pp) FOS"
+}, {
+  "po" : 2060,
+  "n" : "name",
+  "v" : "BATF (pp) JUN"
+}, {
+  "po" : 2060,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2060,
+  "n" : "canonicalName",
+  "v" : "BATF (pp) JUN"
+}, {
+  "po" : 2059,
+  "n" : "name",
+  "v" : "VCL (pp) YWHAZ"
+}, {
+  "po" : 2059,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2059,
+  "n" : "canonicalName",
+  "v" : "VCL (pp) YWHAZ"
+}, {
+  "po" : 2058,
+  "n" : "name",
+  "v" : "VCL (pp) VCL"
+}, {
+  "po" : 2058,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2058,
+  "n" : "canonicalName",
+  "v" : "VCL (pp) VCL"
+}, {
+  "po" : 2057,
+  "n" : "name",
+  "v" : "VCL (pp) VIM"
+}, {
+  "po" : 2057,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2057,
+  "n" : "canonicalName",
+  "v" : "VCL (pp) VIM"
+}, {
+  "po" : 2056,
+  "n" : "name",
+  "v" : "JAG1 (pp) FOS"
+}, {
+  "po" : 2056,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2056,
+  "n" : "canonicalName",
+  "v" : "JAG1 (pp) FOS"
+}, {
+  "po" : 2055,
+  "n" : "name",
+  "v" : "JAG1 (pp) JUN"
+}, {
+  "po" : 2055,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2055,
+  "n" : "canonicalName",
+  "v" : "JAG1 (pp) JUN"
+}, {
+  "po" : 2054,
+  "n" : "name",
+  "v" : "JDP2 (pp) JUNB"
+}, {
+  "po" : 2054,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2054,
+  "n" : "canonicalName",
+  "v" : "JDP2 (pp) JUNB"
+}, {
+  "po" : 2053,
+  "n" : "name",
+  "v" : "JDP2 (pp) JUN"
+}, {
+  "po" : 2053,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2053,
+  "n" : "canonicalName",
+  "v" : "JDP2 (pp) JUN"
+}, {
+  "po" : 2052,
+  "n" : "name",
+  "v" : "NRAP (pp) VCL"
+}, {
+  "po" : 2052,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2052,
+  "n" : "canonicalName",
+  "v" : "NRAP (pp) VCL"
+}, {
+  "po" : 2051,
+  "n" : "name",
+  "v" : "NRAP (pp) TLN1"
+}, {
+  "po" : 2051,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2051,
+  "n" : "canonicalName",
+  "v" : "NRAP (pp) TLN1"
+}, {
+  "po" : 2050,
+  "n" : "name",
+  "v" : "PKD1 (pp) VCL"
+}, {
+  "po" : 2050,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2050,
+  "n" : "canonicalName",
+  "v" : "PKD1 (pp) VCL"
+}, {
+  "po" : 2049,
+  "n" : "name",
+  "v" : "PKD1 (pp) TLN1"
+}, {
+  "po" : 2049,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2049,
+  "n" : "canonicalName",
+  "v" : "PKD1 (pp) TLN1"
+}, {
+  "po" : 2048,
+  "n" : "name",
+  "v" : "PKD1 (pp) VIM"
+}, {
+  "po" : 2048,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2048,
+  "n" : "canonicalName",
+  "v" : "PKD1 (pp) VIM"
+}, {
+  "po" : 2047,
+  "n" : "name",
+  "v" : "FOSB (pp) MAFB"
+}, {
+  "po" : 2047,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2047,
+  "n" : "canonicalName",
+  "v" : "FOSB (pp) MAFB"
+}, {
+  "po" : 2046,
+  "n" : "name",
+  "v" : "FOSB (pp) FOSL1"
+}, {
+  "po" : 2046,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2046,
+  "n" : "canonicalName",
+  "v" : "FOSB (pp) FOSL1"
+}, {
+  "po" : 2045,
+  "n" : "name",
+  "v" : "FOSB (pp) ATF4"
+}, {
+  "po" : 2045,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2045,
+  "n" : "canonicalName",
+  "v" : "FOSB (pp) ATF4"
+}, {
+  "po" : 2044,
+  "n" : "name",
+  "v" : "FOSB (pp) JUND"
+}, {
+  "po" : 2044,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2044,
+  "n" : "canonicalName",
+  "v" : "FOSB (pp) JUND"
+}, {
+  "po" : 2043,
+  "n" : "name",
+  "v" : "FOSB (pp) JUNB"
+}, {
+  "po" : 2043,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2043,
+  "n" : "canonicalName",
+  "v" : "FOSB (pp) JUNB"
+}, {
+  "po" : 2042,
+  "n" : "name",
+  "v" : "FOSB (pp) JUN"
+}, {
+  "po" : 2042,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2042,
+  "n" : "canonicalName",
+  "v" : "FOSB (pp) JUN"
+}, {
+  "po" : 2041,
+  "n" : "name",
+  "v" : "ACTA1 (pp) VCL"
+}, {
+  "po" : 2041,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2041,
+  "n" : "canonicalName",
+  "v" : "ACTA1 (pp) VCL"
+}, {
+  "po" : 2040,
+  "n" : "name",
+  "v" : "ACTA1 (pp) TLN1"
+}, {
+  "po" : 2040,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2040,
+  "n" : "canonicalName",
+  "v" : "ACTA1 (pp) TLN1"
+}, {
+  "po" : 2039,
+  "n" : "name",
+  "v" : "LDLR (pp) PF4"
+}, {
+  "po" : 2039,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2039,
+  "n" : "canonicalName",
+  "v" : "LDLR (pp) PF4"
+}, {
+  "po" : 2038,
+  "n" : "name",
+  "v" : "LDLR (pp) LDLR"
+}, {
+  "po" : 2038,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2038,
+  "n" : "canonicalName",
+  "v" : "LDLR (pp) LDLR"
+}, {
+  "po" : 2037,
+  "n" : "name",
+  "v" : "PDIA3 (pp) VCL"
+}, {
+  "po" : 2037,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2037,
+  "n" : "canonicalName",
+  "v" : "PDIA3 (pp) VCL"
+}, {
+  "po" : 2036,
+  "n" : "name",
+  "v" : "PDIA3 (pp) LDLR"
+}, {
+  "po" : 2036,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2036,
+  "n" : "canonicalName",
+  "v" : "PDIA3 (pp) LDLR"
+}, {
+  "po" : 2035,
+  "n" : "name",
+  "v" : "ERBB2 (pp) ITGA5"
+}, {
+  "po" : 2035,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2035,
+  "n" : "canonicalName",
+  "v" : "ERBB2 (pp) ITGA5"
+}, {
+  "po" : 2034,
+  "n" : "name",
+  "v" : "ERBB2 (pp) TLN1"
+}, {
+  "po" : 2034,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2034,
+  "n" : "canonicalName",
+  "v" : "ERBB2 (pp) TLN1"
+}, {
+  "po" : 2033,
+  "n" : "name",
+  "v" : "JUN (pp) MAFB"
+}, {
+  "po" : 2033,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2033,
+  "n" : "canonicalName",
+  "v" : "JUN (pp) MAFB"
+}, {
+  "po" : 2032,
+  "n" : "name",
+  "v" : "JUN (pp) NCOR2"
+}, {
+  "po" : 2032,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2032,
+  "n" : "canonicalName",
+  "v" : "JUN (pp) NCOR2"
+}, {
+  "po" : 2031,
+  "n" : "name",
+  "v" : "JUN (pp) NCOA1"
+}, {
+  "po" : 2031,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2031,
+  "n" : "canonicalName",
+  "v" : "JUN (pp) NCOA1"
+}, {
+  "po" : 2030,
+  "n" : "name",
+  "v" : "JUN (pp) RUNX1"
+}, {
+  "po" : 2030,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2030,
+  "n" : "canonicalName",
+  "v" : "JUN (pp) RUNX1"
+}, {
+  "po" : 2029,
+  "n" : "name",
+  "v" : "JUN (pp) RUNX2"
+}, {
+  "po" : 2029,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2029,
+  "n" : "canonicalName",
+  "v" : "JUN (pp) RUNX2"
+}, {
+  "po" : 2028,
+  "n" : "name",
+  "v" : "JUN (pp) KHSRP"
+}, {
+  "po" : 2028,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2028,
+  "n" : "canonicalName",
+  "v" : "JUN (pp) KHSRP"
+}, {
+  "po" : 2027,
+  "n" : "name",
+  "v" : "JUN (pp) FOSL1"
+}, {
+  "po" : 2027,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2027,
+  "n" : "canonicalName",
+  "v" : "JUN (pp) FOSL1"
+}, {
+  "po" : 2026,
+  "n" : "name",
+  "v" : "JUN (pp) MAFK"
+}, {
+  "po" : 2026,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2026,
+  "n" : "canonicalName",
+  "v" : "JUN (pp) MAFK"
+}, {
+  "po" : 2025,
+  "n" : "name",
+  "v" : "JUN (pp) SUMO1"
+}, {
+  "po" : 2025,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2025,
+  "n" : "canonicalName",
+  "v" : "JUN (pp) SUMO1"
+}, {
+  "po" : 2024,
+  "n" : "name",
+  "v" : "JUN (pp) UBE2I"
+}, {
+  "po" : 2024,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2024,
+  "n" : "canonicalName",
+  "v" : "JUN (pp) UBE2I"
+}, {
+  "po" : 2023,
+  "n" : "name",
+  "v" : "JUN (pp) TBP"
+}, {
+  "po" : 2023,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2023,
+  "n" : "canonicalName",
+  "v" : "JUN (pp) TBP"
+}, {
+  "po" : 2022,
+  "n" : "name",
+  "v" : "JUN (pp) TAF1"
+}, {
+  "po" : 2022,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2022,
+  "n" : "canonicalName",
+  "v" : "JUN (pp) TAF1"
+}, {
+  "po" : 2021,
+  "n" : "name",
+  "v" : "JUN (pp) STAT3"
+}, {
+  "po" : 2021,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2021,
+  "n" : "canonicalName",
+  "v" : "JUN (pp) STAT3"
+}, {
+  "po" : 2020,
+  "n" : "name",
+  "v" : "JUN (pp) STAT1"
+}, {
+  "po" : 2020,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2020,
+  "n" : "canonicalName",
+  "v" : "JUN (pp) STAT1"
+}, {
+  "po" : 2019,
+  "n" : "name",
+  "v" : "JUN (pp) BRCA1"
+}, {
+  "po" : 2019,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2019,
+  "n" : "canonicalName",
+  "v" : "JUN (pp) BRCA1"
+}, {
+  "po" : 2018,
+  "n" : "name",
+  "v" : "JUN (pp) SUMO2"
+}, {
+  "po" : 2018,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2018,
+  "n" : "canonicalName",
+  "v" : "JUN (pp) SUMO2"
+}, {
+  "po" : 2017,
+  "n" : "name",
+  "v" : "JUN (pp) SUMO3"
+}, {
+  "po" : 2017,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2017,
+  "n" : "canonicalName",
+  "v" : "JUN (pp) SUMO3"
+}, {
+  "po" : 2016,
+  "n" : "name",
+  "v" : "JUN (pp) SMARCD1"
+}, {
+  "po" : 2016,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2016,
+  "n" : "canonicalName",
+  "v" : "JUN (pp) SMARCD1"
+}, {
+  "po" : 2015,
+  "n" : "name",
+  "v" : "JUN (pp) BCL6"
+}, {
+  "po" : 2015,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2015,
+  "n" : "canonicalName",
+  "v" : "JUN (pp) BCL6"
+}, {
+  "po" : 2014,
+  "n" : "name",
+  "v" : "JUN (pp) BCL3"
+}, {
+  "po" : 2014,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2014,
+  "n" : "canonicalName",
+  "v" : "JUN (pp) BCL3"
+}, {
+  "po" : 2013,
+  "n" : "name",
+  "v" : "JUN (pp) RELA"
+}, {
+  "po" : 2013,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2013,
+  "n" : "canonicalName",
+  "v" : "JUN (pp) RELA"
+}, {
+  "po" : 2012,
+  "n" : "name",
+  "v" : "JUN (pp) RB1"
+}, {
+  "po" : 2012,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2012,
+  "n" : "canonicalName",
+  "v" : "JUN (pp) RB1"
+}, {
+  "po" : 2011,
+  "n" : "name",
+  "v" : "JUN (pp) MAPK8"
+}, {
+  "po" : 2011,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2011,
+  "n" : "canonicalName",
+  "v" : "JUN (pp) MAPK8"
+}, {
+  "po" : 2010,
+  "n" : "name",
+  "v" : "JUN (pp) MAPK1"
+}, {
+  "po" : 2010,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2010,
+  "n" : "canonicalName",
+  "v" : "JUN (pp) MAPK1"
+}, {
+  "po" : 2009,
+  "n" : "name",
+  "v" : "JUN (pp) BATF3"
+}, {
+  "po" : 2009,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2009,
+  "n" : "canonicalName",
+  "v" : "JUN (pp) BATF3"
+}, {
+  "po" : 2008,
+  "n" : "name",
+  "v" : "JUN (pp) PML"
+}, {
+  "po" : 2008,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2008,
+  "n" : "canonicalName",
+  "v" : "JUN (pp) PML"
+}, {
+  "po" : 2007,
+  "n" : "name",
+  "v" : "JUN (pp) NTRK3"
+}, {
+  "po" : 2007,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2007,
+  "n" : "canonicalName",
+  "v" : "JUN (pp) NTRK3"
+}, {
+  "po" : 2006,
+  "n" : "name",
+  "v" : "JUN (pp) NFE2L1"
+}, {
+  "po" : 2006,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2006,
+  "n" : "canonicalName",
+  "v" : "JUN (pp) NFE2L1"
+}, {
+  "po" : 2005,
+  "n" : "name",
+  "v" : "JUN (pp) NFATC2"
+}, {
+  "po" : 2005,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2005,
+  "n" : "canonicalName",
+  "v" : "JUN (pp) NFATC2"
+}, {
+  "po" : 2004,
+  "n" : "name",
+  "v" : "JUN (pp) ATF4"
+}, {
+  "po" : 2004,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2004,
+  "n" : "canonicalName",
+  "v" : "JUN (pp) ATF4"
+}, {
+  "po" : 2003,
+  "n" : "name",
+  "v" : "JUN (pp) ATF3"
+}, {
+  "po" : 2003,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2003,
+  "n" : "canonicalName",
+  "v" : "JUN (pp) ATF3"
+}, {
+  "po" : 2002,
+  "n" : "name",
+  "v" : "JUN (pp) MAFG"
+}, {
+  "po" : 2002,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2002,
+  "n" : "canonicalName",
+  "v" : "JUN (pp) MAFG"
+}, {
+  "po" : 2001,
+  "n" : "name",
+  "v" : "JUN (pp) MAF"
+}, {
+  "po" : 2001,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2001,
+  "n" : "canonicalName",
+  "v" : "JUN (pp) MAF"
+}, {
+  "po" : 2000,
+  "n" : "name",
+  "v" : "JUN (pp) SMAD4"
+}, {
+  "po" : 2000,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 2000,
+  "n" : "canonicalName",
+  "v" : "JUN (pp) SMAD4"
+}, {
+  "po" : 1999,
+  "n" : "name",
+  "v" : "JUN (pp) SMAD3"
+}, {
+  "po" : 1999,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 1999,
+  "n" : "canonicalName",
+  "v" : "JUN (pp) SMAD3"
+}, {
+  "po" : 1998,
+  "n" : "name",
+  "v" : "JUN (pp) SUMO4"
+}, {
+  "po" : 1998,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 1998,
+  "n" : "canonicalName",
+  "v" : "JUN (pp) SUMO4"
+}, {
+  "po" : 1997,
+  "n" : "name",
+  "v" : "JUN (pp) JUND"
+}, {
+  "po" : 1997,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 1997,
+  "n" : "canonicalName",
+  "v" : "JUN (pp) JUND"
+}, {
+  "po" : 1996,
+  "n" : "name",
+  "v" : "JUN (pp) JUNB"
+}, {
+  "po" : 1996,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 1996,
+  "n" : "canonicalName",
+  "v" : "JUN (pp) JUNB"
+}, {
+  "po" : 1995,
+  "n" : "name",
+  "v" : "JUN (pp) JUN"
+}, {
+  "po" : 1995,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 1995,
+  "n" : "canonicalName",
+  "v" : "JUN (pp) JUN"
+}, {
+  "po" : 1994,
+  "n" : "name",
+  "v" : "MYH9 (pp) VCL"
+}, {
+  "po" : 1994,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 1994,
+  "n" : "canonicalName",
+  "v" : "MYH9 (pp) VCL"
+}, {
+  "po" : 1993,
+  "n" : "name",
+  "v" : "MYH9 (pp) MYH10"
+}, {
+  "po" : 1993,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 1993,
+  "n" : "canonicalName",
+  "v" : "MYH9 (pp) MYH10"
+}, {
+  "po" : 1992,
+  "n" : "name",
+  "v" : "AGTR1 (pp) GPRASP1"
+}, {
+  "po" : 1992,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 1992,
+  "n" : "canonicalName",
+  "v" : "AGTR1 (pp) GPRASP1"
+}, {
+  "po" : 1991,
+  "n" : "name",
+  "v" : "AGTR1 (pp) EGFR"
+}, {
+  "po" : 1991,
+  "n" : "interaction",
+  "v" : "pp"
+}, {
+  "po" : 1991,
+  "n" : "canonicalName",
+  "v" : "AGTR1 (pp) EGFR"
+}]},
+ {"cartesianLayout":[{
+  "node" : 1990,
+  "x" : 115.45074462890625,
+  "y" : 1247.137451171875
+}, {
+  "node" : 1989,
+  "x" : 215.45074462890625,
+  "y" : 1247.137451171875
+}, {
+  "node" : 1988,
+  "x" : 315.45074462890625,
+  "y" : 1247.137451171875
+}, {
+  "node" : 1987,
+  "x" : 1305.5284423828125,
+  "y" : 552.9442749023438
+}, {
+  "node" : 1986,
+  "x" : 719.1798706054688,
+  "y" : 300.35491943359375
+}, {
+  "node" : 1985,
+  "x" : 667.2521362304688,
+  "y" : 307.60626220703125
+}, {
+  "node" : 1984,
+  "x" : 828.9523315429688,
+  "y" : 331.6335754394531
+}, {
+  "node" : 1983,
+  "x" : 460.7267761230469,
+  "y" : 355.955078125
+}, {
+  "node" : 1982,
+  "x" : 279.09283447265625,
+  "y" : 657.22216796875
+}, {
+  "node" : 1981,
+  "x" : 668.6952514648438,
+  "y" : 544.6622924804688
+}, {
+  "node" : 1980,
+  "x" : 1259.7103271484375,
+  "y" : 549.1605224609375
+}, {
+  "node" : 1979,
+  "x" : 712.2846069335938,
+  "y" : 579.604736328125
+}, {
+  "node" : 1978,
+  "x" : 870.572265625,
+  "y" : 726.9676513671875
+}, {
+  "node" : 1977,
+  "x" : 364.681640625,
+  "y" : 367.8902587890625
+}, {
+  "node" : 1976,
+  "x" : 705.5723876953125,
+  "y" : 789.9351806640625
+}, {
+  "node" : 1975,
+  "x" : 335.22320556640625,
+  "y" : 443.447021484375
+}, {
+  "node" : 1974,
+  "x" : 784.2816772460938,
+  "y" : 287.3472900390625
+}, {
+  "node" : 1973,
+  "x" : 189.245361328125,
+  "y" : 828.810546875
+}, {
+  "node" : 1972,
+  "x" : 1106.1593017578125,
+  "y" : 508.6750946044922
+}, {
+  "node" : 1971,
+  "x" : 301.0044860839844,
+  "y" : 575.3361206054688
+}, {
+  "node" : 1970,
+  "x" : 265.3548278808594,
+  "y" : 281.1683044433594
+}, {
+  "node" : 1969,
+  "x" : 530.0591430664062,
+  "y" : 721.43896484375
+}, {
+  "node" : 1968,
+  "x" : 1198.5196533203125,
+  "y" : 597.131591796875
+}, {
+  "node" : 1967,
+  "x" : 423.6495666503906,
+  "y" : 755.181884765625
+}, {
+  "node" : 1966,
+  "x" : 481.68914794921875,
+  "y" : 943.3212890625
+}, {
+  "node" : 1965,
+  "x" : 1359.2989501953125,
+  "y" : 403.285400390625
+}, {
+  "node" : 1964,
+  "x" : 1319.0657958984375,
+  "y" : 306.5563049316406
+}, {
+  "node" : 1963,
+  "x" : 1266.9273681640625,
+  "y" : 500.19371032714844
+}, {
+  "node" : 1962,
+  "x" : 870.5343017578125,
+  "y" : 360.6092224121094
+}, {
+  "node" : 1961,
+  "x" : 594.4660034179688,
+  "y" : 880.9830322265625
+}, {
+  "node" : 1960,
+  "x" : 1038.0202331542969,
+  "y" : 368.7022705078125
+}, {
+  "node" : 1959,
+  "x" : 1197.1705322265625,
+  "y" : 547.3692016601562
+}, {
+  "node" : 1958,
+  "x" : 396.86328125,
+  "y" : 678.9248046875
+}, {
+  "node" : 1957,
+  "x" : 407.4264221191406,
+  "y" : 846.137939453125
+}, {
+  "node" : 1956,
+  "x" : 369.4337158203125,
+  "y" : 794.8781127929688
+}, {
+  "node" : 1955,
+  "x" : 305.11810302734375,
+  "y" : 869.5035400390625
+}, {
+  "node" : 1954,
+  "x" : 476.501953125,
+  "y" : 863.4191284179688
+}, {
+  "node" : 1953,
+  "x" : 588.409912109375,
+  "y" : 307.577392578125
+}, {
+  "node" : 1952,
+  "x" : 760.7383422851562,
+  "y" : 331.72076416015625
+}, {
+  "node" : 1951,
+  "x" : 641.9661865234375,
+  "y" : 442.0837097167969
+}, {
+  "node" : 1950,
+  "x" : 869.1173706054688,
+  "y" : 555.7036743164062
+}, {
+  "node" : 1949,
+  "x" : 1221.0596923828125,
+  "y" : 288.4344787597656
+}, {
+  "node" : 1948,
+  "x" : 115.45074462890625,
+  "y" : 795.923583984375
+}, {
+  "node" : 1947,
+  "x" : 1043.1731872558594,
+  "y" : 320.1060485839844
+}, {
+  "node" : 1946,
+  "x" : 1064.8233642578125,
+  "y" : 610.9053955078125
+}, {
+  "node" : 1945,
+  "x" : 1319.0062255859375,
+  "y" : 421.5399475097656
+}, {
+  "node" : 1944,
+  "x" : 1152.9627685546875,
+  "y" : 571.6055297851562
+}, {
+  "node" : 1943,
+  "x" : 1239.1307373046875,
+  "y" : 587.75146484375
+}, {
+  "node" : 1942,
+  "x" : 899.860107421875,
+  "y" : 510.4022521972656
+}, {
+  "node" : 1941,
+  "x" : 896.5711669921875,
+  "y" : 406.0578308105469
+}, {
+  "node" : 1940,
+  "x" : 1042.5729675292969,
+  "y" : 417.1156311035156
+}, {
+  "node" : 1939,
+  "x" : 695.6586303710938,
+  "y" : 647.2542114257812
+}, {
+  "node" : 1938,
+  "x" : 587.4325561523438,
+  "y" : 193.86688232421875
+}, {
+  "node" : 1937,
+  "x" : 823.3882446289062,
+  "y" : 390.0184631347656
+}, {
+  "node" : 1936,
+  "x" : 901.7157592773438,
+  "y" : 614.4517211914062
+}, {
+  "node" : 1935,
+  "x" : 1094.3472900390625,
+  "y" : 574.2919311523438
+}, {
+  "node" : 1934,
+  "x" : 1282.8800048828125,
+  "y" : 601.139892578125
+}, {
+  "node" : 1933,
+  "x" : 1042.9793395996094,
+  "y" : 568.2110595703125
+}, {
+  "node" : 1932,
+  "x" : 902.1221313476562,
+  "y" : 457.23883056640625
+}, {
+  "node" : 1931,
+  "x" : 1351.6290283203125,
+  "y" : 462.7389831542969
+}, {
+  "node" : 1930,
+  "x" : 857.0604858398438,
+  "y" : 809.0494995117188
+}, {
+  "node" : 1929,
+  "x" : 556.7235107421875,
+  "y" : 820.2266845703125
+}, {
+  "node" : 1928,
+  "x" : 265.6728210449219,
+  "y" : 815.5536499023438
+}, {
+  "node" : 1927,
+  "x" : 821.26806640625,
+  "y" : 1002.77880859375
+}, {
+  "node" : 1926,
+  "x" : 785.4044799804688,
+  "y" : 599.3639526367188
+}, {
+  "node" : 1925,
+  "x" : 1172.2244873046875,
+  "y" : 630.3786010742188
+}, {
+  "node" : 1924,
+  "x" : 848.9552612304688,
+  "y" : 485.03729248046875
+}, {
+  "node" : 1923,
+  "x" : 1203.7203369140625,
+  "y" : 662.3901977539062
+}, {
+  "node" : 1922,
+  "x" : 322.0287170410156,
+  "y" : 730.0418701171875
+}, {
+  "node" : 1921,
+  "x" : 772.8217163085938,
+  "y" : 1044.33837890625
+}, {
+  "node" : 1920,
+  "x" : 765.1065673828125,
+  "y" : 465.8020935058594
+}, {
+  "node" : 1919,
+  "x" : 766.2471313476562,
+  "y" : 537.0943603515625
+}, {
+  "node" : 1918,
+  "x" : 149.43701171875,
+  "y" : 687.421630859375
+}, {
+  "node" : 1917,
+  "x" : 747.369384765625,
+  "y" : 719.600830078125
+}, {
+  "node" : 1916,
+  "x" : 1101.1209716796875,
+  "y" : 663.0280151367188
+}, {
+  "node" : 1915,
+  "x" : 1244.0150146484375,
+  "y" : 635.8301391601562
+}, {
+  "node" : 1914,
+  "x" : 1130.7789306640625,
+  "y" : 614.3710327148438
+}, {
+  "node" : 1913,
+  "x" : 1119.89208984375,
+  "y" : 265.6341323852539
+}, {
+  "node" : 1912,
+  "x" : 1271.9144287109375,
+  "y" : 279.31207275390625
+}, {
+  "node" : 1911,
+  "x" : 606.4625854492188,
+  "y" : 517.247802734375
+}, {
+  "node" : 1910,
+  "x" : 783.407470703125,
+  "y" : 888.3631591796875
+}, {
+  "node" : 1909,
+  "x" : 859.369384765625,
+  "y" : 649.6844482421875
+}, {
+  "node" : 1908,
+  "x" : 1226.6451416015625,
+  "y" : 467.53179931640625
+}, {
+  "node" : 1907,
+  "x" : 739.5897827148438,
+  "y" : 407.2936706542969
+}, {
+  "node" : 1906,
+  "x" : 667.1461791992188,
+  "y" : 365.64117431640625
+}, {
+  "node" : 1905,
+  "x" : 1137.2618408203125,
+  "y" : 370.2415466308594
+}, {
+  "node" : 1904,
+  "x" : 1031.4698486328125,
+  "y" : 472.35084533691406
+}, {
+  "node" : 1903,
+  "x" : 1346.2669677734375,
+  "y" : 348.7479248046875
+}, {
+  "node" : 1902,
+  "x" : 1227.731689453125,
+  "y" : 514.0210418701172
+}, {
+  "node" : 1901,
+  "x" : 820.828369140625,
+  "y" : 526.2285766601562
+}, {
+  "node" : 1900,
+  "x" : 1225.6915283203125,
+  "y" : 422.9170227050781
+}, {
+  "node" : 1899,
+  "x" : 1176.1134033203125,
+  "y" : 403.7768859863281
+}, {
+  "node" : 1898,
+  "x" : 615.1937866210938,
+  "y" : 772.711181640625
+}, {
+  "node" : 1897,
+  "x" : 1126.4716796875,
+  "y" : 413.5410461425781
+}, {
+  "node" : 1896,
+  "x" : 264.5274353027344,
+  "y" : 709.3876953125
+}, {
+  "node" : 1895,
+  "x" : 1268.4908447265625,
+  "y" : 327.4273986816406
+}, {
+  "node" : 1894,
+  "x" : 167.8306884765625,
+  "y" : 926.1484985351562
+}, {
+  "node" : 1893,
+  "x" : 1307.4061279296875,
+  "y" : 502.37693786621094
+}, {
+  "node" : 1892,
+  "x" : 1204.1055908203125,
+  "y" : 370.0185241699219
+}, {
+  "node" : 1891,
+  "x" : 842.7407836914062,
+  "y" : 435.84454345703125
+}, {
+  "node" : 1890,
+  "x" : 659.5078735351562,
+  "y" : 614.4479370117188
+}, {
+  "node" : 1889,
+  "x" : 1119.7669677734375,
+  "y" : 330.0891418457031
+}, {
+  "node" : 1888,
+  "x" : 1088.3970947265625,
+  "y" : 376.8039855957031
+}, {
+  "node" : 1887,
+  "x" : 1276.3155517578125,
+  "y" : 452.1596984863281
+}, {
+  "node" : 1886,
+  "x" : 613.75927734375,
+  "y" : 660.4109497070312
+}, {
+  "node" : 1885,
+  "x" : 1037.1229553222656,
+  "y" : 521.1299591064453
+}, {
+  "node" : 1884,
+  "x" : 1148.5433349609375,
+  "y" : 671.5806884765625
+}, {
+  "node" : 1883,
+  "x" : 1216.2828369140625,
+  "y" : 242.76353454589844
+}, {
+  "node" : 1882,
+  "x" : 472.94110107421875,
+  "y" : 646.0647583007812
+}, {
+  "node" : 1881,
+  "x" : 603.0339965820312,
+  "y" : 576.1859130859375
+}, {
+  "node" : 1880,
+  "x" : 1076.6964111328125,
+  "y" : 291.0680236816406
+}, {
+  "node" : 1879,
+  "x" : 1264.3150634765625,
+  "y" : 395.4712219238281
+}, {
+  "node" : 1878,
+  "x" : 587.7887573242188,
+  "y" : 398.857666015625
+}, {
+  "node" : 1877,
+  "x" : 510.8555908203125,
+  "y" : 605.639892578125
+}, {
+  "node" : 1876,
+  "x" : 1304.5697021484375,
+  "y" : 366.3501281738281
+}, {
+  "node" : 1875,
+  "x" : 701.1734008789062,
+  "y" : 980.4140625
+}, {
+  "node" : 1874,
+  "x" : 663.1631469726562,
+  "y" : 845.0911254882812
+}, {
+  "node" : 1873,
+  "x" : 380.2032775878906,
+  "y" : 912.2099609375
+}, {
+  "node" : 1872,
+  "x" : 491.0501708984375,
+  "y" : 816.636474609375
+}, {
+  "node" : 1871,
+  "x" : 1169.9593505859375,
+  "y" : 266.5906753540039
+}, {
+  "node" : 1870,
+  "x" : 1158.56103515625,
+  "y" : 466.41845703125
+}, {
+  "node" : 1869,
+  "x" : 1171.1383056640625,
+  "y" : 336.2669372558594
+}, {
+  "node" : 1868,
+  "x" : 651.088623046875,
+  "y" : 493.354248046875
+}, {
+  "node" : 1867,
+  "x" : 489.30377197265625,
+  "y" : 487.773193359375
+}, {
+  "node" : 1866,
+  "x" : 248.59344482421875,
+  "y" : 758.2381591796875
+}]},
+ {"cyVisualProperties":[{
+  "properties_of" : "network",
+  "properties" : {
+    "NETWORK_BACKGROUND_PAINT" : "#FFFFFF",
+    "NETWORK_CENTER_X_LOCATION" : "0.0",
+    "NETWORK_CENTER_Y_LOCATION" : "0.0",
+    "NETWORK_CENTER_Z_LOCATION" : "0.0",
+    "NETWORK_DEPTH" : "0.0",
+    "NETWORK_EDGE_SELECTION" : "true",
+    "NETWORK_HEIGHT" : "400.0",
+    "NETWORK_NODE_SELECTION" : "true",
+    "NETWORK_SCALE_FACTOR" : "1.0",
+    "NETWORK_WIDTH" : "550.0"
+  }
+}, {
+  "properties_of" : "nodes:default",
+  "properties" : {
+    "COMPOUND_NODE_PADDING" : "10.0",
+    "COMPOUND_NODE_SHAPE" : "ROUND_RECTANGLE",
+    "NODE_BORDER_PAINT" : "#666666",
+    "NODE_BORDER_STROKE" : "SOLID",
+    "NODE_BORDER_TRANSPARENCY" : "255",
+    "NODE_BORDER_WIDTH" : "1.5",
+    "NODE_CUSTOMGRAPHICS_1" : "org.cytoscape.ding.customgraphics.NullCustomGraphics,0,[ Remove Graphics ],",
+    "NODE_CUSTOMGRAPHICS_2" : "org.cytoscape.ding.customgraphics.NullCustomGraphics,0,[ Remove Graphics ],",
+    "NODE_CUSTOMGRAPHICS_3" : "org.cytoscape.ding.customgraphics.NullCustomGraphics,0,[ Remove Graphics ],",
+    "NODE_CUSTOMGRAPHICS_4" : "org.cytoscape.ding.customgraphics.NullCustomGraphics,0,[ Remove Graphics ],",
+    "NODE_CUSTOMGRAPHICS_5" : "org.cytoscape.ding.customgraphics.NullCustomGraphics,0,[ Remove Graphics ],",
+    "NODE_CUSTOMGRAPHICS_6" : "org.cytoscape.ding.customgraphics.NullCustomGraphics,0,[ Remove Graphics ],",
+    "NODE_CUSTOMGRAPHICS_7" : "org.cytoscape.ding.customgraphics.NullCustomGraphics,0,[ Remove Graphics ],",
+    "NODE_CUSTOMGRAPHICS_8" : "org.cytoscape.ding.customgraphics.NullCustomGraphics,0,[ Remove Graphics ],",
+    "NODE_CUSTOMGRAPHICS_9" : "org.cytoscape.ding.customgraphics.NullCustomGraphics,0,[ Remove Graphics ],",
+    "NODE_CUSTOMGRAPHICS_POSITION_1" : "C,C,c,0.00,0.00",
+    "NODE_CUSTOMGRAPHICS_POSITION_2" : "C,C,c,0.00,0.00",
+    "NODE_CUSTOMGRAPHICS_POSITION_3" : "C,C,c,0.00,0.00",
+    "NODE_CUSTOMGRAPHICS_POSITION_4" : "C,C,c,0.00,0.00",
+    "NODE_CUSTOMGRAPHICS_POSITION_5" : "C,C,c,0.00,0.00",
+    "NODE_CUSTOMGRAPHICS_POSITION_6" : "C,C,c,0.00,0.00",
+    "NODE_CUSTOMGRAPHICS_POSITION_7" : "C,C,c,0.00,0.00",
+    "NODE_CUSTOMGRAPHICS_POSITION_8" : "C,C,c,0.00,0.00",
+    "NODE_CUSTOMGRAPHICS_POSITION_9" : "C,C,c,0.00,0.00",
+    "NODE_CUSTOMGRAPHICS_SIZE_1" : "0.0",
+    "NODE_CUSTOMGRAPHICS_SIZE_2" : "0.0",
+    "NODE_CUSTOMGRAPHICS_SIZE_3" : "0.0",
+    "NODE_CUSTOMGRAPHICS_SIZE_4" : "0.0",
+    "NODE_CUSTOMGRAPHICS_SIZE_5" : "0.0",
+    "NODE_CUSTOMGRAPHICS_SIZE_6" : "0.0",
+    "NODE_CUSTOMGRAPHICS_SIZE_7" : "0.0",
+    "NODE_CUSTOMGRAPHICS_SIZE_8" : "0.0",
+    "NODE_CUSTOMGRAPHICS_SIZE_9" : "0.0",
+    "NODE_DEPTH" : "0.0",
+    "NODE_FILL_COLOR" : "#9999FF",
+    "NODE_HEIGHT" : "30.0",
+    "NODE_LABEL_COLOR" : "#000000",
+    "NODE_LABEL_FONT_FACE" : "SansSerif.bold,bold,12",
+    "NODE_LABEL_FONT_SIZE" : "12",
+    "NODE_LABEL_POSITION" : "C,C,c,0.00,0.00",
+    "NODE_LABEL_TRANSPARENCY" : "255",
+    "NODE_LABEL_WIDTH" : "200.0",
+    "NODE_NESTED_NETWORK_IMAGE_VISIBLE" : "true",
+    "NODE_SELECTED" : "false",
+    "NODE_SELECTED_PAINT" : "#FFFF00",
+    "NODE_SHAPE" : "ELLIPSE",
+    "NODE_SIZE" : "40.0",
+    "NODE_TRANSPARENCY" : "255",
+    "NODE_VISIBLE" : "true",
+    "NODE_WIDTH" : "70.0",
+    "NODE_X_LOCATION" : "0.0",
+    "NODE_Y_LOCATION" : "0.0",
+    "NODE_Z_LOCATION" : "0.0"
+  },
+  "dependencies" : {
+    "nodeCustomGraphicsSizeSync" : "true",
+    "nodeSizeLocked" : "true"
+  },
+  "mappings" : {
+    "NODE_LABEL" : {
+      "type" : "PASSTHROUGH",
+      "definition" : "COL=name,T=string"
+    }
+  }
+}, {
+  "properties_of" : "edges:default",
+  "properties" : {
+    "EDGE_CURVED" : "true",
+    "EDGE_LABEL_COLOR" : "#000000",
+    "EDGE_LABEL_FONT_SIZE" : "10",
+    "EDGE_LABEL_TRANSPARENCY" : "255",
+    "EDGE_LABEL_WIDTH" : "200.0",
+    "EDGE_LINE_TYPE" : "SOLID",
+    "EDGE_SELECTED" : "false",
+    "EDGE_SOURCE_ARROW_SELECTED_PAINT" : "#FFFF00",
+    "EDGE_SOURCE_ARROW_SHAPE" : "NONE",
+    "EDGE_SOURCE_ARROW_SIZE" : "6.0",
+    "EDGE_SOURCE_ARROW_UNSELECTED_PAINT" : "#000000",
+    "EDGE_STROKE_SELECTED_PAINT" : "#FF0000",
+    "EDGE_STROKE_UNSELECTED_PAINT" : "#666666",
+    "EDGE_TARGET_ARROW_SELECTED_PAINT" : "#FFFF00",
+    "EDGE_TARGET_ARROW_SHAPE" : "NONE",
+    "EDGE_TARGET_ARROW_SIZE" : "6.0",
+    "EDGE_TARGET_ARROW_UNSELECTED_PAINT" : "#000000",
+    "EDGE_TRANSPARENCY" : "255",
+    "EDGE_UNSELECTED_PAINT" : "#666666",
+    "EDGE_VISIBLE" : "true",
+    "EDGE_WIDTH" : "1.5"
+  },
+  "dependencies" : {
+    "arrowColorMatchesEdge" : "false"
+  }
+}, {
+  "properties_of" : "nodes",
+  "applies_to" : 1989,
+  "properties" : {
+    "NODE_FILL_COLOR" : "#CC0099"
+  }
+}, {
+  "properties_of" : "nodes",
+  "applies_to" : 1988,
+  "properties" : {
+    "NODE_FILL_COLOR" : "#CC0099"
+  }
+}, {
+  "properties_of" : "nodes",
+  "applies_to" : 1983,
+  "properties" : {
+    "NODE_FILL_COLOR" : "#FF0033"
+  }
+}, {
+  "properties_of" : "nodes",
+  "applies_to" : 1973,
+  "properties" : {
+    "NODE_FILL_COLOR" : "#FF0033"
+  }
+}, {
+  "properties_of" : "nodes",
+  "applies_to" : 1972,
+  "properties" : {
+    "NODE_FILL_COLOR" : "#FF0033"
+  }
+}, {
+  "properties_of" : "nodes",
+  "applies_to" : 1971,
+  "properties" : {
+    "NODE_FILL_COLOR" : "#FF0033"
+  }
+}, {
+  "properties_of" : "nodes",
+  "applies_to" : 1970,
+  "properties" : {
+    "NODE_FILL_COLOR" : "#FF0033"
+  }
+}, {
+  "properties_of" : "nodes",
+  "applies_to" : 1969,
+  "properties" : {
+    "NODE_FILL_COLOR" : "#FF0033"
+  }
+}, {
+  "properties_of" : "nodes",
+  "applies_to" : 1967,
+  "properties" : {
+    "NODE_FILL_COLOR" : "#FF0033"
+  }
+}, {
+  "properties_of" : "nodes",
+  "applies_to" : 1966,
+  "properties" : {
+    "NODE_FILL_COLOR" : "#FF0033"
+  }
+}, {
+  "properties_of" : "nodes",
+  "applies_to" : 1938,
+  "properties" : {
+    "NODE_FILL_COLOR" : "#FF0033"
+  }
+}, {
+  "properties_of" : "nodes",
+  "applies_to" : 1928,
+  "properties" : {
+    "NODE_FILL_COLOR" : "#FF0033"
+  }
+}, {
+  "properties_of" : "nodes",
+  "applies_to" : 1920,
+  "properties" : {
+    "NODE_FILL_COLOR" : "#FF0033"
+  }
+}, {
+  "properties_of" : "nodes",
+  "applies_to" : 1918,
+  "properties" : {
+    "NODE_FILL_COLOR" : "#FF0033"
+  }
+}, {
+  "properties_of" : "nodes",
+  "applies_to" : 1910,
+  "properties" : {
+    "NODE_FILL_COLOR" : "#FF0033"
+  }
+}, {
+  "properties_of" : "nodes",
+  "applies_to" : 1909,
+  "properties" : {
+    "NODE_FILL_COLOR" : "#FF0033"
+  }
+}, {
+  "properties_of" : "nodes",
+  "applies_to" : 1907,
+  "properties" : {
+    "NODE_FILL_COLOR" : "#FF0033"
+  }
+}, {
+  "properties_of" : "nodes",
+  "applies_to" : 1886,
+  "properties" : {
+    "NODE_FILL_COLOR" : "#FF0033"
+  }
+}, {
+  "properties_of" : "nodes",
+  "applies_to" : 1875,
+  "properties" : {
+    "NODE_FILL_COLOR" : "#FF0033"
+  }
+}, {
+  "properties_of" : "nodes",
+  "applies_to" : 1870,
+  "properties" : {
+    "NODE_FILL_COLOR" : "#FF0033"
+  }
+}, {
+  "properties_of" : "nodes",
+  "applies_to" : 1867,
+  "properties" : {
+    "NODE_FILL_COLOR" : "#FF0033"
+  }
+}]},
+ {"cyHiddenAttributes":[{
+  "n" : "__layoutAlgorithm",
+  "v" : "force-directed"
+}]},
+{"status":[{"error":"","success":true}]}]
