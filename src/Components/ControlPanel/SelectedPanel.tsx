@@ -32,23 +32,31 @@ class SelectedPanel extends React.Component<any, any> {
   render() {
   const selected = this.props.selected;
   const isNode = this.props.isNode;
+  let selectedKeys = [];
+  for(let k of Object.keys(selected)) {
+    selectedKeys.push(
+      <ListItem button>
+        <ListItemText primary={k + " : " + selected[k]} />
+       </ListItem>
+    )
+  }
   let type = isNode ? "Node" : "Edge";
   return (
     <div>
-        <div style={divStyle}>SELECTION</div>
-      {typeof isNode==="undefined"
-       ?null
-       :<List component="nav" dense={true}>
-          <ListItem button>
-            <ListItemText primary={"TYPE: " + type} />
-          </ListItem>
-          <ListItem button>
-            <ListItemText primary={"NAME: " + selected.name} />
-          </ListItem>
-          <ListItem button>
-            <ListItemText primary={"ID: " + selected.id} />
-          </ListItem>
-        </List>}
+      <div>
+        <h3>SELECTION</h3>
+      </div>
+      <div> 
+        {typeof isNode==="undefined"
+         ?null
+         :<List component="nav" dense={true}>
+            <ListItem button>
+              <ListItemText primary={"TYPE: " + type} />
+            </ListItem>
+            <Divider />
+            {selectedKeys}
+         </List>}
+      </div>
     </div>
   );
   }

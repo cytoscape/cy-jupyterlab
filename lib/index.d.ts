@@ -11,9 +11,6 @@ export declare class cy2js {
  * A widget for rendering cx.
  */
 export declare class OutputWidget extends Widget implements IRenderMime.IRenderer {
-    /**
-     * Construct a new output widget.
-     */
     constructor(options: IRenderMime.IRendererOptions);
     convertData: (data: any) => any[];
     /**
