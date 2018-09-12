@@ -37,20 +37,12 @@ export class cy2js {
   }
 
   transportation() {
-    //rowdata
     const utils = new cyNetworkUtils();
-
     console.info(this.DATA);
     console.log(typeof this.DATA);
-
-    // const jsonObject = JSON.parse(this.DATA.toString())
-    // console.info(jsonObject);
-
     const niceCX = utils.rawCXtoNiceCX(this.DATA);
-
     const cx2Js = new cxToJs(utils);
     const attributeNameMap = {};
-    //これを返す予定
     const elements = cx2Js.cyElementsFromNiceCX(niceCX, attributeNameMap);
     const style = cx2Js.cyStyleFromNiceCX(niceCX, attributeNameMap);
     return [elements, style];
@@ -68,7 +60,6 @@ export class OutputWidget extends Widget implements IRenderMime.IRenderer {
     super();
     console.log("Instanciated");
     this._mimeType = options.mimeType;
-    // this._resolver = options.resolver;
     this.addClass(CLASS_NAME);
   }
 
@@ -108,22 +99,14 @@ export class OutputWidget extends Widget implements IRenderMime.IRenderer {
       let networkname = null;
       var keys = Object.keys(data_raw);
       for (let i = 0; i < keys.length; i++) {
-        if ("networkAttributes" in data_raw[i]) {
-          //console.log("yes");
-          networkname = data_raw[i].networkAttributes[0].v;
-        } else {
-          //console.log(data_raw[keys[i]]);
-          //console.log(data[i])
-        }
+        if ("networkAttributes" in data_raw[i]) {networkname = data_raw[i].networkAttributes[0].v; }
       }
-
-      //uemura
-      //const networkname = data_raw[7].networkAttributes[0].v;
 
       const data: JGraph = {
         elements: data_js,
         style: style_js
       };
+      
       console.log("kokodayo");
       const props = {
         data,
