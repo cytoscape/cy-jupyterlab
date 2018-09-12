@@ -66,13 +66,8 @@ class RootComponent extends React.Component<any, any> {
           style={networkPanelStyle}
           elements={this.props.data.elements}
           visualStyle={this.props.data.style}
-<<<<<<< HEAD
-          nodeClickAction={this.nodeClickAction}
-          addCyRefAction={this.addCyRefAction}
-=======
           clickAction={this.clickAction}
-      addCyRefAction={this.addCyRefAction}
->>>>>>> 3d576c14a349e370614fdff82e73fe1e8c2d7767
+          addCyRefAction={this.addCyRefAction}
         />
         <ControlPanel
           style={controlPanelStyle}

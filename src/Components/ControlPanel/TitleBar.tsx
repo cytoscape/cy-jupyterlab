@@ -12,7 +12,7 @@ const TitleBar = (props: any) => {
         alignItems: "center"
       }}
     >
-      <div style={{ color: "#FFFFFF", fontSize: "2em" }}>{props.title}</div>
+      <div style={{ color: "#FFFFFF", fontSize: "1em" }}>{props.title}</div>
     </div>
   );
 };
