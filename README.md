@@ -1,12 +1,15 @@
 # cy-jupyterlab
 
-Jupyter lab extension (widget) for rendering graphs (network:.cx, .cyjs) using cytoscape.js. 
-![top-page](https://github.com/idekerlab/cy-jupyterlab/blob/images/screenshot-01.png)
+Jupyter lab extension (widget) for rendering graphs (network: [.cx](http://www.home.ndexbio.org/data-model/), .cyjs) using cytoscape.js. 
+![tab](https://github.com/idekerlab/cy-jupyterlab/blob/images/screenshot-01.png)  
+
+![cell](https://github.com/idekerlab/cy-jupyterlab/blob/images/screenshot-02.png)
+
 
 ## What you can do
 - visualize network on tab.
 - also visualize on cells of python notebook (including some bugs related to layout).
-- get deta from public detabase (ex: NDEx) and visualize on cells.
+- get deta from public detabase (ex: [NDEx](http://www.ndexbio.org/)) and visualize on cells.
 - show filename, the number of Nodes&Edges (elements) in graph.
 - when you clicked an element, display the keys of it.
 - change layouts.
