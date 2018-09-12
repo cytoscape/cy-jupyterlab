@@ -1,29 +1,14 @@
 import { IRenderMime } from "@jupyterlab/rendermime-interfaces";
-
 import { JSONObject } from "@phosphor/coreutils";
-
 import { Widget } from "@phosphor/widgets";
-
 import "../style/index.css";
-
 import { cxToJs, cyNetworkUtils } from "cytoscape-cx2js";
-
 import * as React from "react";
-
 import * as ReactDOM from "react-dom";
-
 import RootComponent, { JGraph } from "./Components";
 import { element } from "prop-types";
 
-/**
- * The default mime type for the extension.
- */
-
 const MIME_TYPE = "application/cx";
-
-/**
- * The class name added to the extension.
- */
 const CLASS_NAME = "mimerenderer-cx";
 
 let NetworkName: any = null;
@@ -32,14 +17,11 @@ let NetworkName: any = null;
 export class cy2js {
   DATA: JSONObject;
   constructor(content: JSONObject) {
-    console.log("Instanciated_cy2jsclass");
     this.DATA = content;
   }
 
   transportation() {
     const utils = new cyNetworkUtils();
-    console.info(this.DATA);
-    console.log(typeof this.DATA);
     const niceCX = utils.rawCXtoNiceCX(this.DATA);
     const cx2Js = new cxToJs(utils);
     const attributeNameMap = {};
@@ -53,12 +35,8 @@ export class cy2js {
  * A widget for rendering cx.
  */
 export class OutputWidget extends Widget implements IRenderMime.IRenderer {
-  /**
-   * Construct a new output widget.
-   */
   constructor(options: IRenderMime.IRendererOptions) {
     super();
-    console.log("Instanciated");
     this._mimeType = options.mimeType;
     this.addClass(CLASS_NAME);
   }
@@ -66,8 +44,6 @@ export class OutputWidget extends Widget implements IRenderMime.IRenderer {
   convertData = (data: any) => {
     let elements: any;
     let style: any;
-    console.info("info", data);
-    console.log("length", data.length);
     const L = data.length;
 
     if (L == 13 || L == 12) {
@@ -89,7 +65,6 @@ export class OutputWidget extends Widget implements IRenderMime.IRenderer {
    * Render cx into this widget's node.
    */
   renderModel(model: IRenderMime.IMimeModel): Promise<void> {
-    //データ作成
 
     return new Promise<void>((resolve, reject) => {
       let data_raw = model.data[this._mimeType] as any;
@@ -107,7 +82,6 @@ export class OutputWidget extends Widget implements IRenderMime.IRenderer {
         style: style_js
       };
       
-      console.log("kokodayo");
       const props = {
         data,
         metadata,
@@ -130,11 +104,9 @@ let cyRef: any = null;
 let selection: any = null;
 const registerCy = (cy: any) => {
   cyRef = cy;
-  console.log("Register called", cyRef);
 
   cyRef.on("tap", "node", (evt: any) => {
     selection = evt.target.data();
-    console.log("* Node Selected30: ", selection);
   });
 };
 
