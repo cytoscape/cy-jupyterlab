@@ -28,9 +28,10 @@ class NetworkPanel extends React.Component<any, any> {
 
     cy.on("click", (evt: any) => {
       const selected = evt.target.data();
-      console.log("set selected", selected);
+      const isNode = evt.target.isNode();
 
       this.props.clickAction(selected);
+      this.props.isNode(isNode);
     });
   }
 

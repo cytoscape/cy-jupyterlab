@@ -24,30 +24,24 @@ class SelectedPanel extends React.Component<any, any> {
   
   render() {
   const selected = this.props.selected;
-    let type = "";
-  if (selected.interaction) {
-    type = "Edge";
-  }
-  else {
-    type = "Node";
-  }
-  if (!selected.name) {
-    type = "undefined";
-  }
+  const isNode = this.props.isNode;
+  let type = isNode ? "Node" : "Edge";
   return (
     <div>
       <h3>SELECTION</h3>
-      <List component="nav">
-        <ListItem button>
-          <ListItemText primary={"TYPE: " + type} />
-        </ListItem>
-        <ListItem button>
-          <ListItemText primary={"NAME: " + selected.name} />
-        </ListItem>
-        <ListItem button>
-          <ListItemText primary={"ID: " + selected.id} />
-        </ListItem>
-      </List>
+      {typeof isNode==="undefined"
+       ?null
+       :<List component="nav">
+           <ListItem button>
+            <ListItemText primary={"TYPE: " + type} />
+          </ListItem>
+          <ListItem button>
+            <ListItemText primary={"NAME: " + selected.name} />
+          </ListItem>
+          <ListItem button>
+            <ListItemText primary={"ID: " + selected.id} />
+          </ListItem>
+        </List>}
     </div>
   );
   }
