@@ -18,7 +18,6 @@ Jupyter lab extension (widget) for rendering graphs (network:.cx, .cyjs) using c
 
 ## Installation
 
-(still cannot.)
 ```bash
 jupyter labextension install cy-jupyterlab
 ```
