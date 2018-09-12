@@ -18,8 +18,9 @@ var divStyle = {
 const styles = (theme: any) => ({
   root: {
     //dense: true,
-    width: "100%",
+    width: "90%",
     maxWidth: 360,
+    margin: 'auto',
     backgroundColor: theme.palette.background.paper
   }
 });
@@ -29,7 +30,8 @@ class SelectedPanel extends React.Component<any, any> {
     super(props);
   }
 
-  render() {
+  render() {  
+  const { classes } = this.props;
   const selected = this.props.selected;
   const isNode = this.props.isNode;
   let selectedKeys = [];
@@ -42,14 +44,14 @@ class SelectedPanel extends React.Component<any, any> {
   }
   let type = isNode ? "Node" : "Edge";
   return (
-    <div>
+    <div className={classes.root}>
       <div>
         <h3>SELECTION</h3>
       </div>
       <div> 
         {typeof isNode==="undefined"
          ?null
-         :<List component="nav" dense={true}>
+         : <List component="nav" dense={true} style={{maxHeight: "150px", overflow: "auto"}}>
             <ListItem button>
               <ListItemText primary={"TYPE: " + type} />
             </ListItem>
