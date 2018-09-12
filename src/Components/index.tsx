@@ -38,12 +38,17 @@ class RootComponent extends React.Component<any, any> {
     this.state = {
       counter: 0,
       selected: {},
+      //isNode: false,
       cy: null
     };
   }
 
   clickAction = (selected: any) => {
     this.setState({ selected });
+  };
+
+  isNode = (isNode: any) => {
+    this.setState({ isNode });
   };
 
   addCyRefAction = (cy: any) => {
@@ -67,12 +72,14 @@ class RootComponent extends React.Component<any, any> {
           elements={this.props.data.elements}
           visualStyle={this.props.data.style}
           clickAction={this.clickAction}
-      addCyRefAction={this.addCyRefAction}
+          isNode={this.isNode}
+          addCyRefAction={this.addCyRefAction}
         />
         <ControlPanel
           style={controlPanelStyle}
           elements={this.props.data.elements}
           selected={this.state.selected}
+          isNode={this.state.isNode}
           networkname={this.props.networkname}
           fitAction={this.fitAction}
           layoutAction={this.layoutAction}

@@ -8,11 +8,11 @@ import PropertyPanel from "./PropertyPanel";
 const ControlPanel = (props: any) => {
   const selected = props.selected;
   const elements = props.elements;
+  const isNode = props.isNode;
 
   let name = "Not selected";
   if (selected) {
     name = selected.name;
-    console.log("seleced:",selected);
   }
 
   return (
@@ -21,7 +21,9 @@ const ControlPanel = (props: any) => {
 
       <div>
         <PropertyPanel elements={elements}/>
-        <SelectedPanel selected={selected}/>
+      </div>
+      <div>
+        <SelectedPanel selected={selected} isNode={isNode}/>
       </div>
       <LayoutSelector layoutAction={props.layoutAction} />
       <div>
