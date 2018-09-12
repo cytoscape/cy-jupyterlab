@@ -1,11 +1,20 @@
 # cy-jupyterlab
 
-Jupyter lab widget for rendering praphs (network:.cx, .json) using cytoscape.js.
+Jupyter lab extension (widget) for rendering graphs (network:.cx, .cyjs) using cytoscape.js. 
+![top-page](https://github.com/idekerlab/cy-jupyterlab/blob/images/screenshot-01.png)
 
+## What you can do
+- visualize network on tab.
+- also visualize on cells of python notebook (including some bugs related to layout).
+- get deta from public detabase (ex: NDEx) and visualize on cells.
+- show filename, the number of Nodes&Edges (elements) in graph.
+- when you clicked an element, display the keys of it.
+- change layouts.
+- fit graph to the screen.
 
 ## Prerequisites
 
-* JupyterLab
+- JupyterLab
 
 ## Installation
 
