@@ -5,7 +5,6 @@ import LayoutSelector from "./LayoutSelector";
 import SelectedPanel from "./SelectedPanel";
 import PropertyPanel from "./PropertyPanel";
 
-
 const ControlPanel = (props: any) => {
   const selected = props.selected;
   const elements = props.elements;
@@ -21,15 +20,19 @@ const ControlPanel = (props: any) => {
       <TitleBar title={props.networkname} />
 
       <div>
-        <PropertyPanel elements={elements}/>
+        <PropertyPanel elements={elements} />
       </div>
       <div>
-        <SelectedPanel selected={selected} isNode={isNode}/>
+        <SelectedPanel selected={selected} isNode={isNode} />
       </div>
       <LayoutSelector layoutAction={props.layoutAction} />
-      <div>
-        <Button fullWidth={true} onClick={() => props.fitAction()}>Fit</Button>
-      </div>
+      <Button
+        variant="outlined"
+        color="primary"
+        onClick={() => props.fitAction()}
+      >
+        Fit Graph
+      </Button>
     </div>
   );
 };
