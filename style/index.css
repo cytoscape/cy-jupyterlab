@@ -9,7 +9,7 @@
 }
 
 /* Base styles */
-.jp-RenderedJSON {
+.jp-RenderedCX {
   width: 100%;
   height: 100%;
   padding: 0;
@@ -31,5 +31,8 @@
 }
 
 /* Output styles */
-.jp-OutputArea .jp-RenderedJSON {
+.jp-OutputArea .jp-RenderedCX {
+  min-height: 500px;
+  background-color: aquamarine;
 }
+

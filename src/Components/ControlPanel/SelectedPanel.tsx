@@ -27,7 +27,7 @@ class SelectedPanel extends React.Component<any, any> {
   let selectedKeys = [];
   for(let k of Object.keys(selected)) {
     selectedKeys.push(
-      <ListItem button>
+      <ListItem button key={k}>
         <ListItemText primary={k + " : " + selected[k]} />
        </ListItem>
     )
