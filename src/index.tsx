@@ -3,7 +3,6 @@ import "../style/index.css";
 import CytoscapejsWidget from './CytoscapejsWidget'
 const MIME_TYPE = "application/cx";
 
-
 export const rendererFactory: IRenderMime.IRendererFactory = {
   safe: false,
   mimeTypes: [MIME_TYPE],
@@ -32,3 +31,5 @@ const extension: IRenderMime.IExtension = {
 };
 
 export default extension;
+
+export * from './CytoscapejsWidget'
