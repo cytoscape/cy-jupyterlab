@@ -10,14 +10,14 @@ const ControlPanel = (props: any) => {
   const elements = props.elements;
   const isNode = props.isNode;
 
-  let name = "Not selected";
+  let name = "Click to select a node/edge";
   if (selected) {
     name = selected.name;
   }
 
   return (
     <div style={props.style}>
-      <TitleBar title={props.networkname} />
+      <TitleBar title={props.networkName} />
 
       <div>
         <PropertyPanel elements={elements} />
