@@ -22,18 +22,15 @@ class CytoscapejsWidget extends Widget implements IRenderMime.IRenderer {
     return new Promise<void>((resolve, reject) => {
       let rawData = model.data[this._mimeType] as any;
       const metadata = (model.metadata[this._mimeType] as any) || {};
-
-      console.log("* Model data", rawData, metadata);
       const data: any = cx2cyjs(rawData);
+      let networkName = '-'
+      let keys = Object.keys(rawData);
+      keys.forEach(key =>  {
+        if ("networkAttributes" in rawData[key]) {
+          networkName = rawData[key].networkAttributes[0].v;
+        }
+      })
 
-      console.log("* Converted", data.elements, data.style);
-      let networkName = "N/A";
-      // var keys = Object.keys(rawData);
-      // for (let i = 0; i < keys.length; i++) {
-      //   if ("networkAttributes" in rawData[i]) {
-      //     networkname = rawData[i].networkAttributes[0].v;
-      //   }
-      // }
       const props = {
         data,
         metadata,

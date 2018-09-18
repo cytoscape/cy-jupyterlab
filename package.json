@@ -1,6 +1,6 @@
 {
-  "name": "@iau/cy-jupyterlab",
-  "version": "0.1.0",
+  "name": "cy-jupyterlab",
+  "version": "0.5.0",
   "description": "A JupyterLab extension for rendering cx (a network exchange format, designed as a flexible structure for transmission of networks) and cyjs files.",
   "author": "Hideki Akazawa <>",
   "contributors": [
@@ -44,11 +44,11 @@
     "@material-ui/core": "^3.0.1",
     "@material-ui/icons": "^3.0.1",
     "@phosphor/widgets": "^1.5.0",
+    "@types/react": "^16.4.14",
     "ajv": "^6.5.3",
     "cytoscape": "^3.2.16",
     "cytoscape-cx2js": "^0.2.0",
     "fs": "0.0.1-security",
-    "npm-run-all": "^4.1.3",
     "prop-types": "^15.6.2",
     "react": "^16.5.0",
     "react-cytoscape": "^1.0.6",

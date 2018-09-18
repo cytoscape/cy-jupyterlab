@@ -16,7 +16,7 @@ const containerStyle = {
 const networkPanelStyle = {
   width: "70%",
   height: "100%",
-  background: "#EEFFEE"
+  background: "#FAFAFA"
 };
 
 const controlPanelStyle = {
@@ -24,7 +24,6 @@ const controlPanelStyle = {
   flexDirection: "column",
   width: "30%",
   height: "100%",
-  padding: "0.5em",
   background: "#EEEEEE"
 };
 
