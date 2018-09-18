@@ -2,8 +2,11 @@
   "name": "@iau/cy-jupyterlab",
   "version": "0.1.0",
   "description": "A JupyterLab extension for rendering cx (a network exchange format, designed as a flexible structure for transmission of networks) and cyjs files.",
-  "author": "Hideki Akazawa <>" ,
-  "contributors": ["Kaito Uemura <>", "Keiichiro Ono <>"],
+  "author": "Hideki Akazawa <>",
+  "contributors": [
+    "Kaito Uemura <>",
+    "Keiichiro Ono <>"
+  ],
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "license": "MIT",
@@ -55,6 +58,8 @@
   "devDependencies": {
     "@types/node": "^10.9.4",
     "rimraf": "^2.6.2",
-    "typescript": "~2.9.2"
+    "typescript": "~2.9.2",
+    "prettier": "^1.14.2",
+    "eslint": "^5.6.0"
   }
 }

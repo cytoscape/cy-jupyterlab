@@ -11,6 +11,9 @@ class PropertyPanel extends React.Component<any, any> {
 
   render() {
     const elements = this.props.elements
+      if(!elements) {
+          return <div/>
+      }
     return (
       <div style={containerStyle}>
         <Typography variant="subheading">

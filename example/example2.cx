@@ -1,0 +1,1713 @@
+[{"numberVerification":[{"longNumber":281474976710655}]},{"metaData":[{"name":"provenanceHistory","elementCount":1,"version":"1.0","consistencyGroup":1,"properties":[]},{"name":"@context","elementCount":1,"version":"1.0","consistencyGroup":1,"properties":[]},{"name":"nodes","elementCount":33,"idCounter":33,"version":"1.0","consistencyGroup":1,"properties":[]},{"name":"edges","elementCount":63,"idCounter":125,"version":"1.0","consistencyGroup":1,"properties":[]},{"name":"networkAttributes","elementCount":9,"version":"1.0","consistencyGroup":1,"properties":[]},{"name":"nodeAttributes","elementCount":66,"version":"1.0","consistencyGroup":1,"properties":[]},{"name":"edgeAttributes","elementCount":66,"version":"1.0","consistencyGroup":1,"properties":[]},{"name":"citations","elementCount":27,"idCounter":27,"consistencyGroup":1,"properties":[]},{"name":"edgeCitations","elementCount":62,"consistencyGroup":1,"properties":[]},{"name":"cartesianLayout","elementCount":33,"version":"1.0","consistencyGroup":1,"properties":[]},{"name":"cyVisualProperties","elementCount":3,"consistencyGroup":1,"properties":[]},{"name":"ndexStatus","elementCount":1,"version":"1.0","consistencyGroup":1,"properties":[]}]},
+{"@context":[{
+  "Mouse Genome Database" : "http://www.informatics.jax.org/accession/",
+  "KEGG Pathway" : "http://identifiers.org/kegg.pathway/",
+  "KEGG Compound" : "http://identifiers.org/kegg.compound/",
+  "LIPID MAPS" : "http://www.lipidmaps.org/data/LMSDRecord.php?LMID="
+}]},
+ {"ndexStatus":[{"externalId":"f0ce42b7-cbe8-11e7-ac1f-0660b7976219","creationTime":1510958699121,"modificationTime":1536625912935,"visibility":"PRIVATE","published":false,"nodeCount":33,"edgeCount":63,"owner":"rudipillich","ndexServerURI":"http://dev2.ndexbio.org","readOnly":false}]}, {"provenanceHistory":[{"entity":{"creationEvent":{"inputs":[{"creationEvent":{"inputs":[{"creationEvent":{"inputs":[{"creationEvent":{"inputs":[{"creationEvent":{"inputs":[{"creationEvent":{"inputs":[{"creationEvent":{"inputs":[{"creationEvent":{"inputs":[{"creationEvent":{"inputs":[{"creationEvent":{"inputs":[{"creationEvent":{"inputs":[{"creationEvent":{"inputs":[{"creationEvent":{"inputs":[{"creationEvent":{"inputs":[{"creationEvent":{"inputs":[{"creationEvent":{"inputs":null,"startedAtTime":1438200595958,"endedAtTime":1438200595958,"eventType":"File Upload","properties":[{"name":"user","value":"NetPath Database"},{"name":"account name","value":"netpath"},{"name":"filename","value":"NetPath_5.owl"}]},"uri":"http://public.ndexbio.org/network/c7e1f2ab-362d-11e5-8ac5-06603eb7f303","properties":[{"name":"edge count","value":"803"},{"name":"node count","value":"416"},{"name":"dc:title","value":"NetPath_5"}]}],"startedAtTime":1438203579903,"endedAtTime":1438203579903,"eventType":"Update Network Profile","properties":[{"name":"user","value":"NetPath Database"},{"name":"account name","value":"netpath"},{"name":"dc:title","value":"ID Signalling Pathway"},{"name":"description","value":"Inhibitor of DNA binding (ID) proteins are members of the helix-loop-helix (HLH) family of proteins which lack a DNA binding domain themselves but bind to other family members inhibiting their DNA binding capacity. This family of proteins is comprised of IDs 1, 2, 3 and 4. They can be stimulated by ligands such as the Vascular Endothelial Growth Factor (VEGF), TGF beta and the T cell receptor."}]},"uri":"http://public.ndexbio.org/network/c7e1f2ab-362d-11e5-8ac5-06603eb7f303","properties":[{"name":"edge count","value":"803"},{"name":"node count","value":"416"},{"name":"dc:title","value":"ID Signalling Pathway"},{"name":"description","value":"Inhibitor of DNA binding (ID) proteins are members of the helix-loop-helix (HLH) family of proteins which lack a DNA binding domain themselves but bind to other family members inhibiting their DNA binding capacity. This family of proteins is comprised of IDs 1, 2, 3 and 4. They can be stimulated by ligands such as the Vascular Endothelial Growth Factor (VEGF), TGF beta and the T cell receptor."}]}],"startedAtTime":1438203795692,"endedAtTime":1438203795692,"eventType":"Update Network Profile","properties":[{"name":"user","value":"NetPath Database"},{"name":"account name","value":"netpath"}]},"uri":"http://public.ndexbio.org/network/c7e1f2ab-362d-11e5-8ac5-06603eb7f303","properties":[{"name":"edge count","value":"803"},{"name":"node count","value":"416"},{"name":"dc:title","value":"ID Signalling Pathway"},{"name":"description","value":"Inhibitor of DNA binding (ID) proteins are members of the helix-loop-helix (HLH) family of proteins which lack a DNA binding domain themselves but bind to other family members inhibiting their DNA binding capacity. This family of proteins is comprised of IDs 1, 2, 3 and 4. They can be stimulated by ligands such as the Vascular Endothelial Growth Factor (VEGF), TGF beta and the T cell receptor."}]}],"startedAtTime":1495742742003,"endedAtTime":1495742742003,"eventType":"CX network update","properties":[{"name":"user","value":"NetPath Database"},{"name":"user name","value":"netpath"}]},"uri":"http://dev2.ndexbio.org/v2/network/c7e1f2ab-362d-11e5-8ac5-06603eb7f303/summary","properties":[{"name":"edge count","value":"125"},{"name":"node count","value":"33"},{"name":"dc:title","value":"ID Signalling Pathway"}]}],"startedAtTime":1496257617452,"endedAtTime":1496257617452,"eventType":"Set Network Properties","properties":[{"name":"user","value":"NetPath Database"},{"name":"user name","value":"netpath"},{"name":"name","value":"ID Signalling Pathway"},{"name":"description","value":"Inhibitor of DNA binding (ID) proteins are members of the helix-loop-helix (HLH) family of proteins which lack a DNA binding domain themselves but bind to other family members inhibiting their DNA binding capacity. This family of proteins is comprised of IDs 1, 2, 3 and 4. They can be stimulated by ligands such as the Vascular Endothelial Growth Factor (VEGF), TGF beta and the T cell receptor."},{"name":"reference","value":"<div><i style=\"color: rgb(51, 51, 51);background-color: rgb(255, 255, 255);\">Kandasamy K. et al.  </i><b style=\"color: rgb(51, 51, 51);background-color: rgb(255, 255, 255);\"><b>NetPath: a public resource of curated signal transduction pathways.</b></b><br style=\"color: rgb(51, 51, 51);background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51);background-color: rgb(255, 255, 255);float: none;\">Genome Biol. 2010 Jan 12;11(1):R3</span><br style=\"color: rgb(51, 51, 51);background-color: rgb(255, 255, 255);\"/><a href=\"http://genomebiology.biomedcentral.com/articles/10.1186/gb-2010-11-1-r3\" target=\"\" style=\"color: rgb(66, 139, 202);background-color: rgb(255, 255, 255);\">doi: 10.1186/gb-2010-11-1-r3.</a><br/></div>"}]},"uri":"http://dev2.ndexbio.org/v2/network/c7e1f2ab-362d-11e5-8ac5-06603eb7f303/summary","properties":[{"name":"edge count","value":"125"},{"name":"node count","value":"33"},{"name":"dc:title","value":"ID Signalling Pathway"}]}],"startedAtTime":1496265494396,"endedAtTime":1496265494396,"eventType":"CX network update","properties":[{"name":"user","value":"NetPath Database"},{"name":"user name","value":"netpath"}]},"uri":"http://dev2.ndexbio.org/v2/network/c7e1f2ab-362d-11e5-8ac5-06603eb7f303/summary","properties":[{"name":"edge count","value":"125"},{"name":"node count","value":"33"},{"name":"dc:title","value":"ID Signalling Pathway"}]}],"startedAtTime":1497305299898,"endedAtTime":1497305299898,"eventType":"CX network update","properties":[{"name":"user","value":"NetPath Database"},{"name":"user name","value":"netpath"}]},"uri":"http://dev2.ndexbio.org/v2/network/c7e1f2ab-362d-11e5-8ac5-06603eb7f303/summary","properties":[{"name":"edge count","value":"65"},{"name":"node count","value":"33"},{"name":"dc:title","value":"ID Signalling Pathway"},{"name":"description","value":"Inhibitor of DNA binding (ID) proteins are members of the helix-loop-helix (HLH) family of proteins which lack a DNA binding domain themselves but bind to other family members inhibiting their DNA binding capacity. This family of proteins is comprised of IDs 1, 2, 3 and 4. They can be stimulated by ligands such as the Vascular Endothelial Growth Factor (VEGF), TGF beta and the T cell receptor."}]}],"startedAtTime":1497305549994,"endedAtTime":1497305549994,"eventType":"CX network update","properties":[{"name":"user","value":"NetPath Database"},{"name":"user name","value":"netpath"}]},"uri":"http://dev2.ndexbio.org/v2/network/c7e1f2ab-362d-11e5-8ac5-06603eb7f303/summary","properties":[{"name":"edge count","value":"65"},{"name":"node count","value":"33"},{"name":"dc:title","value":"ID Signalling Pathway"},{"name":"description","value":"Inhibitor of DNA binding (ID) proteins are members of the helix-loop-helix (HLH) family of proteins which lack a DNA binding domain themselves but bind to other family members inhibiting their DNA binding capacity. This family of proteins is comprised of IDs 1, 2, 3 and 4. They can be stimulated by ligands such as the Vascular Endothelial Growth Factor (VEGF), TGF beta and the T cell receptor."}]}],"startedAtTime":1497305959445,"endedAtTime":1497305959445,"eventType":"CX network update","properties":[{"name":"user","value":"NetPath Database"},{"name":"user name","value":"netpath"}]},"uri":"http://dev2.ndexbio.org/v2/network/c7e1f2ab-362d-11e5-8ac5-06603eb7f303/summary","properties":[{"name":"edge count","value":"65"},{"name":"node count","value":"33"},{"name":"dc:title","value":"ID Signalling Pathway"},{"name":"description","value":"Inhibitor of DNA binding (ID) proteins are members of the helix-loop-helix (HLH) family of proteins which lack a DNA binding domain themselves but bind to other family members inhibiting their DNA binding capacity. This family of proteins is comprised of IDs 1, 2, 3 and 4. They can be stimulated by ligands such as the Vascular Endothelial Growth Factor (VEGF), TGF beta and the T cell receptor."}]}],"startedAtTime":1497548444120,"endedAtTime":1497548444120,"eventType":"CX network update","properties":[{"name":"user","value":"NetPath Database"},{"name":"user name","value":"netpath"}]},"uri":"http://dev2.ndexbio.org/v2/network/c7e1f2ab-362d-11e5-8ac5-06603eb7f303/summary","properties":[{"name":"edge count","value":"63"},{"name":"node count","value":"33"},{"name":"dc:title","value":"ID Signalling Pathway"},{"name":"description","value":"Inhibitor of DNA binding (ID) proteins are members of the helix-loop-helix (HLH) family of proteins which lack a DNA binding domain themselves but bind to other family members inhibiting their DNA binding capacity. This family of proteins is comprised of IDs 1, 2, 3 and 4. They can be stimulated by ligands such as the Vascular Endothelial Growth Factor (VEGF), TGF beta and the T cell receptor."}]}],"startedAtTime":1499101741984,"endedAtTime":1499101741984,"eventType":"Clone on Server","properties":[]},"uri":"http://dev2.ndexbio.org/network/4f9fccca-6012-11e7-aa84-0660b7976219","properties":[]}],"startedAtTime":1508536093509,"endedAtTime":1508536093509,"eventType":"Update Network Profile","properties":[{"name":"user name","value":"rudipillich"},{"name":"dc:title","value":"Copy of ID Signalling Pathway"}]},"uri":"http://dev2.ndexbio.org/network/4f9fccca-6012-11e7-aa84-0660b7976219","properties":[{"name":"dc:title","value":"Copy of ID Signalling Pathway"},{"name":"description","value":"Inhibitor of DNA binding (ID) proteins are members of the helix-loop-helix (HLH) family of proteins which lack a DNA binding domain themselves but bind to other family members inhibiting their DNA binding capacity. This family of proteins is comprised of IDs 1, 2, 3 and 4. They can be stimulated by ligands such as the Vascular Endothelial Growth Factor (VEGF), TGF beta and the T cell receptor."},{"name":"version","value":"2"}]}],"startedAtTime":1510958699125,"endedAtTime":1510958699125,"eventType":"Clone on Server","properties":[]},"uri":"http://dev2.ndexbio.org/network/f0ce42b7-cbe8-11e7-ac1f-0660b7976219","properties":[{"name":"dc:title","value":"Copy of Copy of ID Signalling Pathway"}]}],"startedAtTime":1510958800198,"endedAtTime":1510958800198,"eventType":"Update Network Profile","properties":[{"name":"user name","value":"rudipillich"},{"name":"dc:title","value":"ID Signalling Pathway"}]},"uri":"http://dev2.ndexbio.org/network/f0ce42b7-cbe8-11e7-ac1f-0660b7976219","properties":[{"name":"dc:title","value":"ID Signalling Pathway"},{"name":"description","value":"Inhibitor of DNA binding (ID) proteins are members of the helix-loop-helix (HLH) family of proteins which lack a DNA binding domain themselves but bind to other family members inhibiting their DNA binding capacity. This family of proteins is comprised of IDs 1, 2, 3 and 4. They can be stimulated by ligands such as the Vascular Endothelial Growth Factor (VEGF), TGF beta and the T cell receptor."},{"name":"version","value":"1.0"}]}],"startedAtTime":1529513535069,"endedAtTime":1529513535069,"eventType":"Update Network Profile","properties":[{"name":"user name","value":"rudipillich"},{"name":"dc:title","value":"ID Signalling Pathway"}]},"uri":"http://dev2.ndexbio.org/network/f0ce42b7-cbe8-11e7-ac1f-0660b7976219","properties":[{"name":"dc:title","value":"ID Signalling Pathway"},{"name":"description","value":"<div>this is a test description</div>"}]}],"startedAtTime":1536625912929,"endedAtTime":1536625912929,"eventType":"Update Network Profile","properties":[{"name":"user name","value":"rudipillich"},{"name":"dc:title","value":"ID Signalling Pathway"}]},"uri":"http://dev2.ndexbio.org/network/f0ce42b7-cbe8-11e7-ac1f-0660b7976219","properties":[{"name":"dc:title","value":"ID Signalling Pathway"},{"name":"description","value":"<div>this is a test description</div>"},{"name":"version","value":"1.0"}]}}]}, {"nodes":[{
+  "@id" : 1,
+  "n" : "RB1"
+}, {
+  "@id" : 2,
+  "n" : "FHL2"
+}, {
+  "@id" : 3,
+  "n" : "ELK1"
+}, {
+  "@id" : 4,
+  "n" : "ETS2"
+}, {
+  "@id" : 5,
+  "n" : "ELK3"
+}, {
+  "@id" : 6,
+  "n" : "ELK4"
+}, {
+  "@id" : 7,
+  "n" : "PSMD4"
+}, {
+  "@id" : 8,
+  "n" : "IFI16"
+}, {
+  "@id" : 9,
+  "n" : "HES1"
+}, {
+  "@id" : 10,
+  "n" : "MYOG"
+}, {
+  "@id" : 11,
+  "n" : "TCF7L2"
+}, {
+  "@id" : 12,
+  "n" : "SREBF1"
+}, {
+  "@id" : 13,
+  "n" : "SMAD3"
+}, {
+  "@id" : 14,
+  "n" : "SMURF2"
+}, {
+  "@id" : 15,
+  "n" : "TCF12"
+}, {
+  "@id" : 16,
+  "n" : "OLIG1"
+}, {
+  "@id" : 17,
+  "n" : "PAX5"
+}, {
+  "@id" : 18,
+  "n" : "OLIG2"
+}, {
+  "@id" : 19,
+  "n" : "PAX2"
+}, {
+  "@id" : 20,
+  "n" : "RBL2"
+}, {
+  "@id" : 21,
+  "n" : "RBL1"
+}, {
+  "@id" : 22,
+  "n" : "PAX8"
+}, {
+  "@id" : 23,
+  "n" : "MYOD1"
+}, {
+  "@id" : 24,
+  "n" : "ID2"
+}, {
+  "@id" : 25,
+  "n" : "ID1"
+}, {
+  "@id" : 26,
+  "n" : "CDK2"
+}, {
+  "@id" : 27,
+  "n" : "ID4"
+}, {
+  "@id" : 28,
+  "n" : "MYF6"
+}, {
+  "@id" : 29,
+  "n" : "ID3"
+}, {
+  "@id" : 30,
+  "n" : "TCF4"
+}, {
+  "@id" : 31,
+  "n" : "TCF3"
+}, {
+  "@id" : 32,
+  "n" : "ATF3"
+}, {
+  "@id" : 33,
+  "n" : "MYF5"
+}]},
+ {"edges":[{
+  "@id" : 26,
+  "s" : 2,
+  "t" : 24,
+  "i" : "interacts-with"
+}, {
+  "@id" : 12,
+  "s" : 3,
+  "t" : 24,
+  "i" : "interacts-with"
+}, {
+  "@id" : 10,
+  "s" : 3,
+  "t" : 25,
+  "i" : "interacts-with"
+}, {
+  "@id" : 14,
+  "s" : 3,
+  "t" : 29,
+  "i" : "interacts-with"
+}, {
+  "@id" : 24,
+  "s" : 4,
+  "t" : 25,
+  "i" : "interacts-with"
+}, {
+  "@id" : 16,
+  "s" : 5,
+  "t" : 24,
+  "i" : "interacts-with"
+}, {
+  "@id" : 20,
+  "s" : 6,
+  "t" : 24,
+  "i" : "interacts-with"
+}, {
+  "@id" : 18,
+  "s" : 6,
+  "t" : 25,
+  "i" : "interacts-with"
+}, {
+  "@id" : 22,
+  "s" : 6,
+  "t" : 29,
+  "i" : "interacts-with"
+}, {
+  "@id" : 122,
+  "s" : 7,
+  "t" : 31,
+  "i" : "interacts-with"
+}, {
+  "@id" : 30,
+  "s" : 9,
+  "t" : 24,
+  "i" : "interacts-with"
+}, {
+  "@id" : 28,
+  "s" : 9,
+  "t" : 25,
+  "i" : "interacts-with"
+}, {
+  "@id" : 34,
+  "s" : 9,
+  "t" : 27,
+  "i" : "interacts-with"
+}, {
+  "@id" : 32,
+  "s" : 9,
+  "t" : 29,
+  "i" : "interacts-with"
+}, {
+  "@id" : 124,
+  "s" : 14,
+  "t" : 25,
+  "i" : "controls-state-change-of"
+}, {
+  "@id" : 125,
+  "s" : 14,
+  "t" : 29,
+  "i" : "controls-state-change-of"
+}, {
+  "@id" : 120,
+  "s" : 23,
+  "t" : 7,
+  "i" : "interacts-with"
+}, {
+  "@id" : 60,
+  "s" : 24,
+  "t" : 33,
+  "i" : "interacts-with"
+}, {
+  "@id" : 78,
+  "s" : 24,
+  "t" : 1,
+  "i" : "interacts-with"
+}, {
+  "@id" : 58,
+  "s" : 24,
+  "t" : 8,
+  "i" : "interacts-with"
+}, {
+  "@id" : 66,
+  "s" : 24,
+  "t" : 10,
+  "i" : "interacts-with"
+}, {
+  "@id" : 90,
+  "s" : 24,
+  "t" : 11,
+  "i" : "interacts-with"
+}, {
+  "@id" : 84,
+  "s" : 24,
+  "t" : 12,
+  "i" : "interacts-with"
+}, {
+  "@id" : 86,
+  "s" : 24,
+  "t" : 15,
+  "i" : "interacts-with"
+}, {
+  "@id" : 68,
+  "s" : 24,
+  "t" : 16,
+  "i" : "interacts-with"
+}, {
+  "@id" : 74,
+  "s" : 24,
+  "t" : 17,
+  "i" : "interacts-with"
+}, {
+  "@id" : 70,
+  "s" : 24,
+  "t" : 18,
+  "i" : "interacts-with"
+}, {
+  "@id" : 72,
+  "s" : 24,
+  "t" : 19,
+  "i" : "interacts-with"
+}, {
+  "@id" : 82,
+  "s" : 24,
+  "t" : 20,
+  "i" : "interacts-with"
+}, {
+  "@id" : 80,
+  "s" : 24,
+  "t" : 21,
+  "i" : "interacts-with"
+}, {
+  "@id" : 76,
+  "s" : 24,
+  "t" : 22,
+  "i" : "interacts-with"
+}, {
+  "@id" : 64,
+  "s" : 24,
+  "t" : 23,
+  "i" : "interacts-with"
+}, {
+  "@id" : 62,
+  "s" : 24,
+  "t" : 28,
+  "i" : "interacts-with"
+}, {
+  "@id" : 88,
+  "s" : 24,
+  "t" : 31,
+  "i" : "interacts-with"
+}, {
+  "@id" : 38,
+  "s" : 25,
+  "t" : 33,
+  "i" : "interacts-with"
+}, {
+  "@id" : 46,
+  "s" : 25,
+  "t" : 7,
+  "i" : "interacts-with"
+}, {
+  "@id" : 36,
+  "s" : 25,
+  "t" : 8,
+  "i" : "interacts-with"
+}, {
+  "@id" : 44,
+  "s" : 25,
+  "t" : 10,
+  "i" : "interacts-with"
+}, {
+  "@id" : 56,
+  "s" : 25,
+  "t" : 11,
+  "i" : "interacts-with"
+}, {
+  "@id" : 48,
+  "s" : 25,
+  "t" : 14,
+  "i" : "interacts-with"
+}, {
+  "@id" : 50,
+  "s" : 25,
+  "t" : 15,
+  "i" : "interacts-with"
+}, {
+  "@id" : 42,
+  "s" : 25,
+  "t" : 23,
+  "i" : "interacts-with"
+}, {
+  "@id" : 40,
+  "s" : 25,
+  "t" : 28,
+  "i" : "interacts-with"
+}, {
+  "@id" : 54,
+  "s" : 25,
+  "t" : 30,
+  "i" : "interacts-with"
+}, {
+  "@id" : 52,
+  "s" : 25,
+  "t" : 31,
+  "i" : "interacts-with"
+}, {
+  "@id" : 4,
+  "s" : 26,
+  "t" : 24,
+  "i" : "controls-phosphorylation-of"
+}, {
+  "@id" : 7,
+  "s" : 26,
+  "t" : 29,
+  "i" : "controls-phosphorylation-of"
+}, {
+  "@id" : 114,
+  "s" : 27,
+  "t" : 16,
+  "i" : "interacts-with"
+}, {
+  "@id" : 116,
+  "s" : 27,
+  "t" : 18,
+  "i" : "interacts-with"
+}, {
+  "@id" : 118,
+  "s" : 27,
+  "t" : 11,
+  "i" : "interacts-with"
+}, {
+  "@id" : 112,
+  "s" : 27,
+  "t" : 23,
+  "i" : "interacts-with"
+}, {
+  "@id" : 94,
+  "s" : 29,
+  "t" : 33,
+  "i" : "interacts-with"
+}, {
+  "@id" : 92,
+  "s" : 29,
+  "t" : 8,
+  "i" : "interacts-with"
+}, {
+  "@id" : 100,
+  "s" : 29,
+  "t" : 10,
+  "i" : "interacts-with"
+}, {
+  "@id" : 110,
+  "s" : 29,
+  "t" : 11,
+  "i" : "interacts-with"
+}, {
+  "@id" : 106,
+  "s" : 29,
+  "t" : 12,
+  "i" : "interacts-with"
+}, {
+  "@id" : 104,
+  "s" : 29,
+  "t" : 14,
+  "i" : "interacts-with"
+}, {
+  "@id" : 108,
+  "s" : 29,
+  "t" : 15,
+  "i" : "interacts-with"
+}, {
+  "@id" : 102,
+  "s" : 29,
+  "t" : 17,
+  "i" : "interacts-with"
+}, {
+  "@id" : 98,
+  "s" : 29,
+  "t" : 23,
+  "i" : "interacts-with"
+}, {
+  "@id" : 96,
+  "s" : 29,
+  "t" : 28,
+  "i" : "interacts-with"
+}, {
+  "@id" : 1,
+  "s" : 32,
+  "t" : 13,
+  "i" : "in-complex-with"
+}, {
+  "@id" : 2,
+  "s" : 32,
+  "t" : 13,
+  "i" : "interacts-with"
+}]},
+ {"networkAttributes":[{"n":"name","v":"ID Signalling Pathway"}, {"n":"description","v":"<div>this is a test description</div>"}, {"n":"version","v":"1.0"}, {"n":"networkType","v":"Signaling Pathway"}, {"n":"organism","v":"Human, 9606, Homo sapiens"}, {"n":"author","v":"Myself"}, {"n":"rights","v":"Attribution 4.0 International (CC BY 4.0)"}, {"n":"rightsHolder","v":"myself"}, {"n":"reference","v":""}]},
+ {"nodeAttributes":[{
+  "po" : 1,
+  "n" : "alias",
+  "v" : [ "HPRD:01574", "UniProt:P06400" ],
+  "d" : "list_of_string"
+}, {
+  "po" : 1,
+  "n" : "type",
+  "v" : "Protein"
+}, {
+  "po" : 2,
+  "n" : "alias",
+  "v" : [ "HPRD:04026", "UniProt:Q14192" ],
+  "d" : "list_of_string"
+}, {
+  "po" : 2,
+  "n" : "type",
+  "v" : "Protein"
+}, {
+  "po" : 3,
+  "n" : "alias",
+  "v" : [ "HPRD:02407", "UniProt:P19419" ],
+  "d" : "list_of_string"
+}, {
+  "po" : 3,
+  "n" : "type",
+  "v" : "Protein"
+}, {
+  "po" : 4,
+  "n" : "alias",
+  "v" : [ "HPRD:01263", "UniProt:P15036" ],
+  "d" : "list_of_string"
+}, {
+  "po" : 4,
+  "n" : "type",
+  "v" : "Protein"
+}, {
+  "po" : 5,
+  "n" : "alias",
+  "v" : [ "HPRD:02593", "UniProt:P41970" ],
+  "d" : "list_of_string"
+}, {
+  "po" : 5,
+  "n" : "type",
+  "v" : "Protein"
+}, {
+  "po" : 6,
+  "n" : "alias",
+  "v" : [ "HPRD:02592", "UniProt:P28324" ],
+  "d" : "list_of_string"
+}, {
+  "po" : 6,
+  "n" : "type",
+  "v" : "Protein"
+}, {
+  "po" : 7,
+  "n" : "alias",
+  "v" : [ "HPRD:03386", "UniProt:P55036" ],
+  "d" : "list_of_string"
+}, {
+  "po" : 7,
+  "n" : "type",
+  "v" : "Protein"
+}, {
+  "po" : 8,
+  "n" : "alias",
+  "v" : [ "HPRD:00969", "UniProt:Q16666" ],
+  "d" : "list_of_string"
+}, {
+  "po" : 8,
+  "n" : "type",
+  "v" : "Protein"
+}, {
+  "po" : 9,
+  "n" : "alias",
+  "v" : [ "HPRD:00770", "UniProt:Q14469" ],
+  "d" : "list_of_string"
+}, {
+  "po" : 9,
+  "n" : "type",
+  "v" : "Protein"
+}, {
+  "po" : 10,
+  "n" : "alias",
+  "v" : [ "HPRD:01167", "UniProt:P15173" ],
+  "d" : "list_of_string"
+}, {
+  "po" : 10,
+  "n" : "type",
+  "v" : "Protein"
+}, {
+  "po" : 11,
+  "n" : "alias",
+  "v" : [ "HPRD:03751", "UniProt:Q9NQB0" ],
+  "d" : "list_of_string"
+}, {
+  "po" : 11,
+  "n" : "type",
+  "v" : "Protein"
+}, {
+  "po" : 12,
+  "n" : "alias",
+  "v" : [ "HPRD:01701", "UniProt:P36956" ],
+  "d" : "list_of_string"
+}, {
+  "po" : 12,
+  "n" : "type",
+  "v" : "Protein"
+}, {
+  "po" : 13,
+  "n" : "alias",
+  "v" : [ "HPRD:04380", "UniProt:P84022" ],
+  "d" : "list_of_string"
+}, {
+  "po" : 13,
+  "n" : "type",
+  "v" : "Protein"
+}, {
+  "po" : 14,
+  "n" : "alias",
+  "v" : [ "HPRD:06901", "UniProt:Q9HAU4" ],
+  "d" : "list_of_string"
+}, {
+  "po" : 14,
+  "n" : "type",
+  "v" : "Protein"
+}, {
+  "po" : 15,
+  "n" : "alias",
+  "v" : [ "HPRD:02725", "UniProt:Q99081" ],
+  "d" : "list_of_string"
+}, {
+  "po" : 15,
+  "n" : "type",
+  "v" : "Protein"
+}, {
+  "po" : 16,
+  "n" : "alias",
+  "v" : [ "HPRD:07333", "UniProt:Q8TAK6" ],
+  "d" : "list_of_string"
+}, {
+  "po" : 16,
+  "n" : "type",
+  "v" : "Protein"
+}, {
+  "po" : 17,
+  "n" : "alias",
+  "v" : [ "HPRD:01334", "UniProt:Q02548" ],
+  "d" : "list_of_string"
+}, {
+  "po" : 17,
+  "n" : "type",
+  "v" : "Protein"
+}, {
+  "po" : 18,
+  "n" : "alias",
+  "v" : [ "HPRD:07334", "UniProt:Q13516" ],
+  "d" : "list_of_string"
+}, {
+  "po" : 18,
+  "n" : "type",
+  "v" : "Protein"
+}, {
+  "po" : 19,
+  "n" : "alias",
+  "v" : [ "HPRD:01330", "UniProt:Q02962" ],
+  "d" : "list_of_string"
+}, {
+  "po" : 19,
+  "n" : "type",
+  "v" : "Protein"
+}, {
+  "po" : 20,
+  "n" : "alias",
+  "v" : [ "HPRD:01576", "UniProt:Q08999" ],
+  "d" : "list_of_string"
+}, {
+  "po" : 20,
+  "n" : "type",
+  "v" : "Protein"
+}, {
+  "po" : 21,
+  "n" : "alias",
+  "v" : [ "HPRD:00312", "UniProt:P28749" ],
+  "d" : "list_of_string"
+}, {
+  "po" : 21,
+  "n" : "type",
+  "v" : "Protein"
+}, {
+  "po" : 22,
+  "n" : "alias",
+  "v" : [ "HPRD:01335", "UniProt:Q06710" ],
+  "d" : "list_of_string"
+}, {
+  "po" : 22,
+  "n" : "type",
+  "v" : "Protein"
+}, {
+  "po" : 23,
+  "n" : "alias",
+  "v" : [ "HPRD:01166", "UniProt:P15172" ],
+  "d" : "list_of_string"
+}, {
+  "po" : 23,
+  "n" : "type",
+  "v" : "Protein"
+}, {
+  "po" : 24,
+  "n" : "alias",
+  "v" : [ "HPRD:02664", "UniProt:Q02363" ],
+  "d" : "list_of_string"
+}, {
+  "po" : 24,
+  "n" : "type",
+  "v" : "Protein"
+}, {
+  "po" : 25,
+  "n" : "alias",
+  "v" : [ "HPRD:08980", "UniProt:P41134" ],
+  "d" : "list_of_string"
+}, {
+  "po" : 25,
+  "n" : "type",
+  "v" : "Protein"
+}, {
+  "po" : 26,
+  "n" : "alias",
+  "v" : [ "HPRD:00310", "UniProt:P24941" ],
+  "d" : "list_of_string"
+}, {
+  "po" : 26,
+  "n" : "type",
+  "v" : "Protein"
+}, {
+  "po" : 27,
+  "n" : "alias",
+  "v" : [ "HPRD:08995", "UniProt:P47928" ],
+  "d" : "list_of_string"
+}, {
+  "po" : 27,
+  "n" : "type",
+  "v" : "Protein"
+}, {
+  "po" : 28,
+  "n" : "alias",
+  "v" : [ "HPRD:01169", "UniProt:P23409" ],
+  "d" : "list_of_string"
+}, {
+  "po" : 28,
+  "n" : "type",
+  "v" : "Protein"
+}, {
+  "po" : 29,
+  "n" : "alias",
+  "v" : [ "HPRD:02608", "UniProt:Q02535" ],
+  "d" : "list_of_string"
+}, {
+  "po" : 29,
+  "n" : "type",
+  "v" : "Protein"
+}, {
+  "po" : 30,
+  "n" : "alias",
+  "v" : [ "HPRD:03780", "UniProt:P15884" ],
+  "d" : "list_of_string"
+}, {
+  "po" : 30,
+  "n" : "type",
+  "v" : "Protein"
+}, {
+  "po" : 31,
+  "n" : "alias",
+  "v" : [ "HPRD:00918", "UniProt:P15923" ],
+  "d" : "list_of_string"
+}, {
+  "po" : 31,
+  "n" : "type",
+  "v" : "Protein"
+}, {
+  "po" : 32,
+  "n" : "alias",
+  "v" : [ "HPRD:04395", "UniProt:P18847" ],
+  "d" : "list_of_string"
+}, {
+  "po" : 32,
+  "n" : "type",
+  "v" : "Protein"
+}, {
+  "po" : 33,
+  "n" : "alias",
+  "v" : [ "HPRD:01168", "UniProt:P13349" ],
+  "d" : "list_of_string"
+}, {
+  "po" : 33,
+  "n" : "type",
+  "v" : "Protein"
+}]},
+ {"edgeAttributes":[{
+  "po" : 26,
+  "n" : "pmid",
+  "v" : [ "19417068" ],
+  "d" : "list_of_string"
+}, {
+  "po" : 12,
+  "n" : "pmid",
+  "v" : [ "10022839" ],
+  "d" : "list_of_string"
+}, {
+  "po" : 10,
+  "n" : "pmid",
+  "v" : [ "10022839", "11134340" ],
+  "d" : "list_of_string"
+}, {
+  "po" : 14,
+  "n" : "pmid",
+  "v" : [ "10022839", "11134340" ],
+  "d" : "list_of_string"
+}, {
+  "po" : 24,
+  "n" : "pmid",
+  "v" : [ "11234019" ],
+  "d" : "list_of_string"
+}, {
+  "po" : 16,
+  "n" : "pmid",
+  "v" : [ "10022839" ],
+  "d" : "list_of_string"
+}, {
+  "po" : 20,
+  "n" : "pmid",
+  "v" : [ "11134340" ],
+  "d" : "list_of_string"
+}, {
+  "po" : 18,
+  "n" : "pmid",
+  "v" : [ "10022839", "11058077" ],
+  "d" : "list_of_string"
+}, {
+  "po" : 22,
+  "n" : "pmid",
+  "v" : [ "10022839" ],
+  "d" : "list_of_string"
+}, {
+  "po" : 122,
+  "n" : "pmid",
+  "v" : [ "9235903" ],
+  "d" : "list_of_string"
+}, {
+  "po" : 30,
+  "n" : "pmid",
+  "v" : [ "11756408" ],
+  "d" : "list_of_string"
+}, {
+  "po" : 28,
+  "n" : "pmid",
+  "v" : [ "11756408" ],
+  "d" : "list_of_string"
+}, {
+  "po" : 34,
+  "n" : "pmid",
+  "v" : [ "11756408" ],
+  "d" : "list_of_string"
+}, {
+  "po" : 32,
+  "n" : "pmid",
+  "v" : [ "11756408" ],
+  "d" : "list_of_string"
+}, {
+  "po" : 124,
+  "n" : "directed",
+  "v" : "true",
+  "d" : "boolean"
+}, {
+  "po" : 124,
+  "n" : "pmid",
+  "v" : [ "21933340" ],
+  "d" : "list_of_string"
+}, {
+  "po" : 125,
+  "n" : "directed",
+  "v" : "true",
+  "d" : "boolean"
+}, {
+  "po" : 125,
+  "n" : "pmid",
+  "v" : [ "21933340" ],
+  "d" : "list_of_string"
+}, {
+  "po" : 120,
+  "n" : "pmid",
+  "v" : [ "9235903" ],
+  "d" : "list_of_string"
+}, {
+  "po" : 60,
+  "n" : "pmid",
+  "v" : [ "9242638" ],
+  "d" : "list_of_string"
+}, {
+  "po" : 78,
+  "n" : "pmid",
+  "v" : [ "11034201", "7926730", "8649364" ],
+  "d" : "list_of_string"
+}, {
+  "po" : 58,
+  "n" : "pmid",
+  "v" : [ "11940648" ],
+  "d" : "list_of_string"
+}, {
+  "po" : 66,
+  "n" : "pmid",
+  "v" : [ "9242638" ],
+  "d" : "list_of_string"
+}, {
+  "po" : 90,
+  "n" : "pmid",
+  "v" : [ "11756408" ],
+  "d" : "list_of_string"
+}, {
+  "po" : 84,
+  "n" : "pmid",
+  "v" : [ "10585876", "18796641" ],
+  "d" : "list_of_string"
+}, {
+  "po" : 86,
+  "n" : "pmid",
+  "v" : [ "9242638" ],
+  "d" : "list_of_string"
+}, {
+  "po" : 68,
+  "n" : "pmid",
+  "v" : [ "15280210" ],
+  "d" : "list_of_string"
+}, {
+  "po" : 74,
+  "n" : "pmid",
+  "v" : [ "11134340", "18197815" ],
+  "d" : "list_of_string"
+}, {
+  "po" : 70,
+  "n" : "pmid",
+  "v" : [ "15280210" ],
+  "d" : "list_of_string"
+}, {
+  "po" : 72,
+  "n" : "pmid",
+  "v" : [ "11134340" ],
+  "d" : "list_of_string"
+}, {
+  "po" : 82,
+  "n" : "pmid",
+  "v" : [ "11034201", "8649364" ],
+  "d" : "list_of_string"
+}, {
+  "po" : 80,
+  "n" : "pmid",
+  "v" : [ "11034201", "8649364" ],
+  "d" : "list_of_string"
+}, {
+  "po" : 76,
+  "n" : "pmid",
+  "v" : [ "11134340", "18437010" ],
+  "d" : "list_of_string"
+}, {
+  "po" : 64,
+  "n" : "pmid",
+  "v" : [ "10022839", "1922066" ],
+  "d" : "list_of_string"
+}, {
+  "po" : 62,
+  "n" : "pmid",
+  "v" : [ "9242638" ],
+  "d" : "list_of_string"
+}, {
+  "po" : 88,
+  "n" : "pmid",
+  "v" : [ "1922066", "19417068" ],
+  "d" : "list_of_string"
+}, {
+  "po" : 38,
+  "n" : "pmid",
+  "v" : [ "9242638" ],
+  "d" : "list_of_string"
+}, {
+  "po" : 46,
+  "n" : "pmid",
+  "v" : [ "9235903" ],
+  "d" : "list_of_string"
+}, {
+  "po" : 36,
+  "n" : "pmid",
+  "v" : [ "11940648" ],
+  "d" : "list_of_string"
+}, {
+  "po" : 44,
+  "n" : "pmid",
+  "v" : [ "9242638" ],
+  "d" : "list_of_string"
+}, {
+  "po" : 56,
+  "n" : "pmid",
+  "v" : [ "11756408" ],
+  "d" : "list_of_string"
+}, {
+  "po" : 48,
+  "n" : "pmid",
+  "v" : [ "21933340" ],
+  "d" : "list_of_string"
+}, {
+  "po" : 50,
+  "n" : "pmid",
+  "v" : [ "9242638" ],
+  "d" : "list_of_string"
+}, {
+  "po" : 42,
+  "n" : "pmid",
+  "v" : [ "10022839", "1922066" ],
+  "d" : "list_of_string"
+}, {
+  "po" : 40,
+  "n" : "pmid",
+  "v" : [ "9242638" ],
+  "d" : "list_of_string"
+}, {
+  "po" : 54,
+  "n" : "pmid",
+  "v" : [ "20231428" ],
+  "d" : "list_of_string"
+}, {
+  "po" : 52,
+  "n" : "pmid",
+  "v" : [ "15138269", "1922066" ],
+  "d" : "list_of_string"
+}, {
+  "po" : 4,
+  "n" : "directed",
+  "v" : "true",
+  "d" : "boolean"
+}, {
+  "po" : 4,
+  "n" : "pmid",
+  "v" : [ "11706002", "9029153" ],
+  "d" : "list_of_string"
+}, {
+  "po" : 7,
+  "n" : "directed",
+  "v" : "true",
+  "d" : "boolean"
+}, {
+  "po" : 7,
+  "n" : "pmid",
+  "v" : [ "15321928", "9372912" ],
+  "d" : "list_of_string"
+}, {
+  "po" : 114,
+  "n" : "pmid",
+  "v" : [ "15280210" ],
+  "d" : "list_of_string"
+}, {
+  "po" : 116,
+  "n" : "pmid",
+  "v" : [ "15280210" ],
+  "d" : "list_of_string"
+}, {
+  "po" : 118,
+  "n" : "pmid",
+  "v" : [ "11756408" ],
+  "d" : "list_of_string"
+}, {
+  "po" : 112,
+  "n" : "pmid",
+  "v" : [ "11756408" ],
+  "d" : "list_of_string"
+}, {
+  "po" : 94,
+  "n" : "pmid",
+  "v" : [ "9242638" ],
+  "d" : "list_of_string"
+}, {
+  "po" : 92,
+  "n" : "pmid",
+  "v" : [ "11940648" ],
+  "d" : "list_of_string"
+}, {
+  "po" : 100,
+  "n" : "pmid",
+  "v" : [ "9242638" ],
+  "d" : "list_of_string"
+}, {
+  "po" : 110,
+  "n" : "pmid",
+  "v" : [ "11756408" ],
+  "d" : "list_of_string"
+}, {
+  "po" : 106,
+  "n" : "pmid",
+  "v" : [ "10585876", "18796641" ],
+  "d" : "list_of_string"
+}, {
+  "po" : 104,
+  "n" : "pmid",
+  "v" : [ "21933340" ],
+  "d" : "list_of_string"
+}, {
+  "po" : 108,
+  "n" : "pmid",
+  "v" : [ "9242638" ],
+  "d" : "list_of_string"
+}, {
+  "po" : 102,
+  "n" : "pmid",
+  "v" : [ "11134340", "12054881" ],
+  "d" : "list_of_string"
+}, {
+  "po" : 98,
+  "n" : "pmid",
+  "v" : [ "10022839", "11756408", "9242638" ],
+  "d" : "list_of_string"
+}, {
+  "po" : 96,
+  "n" : "pmid",
+  "v" : [ "9242638" ],
+  "d" : "list_of_string"
+}, {
+  "po" : 2,
+  "n" : "pmid",
+  "v" : [ "12718878" ],
+  "d" : "list_of_string"
+}]},
+ {"citations":[{
+  "@id" : 1,
+  "dc:title" : null,
+  "dc:contributor" : null,
+  "dc:identifier" : "pmid:12718878",
+  "dc:type" : null,
+  "dc:description" : null,
+  "attributes" : [ ]
+}, {
+  "@id" : 2,
+  "dc:title" : null,
+  "dc:contributor" : null,
+  "dc:identifier" : "pmid:11706002",
+  "dc:type" : null,
+  "dc:description" : null,
+  "attributes" : [ ]
+}, {
+  "@id" : 3,
+  "dc:title" : null,
+  "dc:contributor" : null,
+  "dc:identifier" : "pmid:9029153",
+  "dc:type" : null,
+  "dc:description" : null,
+  "attributes" : [ ]
+}, {
+  "@id" : 4,
+  "dc:title" : null,
+  "dc:contributor" : null,
+  "dc:identifier" : "pmid:15321928",
+  "dc:type" : null,
+  "dc:description" : null,
+  "attributes" : [ ]
+}, {
+  "@id" : 5,
+  "dc:title" : null,
+  "dc:contributor" : null,
+  "dc:identifier" : "pmid:9372912",
+  "dc:type" : null,
+  "dc:description" : null,
+  "attributes" : [ ]
+}, {
+  "@id" : 6,
+  "dc:title" : null,
+  "dc:contributor" : null,
+  "dc:identifier" : "pmid:10022839",
+  "dc:type" : null,
+  "dc:description" : null,
+  "attributes" : [ ]
+}, {
+  "@id" : 7,
+  "dc:title" : null,
+  "dc:contributor" : null,
+  "dc:identifier" : "pmid:11134340",
+  "dc:type" : null,
+  "dc:description" : null,
+  "attributes" : [ ]
+}, {
+  "@id" : 8,
+  "dc:title" : null,
+  "dc:contributor" : null,
+  "dc:identifier" : "pmid:11058077",
+  "dc:type" : null,
+  "dc:description" : null,
+  "attributes" : [ ]
+}, {
+  "@id" : 9,
+  "dc:title" : null,
+  "dc:contributor" : null,
+  "dc:identifier" : "pmid:11234019",
+  "dc:type" : null,
+  "dc:description" : null,
+  "attributes" : [ ]
+}, {
+  "@id" : 10,
+  "dc:title" : null,
+  "dc:contributor" : null,
+  "dc:identifier" : "pmid:19417068",
+  "dc:type" : null,
+  "dc:description" : null,
+  "attributes" : [ ]
+}, {
+  "@id" : 11,
+  "dc:title" : null,
+  "dc:contributor" : null,
+  "dc:identifier" : "pmid:11756408",
+  "dc:type" : null,
+  "dc:description" : null,
+  "attributes" : [ ]
+}, {
+  "@id" : 12,
+  "dc:title" : null,
+  "dc:contributor" : null,
+  "dc:identifier" : "pmid:11940648",
+  "dc:type" : null,
+  "dc:description" : null,
+  "attributes" : [ ]
+}, {
+  "@id" : 13,
+  "dc:title" : null,
+  "dc:contributor" : null,
+  "dc:identifier" : "pmid:9242638",
+  "dc:type" : null,
+  "dc:description" : null,
+  "attributes" : [ ]
+}, {
+  "@id" : 14,
+  "dc:title" : null,
+  "dc:contributor" : null,
+  "dc:identifier" : "pmid:1922066",
+  "dc:type" : null,
+  "dc:description" : null,
+  "attributes" : [ ]
+}, {
+  "@id" : 15,
+  "dc:title" : null,
+  "dc:contributor" : null,
+  "dc:identifier" : "pmid:9235903",
+  "dc:type" : null,
+  "dc:description" : null,
+  "attributes" : [ ]
+}, {
+  "@id" : 16,
+  "dc:title" : null,
+  "dc:contributor" : null,
+  "dc:identifier" : "pmid:21933340",
+  "dc:type" : null,
+  "dc:description" : null,
+  "attributes" : [ ]
+}, {
+  "@id" : 17,
+  "dc:title" : null,
+  "dc:contributor" : null,
+  "dc:identifier" : "pmid:15138269",
+  "dc:type" : null,
+  "dc:description" : null,
+  "attributes" : [ ]
+}, {
+  "@id" : 18,
+  "dc:title" : null,
+  "dc:contributor" : null,
+  "dc:identifier" : "pmid:20231428",
+  "dc:type" : null,
+  "dc:description" : null,
+  "attributes" : [ ]
+}, {
+  "@id" : 19,
+  "dc:title" : null,
+  "dc:contributor" : null,
+  "dc:identifier" : "pmid:15280210",
+  "dc:type" : null,
+  "dc:description" : null,
+  "attributes" : [ ]
+}, {
+  "@id" : 20,
+  "dc:title" : null,
+  "dc:contributor" : null,
+  "dc:identifier" : "pmid:18197815",
+  "dc:type" : null,
+  "dc:description" : null,
+  "attributes" : [ ]
+}, {
+  "@id" : 21,
+  "dc:title" : null,
+  "dc:contributor" : null,
+  "dc:identifier" : "pmid:18437010",
+  "dc:type" : null,
+  "dc:description" : null,
+  "attributes" : [ ]
+}, {
+  "@id" : 22,
+  "dc:title" : null,
+  "dc:contributor" : null,
+  "dc:identifier" : "pmid:11034201",
+  "dc:type" : null,
+  "dc:description" : null,
+  "attributes" : [ ]
+}, {
+  "@id" : 23,
+  "dc:title" : null,
+  "dc:contributor" : null,
+  "dc:identifier" : "pmid:7926730",
+  "dc:type" : null,
+  "dc:description" : null,
+  "attributes" : [ ]
+}, {
+  "@id" : 24,
+  "dc:title" : null,
+  "dc:contributor" : null,
+  "dc:identifier" : "pmid:8649364",
+  "dc:type" : null,
+  "dc:description" : null,
+  "attributes" : [ ]
+}, {
+  "@id" : 25,
+  "dc:title" : null,
+  "dc:contributor" : null,
+  "dc:identifier" : "pmid:10585876",
+  "dc:type" : null,
+  "dc:description" : null,
+  "attributes" : [ ]
+}, {
+  "@id" : 26,
+  "dc:title" : null,
+  "dc:contributor" : null,
+  "dc:identifier" : "pmid:18796641",
+  "dc:type" : null,
+  "dc:description" : null,
+  "attributes" : [ ]
+}, {
+  "@id" : 27,
+  "dc:title" : null,
+  "dc:contributor" : null,
+  "dc:identifier" : "pmid:12054881",
+  "dc:type" : null,
+  "dc:description" : null,
+  "attributes" : [ ]
+}]},
+ {"edgeCitations":[{
+  "po" : [ 2 ],
+  "citations" : [ 1 ]
+}, {
+  "po" : [ 4 ],
+  "citations" : [ 2, 3 ]
+}, {
+  "po" : [ 7 ],
+  "citations" : [ 4, 5 ]
+}, {
+  "po" : [ 10 ],
+  "citations" : [ 6, 7 ]
+}, {
+  "po" : [ 12 ],
+  "citations" : [ 6 ]
+}, {
+  "po" : [ 14 ],
+  "citations" : [ 6, 7 ]
+}, {
+  "po" : [ 16 ],
+  "citations" : [ 6 ]
+}, {
+  "po" : [ 18 ],
+  "citations" : [ 6, 8 ]
+}, {
+  "po" : [ 20 ],
+  "citations" : [ 7 ]
+}, {
+  "po" : [ 22 ],
+  "citations" : [ 6 ]
+}, {
+  "po" : [ 24 ],
+  "citations" : [ 9 ]
+}, {
+  "po" : [ 26 ],
+  "citations" : [ 10 ]
+}, {
+  "po" : [ 28 ],
+  "citations" : [ 11 ]
+}, {
+  "po" : [ 30 ],
+  "citations" : [ 11 ]
+}, {
+  "po" : [ 32 ],
+  "citations" : [ 11 ]
+}, {
+  "po" : [ 34 ],
+  "citations" : [ 11 ]
+}, {
+  "po" : [ 36 ],
+  "citations" : [ 12 ]
+}, {
+  "po" : [ 38 ],
+  "citations" : [ 13 ]
+}, {
+  "po" : [ 40 ],
+  "citations" : [ 13 ]
+}, {
+  "po" : [ 42 ],
+  "citations" : [ 6, 14 ]
+}, {
+  "po" : [ 44 ],
+  "citations" : [ 13 ]
+}, {
+  "po" : [ 46 ],
+  "citations" : [ 15 ]
+}, {
+  "po" : [ 48 ],
+  "citations" : [ 16 ]
+}, {
+  "po" : [ 50 ],
+  "citations" : [ 13 ]
+}, {
+  "po" : [ 52 ],
+  "citations" : [ 17, 14 ]
+}, {
+  "po" : [ 54 ],
+  "citations" : [ 18 ]
+}, {
+  "po" : [ 56 ],
+  "citations" : [ 11 ]
+}, {
+  "po" : [ 58 ],
+  "citations" : [ 12 ]
+}, {
+  "po" : [ 60 ],
+  "citations" : [ 13 ]
+}, {
+  "po" : [ 62 ],
+  "citations" : [ 13 ]
+}, {
+  "po" : [ 64 ],
+  "citations" : [ 6, 14 ]
+}, {
+  "po" : [ 66 ],
+  "citations" : [ 13 ]
+}, {
+  "po" : [ 68 ],
+  "citations" : [ 19 ]
+}, {
+  "po" : [ 70 ],
+  "citations" : [ 19 ]
+}, {
+  "po" : [ 72 ],
+  "citations" : [ 7 ]
+}, {
+  "po" : [ 74 ],
+  "citations" : [ 7, 20 ]
+}, {
+  "po" : [ 76 ],
+  "citations" : [ 7, 21 ]
+}, {
+  "po" : [ 78 ],
+  "citations" : [ 22, 23, 24 ]
+}, {
+  "po" : [ 80 ],
+  "citations" : [ 22, 24 ]
+}, {
+  "po" : [ 82 ],
+  "citations" : [ 22, 24 ]
+}, {
+  "po" : [ 84 ],
+  "citations" : [ 25, 26 ]
+}, {
+  "po" : [ 86 ],
+  "citations" : [ 13 ]
+}, {
+  "po" : [ 88 ],
+  "citations" : [ 14, 10 ]
+}, {
+  "po" : [ 90 ],
+  "citations" : [ 11 ]
+}, {
+  "po" : [ 92 ],
+  "citations" : [ 12 ]
+}, {
+  "po" : [ 94 ],
+  "citations" : [ 13 ]
+}, {
+  "po" : [ 96 ],
+  "citations" : [ 13 ]
+}, {
+  "po" : [ 98 ],
+  "citations" : [ 6, 11, 13 ]
+}, {
+  "po" : [ 100 ],
+  "citations" : [ 13 ]
+}, {
+  "po" : [ 102 ],
+  "citations" : [ 7, 27 ]
+}, {
+  "po" : [ 104 ],
+  "citations" : [ 16 ]
+}, {
+  "po" : [ 106 ],
+  "citations" : [ 25, 26 ]
+}, {
+  "po" : [ 108 ],
+  "citations" : [ 13 ]
+}, {
+  "po" : [ 110 ],
+  "citations" : [ 11 ]
+}, {
+  "po" : [ 112 ],
+  "citations" : [ 11 ]
+}, {
+  "po" : [ 114 ],
+  "citations" : [ 19 ]
+}, {
+  "po" : [ 116 ],
+  "citations" : [ 19 ]
+}, {
+  "po" : [ 118 ],
+  "citations" : [ 11 ]
+}, {
+  "po" : [ 120 ],
+  "citations" : [ 15 ]
+}, {
+  "po" : [ 122 ],
+  "citations" : [ 15 ]
+}, {
+  "po" : [ 124 ],
+  "citations" : [ 16 ]
+}, {
+  "po" : [ 125 ],
+  "citations" : [ 16 ]
+}]},
+ {"cartesianLayout":[{
+  "node" : 1,
+  "x" : 384.0104687361797,
+  "y" : 210.80051504861675
+}, {
+  "node" : 2,
+  "x" : 784.1319261216761,
+  "y" : 130.07993775078648
+}, {
+  "node" : 3,
+  "x" : 567.7814841827019,
+  "y" : 460.9727814388133
+}, {
+  "node" : 4,
+  "x" : 355.27492283067335,
+  "y" : 549.4116384158087
+}, {
+  "node" : 5,
+  "x" : 784.8376797472101,
+  "y" : 193.3561887400112
+}, {
+  "node" : 6,
+  "x" : 505.4907334818449,
+  "y" : 437.4960645808543
+}, {
+  "node" : 7,
+  "x" : 242.5103747833912,
+  "y" : 529.2410928432876
+}, {
+  "node" : 8,
+  "x" : 656.649441812463,
+  "y" : 400.61911968114936
+}, {
+  "node" : 9,
+  "x" : 448.6113604819065,
+  "y" : 136.74855268434362
+}, {
+  "node" : 10,
+  "x" : 480.56703339377424,
+  "y" : 239.30590760969
+}, {
+  "node" : 11,
+  "x" : 380.5786198499556,
+  "y" : 145.34018088802938
+}, {
+  "node" : 12,
+  "x" : 678.1769295322788,
+  "y" : 255.57263537576708
+}, {
+  "node" : 13,
+  "x" : -12.12481762018287,
+  "y" : 202.54433875541298
+}, {
+  "node" : 14,
+  "x" : 111.47328716623504,
+  "y" : 306.04012192126805
+}, {
+  "node" : 15,
+  "x" : 605.6309083835898,
+  "y" : 337.22861344809
+}, {
+  "node" : 16,
+  "x" : 523.4792548278668,
+  "y" : -47.46910320428991
+}, {
+  "node" : 17,
+  "x" : 710.6324594502357,
+  "y" : 331.211626594902
+}, {
+  "node" : 18,
+  "x" : 481.8287690363742,
+  "y" : 2.146815911059382
+}, {
+  "node" : 19,
+  "x" : 649.6508398958681,
+  "y" : 71.34344401053714
+}, {
+  "node" : 20,
+  "x" : 789.0510194156757,
+  "y" : 257.1987376854756
+}, {
+  "node" : 21,
+  "x" : 716.4510956055841,
+  "y" : 56.211007767378725
+}, {
+  "node" : 22,
+  "x" : 723.8949228500119,
+  "y" : 120.88941868743225
+}, {
+  "node" : 23,
+  "x" : 194.87637001711303,
+  "y" : 413.3477439918262
+}, {
+  "node" : 24,
+  "x" : 601.8966193170326,
+  "y" : 215.22644592950397
+}, {
+  "node" : 25,
+  "x" : 439.2990924432648,
+  "y" : 393.8376830874051
+}, {
+  "node" : 26,
+  "x" : 164.49461465309219,
+  "y" : 270.3574031662961
+}, {
+  "node" : 27,
+  "x" : 375.4139489362202,
+  "y" : -32.9318294334124
+}, {
+  "node" : 28,
+  "x" : 620.0728582820988,
+  "y" : 438.68446595330374
+}, {
+  "node" : 29,
+  "x" : 496.7387322792089,
+  "y" : 311.13251368493763
+}, {
+  "node" : 30,
+  "x" : 423.219428957623,
+  "y" : 576.7245090195506
+}, {
+  "node" : 31,
+  "x" : 363.24973358577495,
+  "y" : 410.12381532627796
+}, {
+  "node" : 32,
+  "x" : -161.18741996429736,
+  "y" : 155.43079010858375
+}, {
+  "node" : 33,
+  "x" : 548.6908616276736,
+  "y" : 374.127557117545
+}]},
+ {"cyVisualProperties":[{
+  "properties_of" : "network",
+  "properties" : {
+    "NETWORK_DEPTH" : "0.0",
+    "NETWORK_HEIGHT" : "400.0",
+    "NETWORK_EDGE_SELECTION" : "true",
+    "NETWORK_BACKGROUND_PAINT" : "#EDEDF5",
+    "NETWORK_CENTER_X_LOCATION" : "0.0",
+    "NETWORK_WIDTH" : "550.0",
+    "NETWORK_CENTER_Z_LOCATION" : "0.0",
+    "NETWORK_SCALE_FACTOR" : "1.0",
+    "NETWORK_CENTER_Y_LOCATION" : "0.0",
+    "NETWORK_NODE_SELECTION" : "true"
+  }
+}, {
+  "properties_of" : "nodes:default",
+  "dependencies" : {
+    "nodeCustomGraphicsSizeSync" : "true",
+    "nodeSizeLocked" : "false"
+  },
+  "properties" : {
+    "NODE_FILL_COLOR" : "#FFFFFF",
+    "NODE_NESTED_NETWORK_IMAGE_VISIBLE" : "true",
+    "NODE_LABEL_TRANSPARENCY" : "255",
+    "NODE_BORDER_WIDTH" : "2.0",
+    "NODE_LABEL_FONT_SIZE" : "12",
+    "NODE_LABEL_COLOR" : "#003366",
+    "NODE_SELECTED" : "false",
+    "NODE_WIDTH" : "60.0",
+    "NODE_SHAPE" : "ELLIPSE",
+    "NODE_BORDER_TRANSPARENCY" : "255",
+    "NODE_CUSTOMGRAPHICS_SIZE_8" : "0.0",
+    "NODE_CUSTOMGRAPHICS_SIZE_9" : "0.0",
+    "NODE_SELECTED_PAINT" : "#FFFF00",
+    "NODE_LABEL_POSITION" : "C,C,c,0.00,0.00",
+    "NODE_CUSTOMGRAPHICS_SIZE_1" : "0.0",
+    "NODE_CUSTOMGRAPHICS_SIZE_2" : "0.0",
+    "NODE_CUSTOMGRAPHICS_SIZE_3" : "0.0",
+    "NODE_CUSTOMGRAPHICS_SIZE_4" : "0.0",
+    "NODE_CUSTOMGRAPHICS_SIZE_5" : "0.0",
+    "NODE_CUSTOMGRAPHICS_SIZE_6" : "0.0",
+    "NODE_CUSTOMGRAPHICS_SIZE_7" : "0.0",
+    "NODE_BORDER_PAINT" : "#003366",
+    "NODE_LABEL_FONT_FACE" : "SansSerif.plain,plain,12",
+    "NODE_CUSTOMGRAPHICS_POSITION_2" : "C,C,c,0.00,0.00",
+    "NODE_CUSTOMGRAPHICS_POSITION_3" : "C,C,c,0.00,0.00",
+    "NODE_CUSTOMGRAPHICS_POSITION_1" : "C,C,c,0.00,0.00",
+    "NODE_CUSTOMGRAPHICS_POSITION_6" : "C,C,c,0.00,0.00",
+    "NODE_CUSTOMGRAPHICS_POSITION_7" : "C,C,c,0.00,0.00",
+    "NODE_CUSTOMGRAPHICS_POSITION_4" : "C,C,c,0.00,0.00",
+    "NODE_CUSTOMGRAPHICS_POSITION_5" : "C,C,c,0.00,0.00",
+    "NODE_CUSTOMGRAPHICS_POSITION_8" : "C,C,c,0.00,0.00",
+    "NODE_CUSTOMGRAPHICS_POSITION_9" : "C,C,c,0.00,0.00",
+    "NODE_X_LOCATION" : "0.0",
+    "NODE_Y_LOCATION" : "0.0",
+    "NODE_DEPTH" : "0.0",
+    "NODE_LABEL_WIDTH" : "200.0",
+    "COMPOUND_NODE_SHAPE" : "ROUND_RECTANGLE",
+    "NODE_CUSTOMGRAPHICS_9" : "org.cytoscape.ding.customgraphics.NullCustomGraphics,0,[ Remove Graphics ],",
+    "NODE_CUSTOMGRAPHICS_8" : "org.cytoscape.ding.customgraphics.NullCustomGraphics,0,[ Remove Graphics ],",
+    "NODE_CUSTOMGRAPHICS_5" : "org.cytoscape.ding.customgraphics.NullCustomGraphics,0,[ Remove Graphics ],",
+    "NODE_CUSTOMGRAPHICS_4" : "org.cytoscape.ding.customgraphics.NullCustomGraphics,0,[ Remove Graphics ],",
+    "NODE_BORDER_STROKE" : "SOLID",
+    "NODE_CUSTOMGRAPHICS_6" : "org.cytoscape.ding.customgraphics.NullCustomGraphics,0,[ Remove Graphics ],",
+    "NODE_CUSTOMGRAPHICS_1" : "org.cytoscape.ding.customgraphics.NullCustomGraphics,0,[ Remove Graphics ],",
+    "NODE_CUSTOMGRAPHICS_3" : "org.cytoscape.ding.customgraphics.NullCustomGraphics,0,[ Remove Graphics ],",
+    "NODE_CUSTOMGRAPHICS_2" : "org.cytoscape.ding.customgraphics.NullCustomGraphics,0,[ Remove Graphics ],",
+    "NODE_HEIGHT" : "40.0",
+    "NODE_Z_LOCATION" : "0.0",
+    "NODE_TRANSPARENCY" : "255",
+    "COMPOUND_NODE_PADDING" : "10.0",
+    "NODE_CUSTOMGRAPHICS_7" : "org.cytoscape.ding.customgraphics.NullCustomGraphics,0,[ Remove Graphics ],",
+    "NODE_VISIBLE" : "true"
+  },
+  "mappings" : {
+    "NODE_LABEL" : {
+      "definition" : "COL=name,T=string",
+      "type" : "PASSTHROUGH"
+    }
+  }
+}, {
+  "properties_of" : "edges:default",
+  "dependencies" : {
+    "arrowColorMatchesEdge" : "true"
+  },
+  "properties" : {
+    "EDGE_UNSELECTED_PAINT" : "#000000",
+    "EDGE_TARGET_ARROW_SELECTED_PAINT" : "#FFFF00",
+    "EDGE_TARGET_ARROW_SHAPE" : "NONE",
+    "EDGE_WIDTH" : "2.5",
+    "EDGE_SOURCE_ARROW_UNSELECTED_PAINT" : "#000000",
+    "EDGE_STROKE_UNSELECTED_PAINT" : "#000000",
+    "EDGE_LABEL_COLOR" : "#000000",
+    "EDGE_TARGET_ARROW_UNSELECTED_PAINT" : "#000000",
+    "EDGE_LABEL_FONT_SIZE" : "10",
+    "EDGE_TRANSPARENCY" : "255",
+    "EDGE_CURVED" : "true",
+    "EDGE_SELECTED" : "false",
+    "EDGE_STROKE_SELECTED_PAINT" : "#FF0000",
+    "EDGE_LABEL_FONT_FACE" : "SansSerif.plain,plain,10",
+    "EDGE_SOURCE_ARROW_SHAPE" : "NONE",
+    "EDGE_LABEL_TRANSPARENCY" : "255",
+    "EDGE_VISIBLE" : "true",
+    "EDGE_LABEL_WIDTH" : "200.0",
+    "EDGE_SOURCE_ARROW_SELECTED_PAINT" : "#FFFF00",
+    "EDGE_LINE_TYPE" : "SOLID"
+  },
+  "mappings" : {
+    "EDGE_UNSELECTED_PAINT" : {
+      "definition" : "COL=shared interaction,T=string,K=0=interacts-with,V=0=#00CC33,K=1=controls-state-change-of,V=1=#0000CC,K=2=controls-phosphorylation-of,V=2=#0066FF,K=3=in-complex-with,V=3=#006633,K=4=neighbor-of,V=4=#666666",
+      "type" : "DISCRETE"
+    },
+    "EDGE_TARGET_ARROW_SHAPE" : {
+      "definition" : "COL=directed,T=boolean,K=0=true,V=0=ARROW",
+      "type" : "DISCRETE"
+    },
+    "EDGE_LINE_TYPE" : {
+      "definition" : "COL=shared interaction,T=string,K=0=neighbor-of,V=0=EQUAL_DASH",
+      "type" : "DISCRETE"
+    }
+  }
+}]},
+{"status":[{"error":"","success":true}]}]

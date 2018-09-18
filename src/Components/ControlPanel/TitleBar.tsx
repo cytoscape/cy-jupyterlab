@@ -4,15 +4,17 @@ const TitleBar = (props: any) => {
   return (
     <div
       style={{
-        background: "teal",
-        height: "4em",
+        background: "#555555",
+        color: "#FFFFFF",
+        height: "3em",
+          fontSize: "1em",
         width: "100%",
         display: "flex",
         justifyContent: "center",
         alignItems: "center"
       }}
     >
-      <div style={{ color: "#FFFFFF", fontSize: "1em" }}>{props.title}</div>
+      <div>{props.title}</div>
     </div>
   );
 };

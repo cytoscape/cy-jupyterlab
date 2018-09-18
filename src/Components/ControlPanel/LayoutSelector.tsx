@@ -24,33 +24,27 @@ class LayoutSelector extends React.Component<any, any> {
     const val = event.target.value;
     this.setState({ layoutName: val });
     this.props.layoutAction(val);
-  };
+  }
 
   render() {
     const layoutName = this.state.layoutName;
 
     return (
-      <div>
-        <div>
-          <h3>SELECT LAYOUTS</h3>
-        </div>
-        <div>
-          <FormControl fullWidth>
-           <InputLabel htmlFor="layout-simple">Layouts</InputLabel>
-            <Select
-              value={layoutName}
-              onChange={(event: any) => this.handleChange(event)}
-            >
-              <MenuItem value={"random"}>random</MenuItem>
-              <MenuItem value={"grid"}>grid</MenuItem>
-              <MenuItem value={"circle"}>circle</MenuItem>
-              <MenuItem value={"concentric"}>concentric</MenuItem>
-              <MenuItem value={"breadthfirst"}>breadthfirst</MenuItem>
-              <MenuItem value={"cose"}>cose</MenuItem>
-            </Select>
-            <FormHelperText>Required</FormHelperText>
-          </FormControl>
-        </div>
+      <div style={{padding: '0.5em'}}>
+        <FormControl fullWidth>
+          <InputLabel htmlFor="layout-simple">Layout:</InputLabel>
+          <Select
+            value={layoutName}
+            onChange={(event: any) => this.handleChange(event)}
+          >
+            <MenuItem value={"random"}>random</MenuItem>
+            <MenuItem value={"grid"}>grid</MenuItem>
+            <MenuItem value={"circle"}>circle</MenuItem>
+            <MenuItem value={"concentric"}>concentric</MenuItem>
+            <MenuItem value={"breadthfirst"}>breadthfirst</MenuItem>
+            <MenuItem value={"cose"}>cose</MenuItem>
+          </Select>
+        </FormControl>
       </div>
     );
   }

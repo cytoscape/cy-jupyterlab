@@ -1,20 +1,10 @@
 import React from "react";
-import PropTypes from "prop-types";
 import { withStyles } from "@material-ui/core/styles";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
-import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
 import Divider from "@material-ui/core/Divider";
-import InboxIcon from "@material-ui/icons/Inbox";
-import DraftsIcon from "@material-ui/icons/Drafts";
 
-var divStyle = {
-  color: 'black',
-  height: '13px',
-  WebkitTransition: 'all', // note the capital 'W' here
-  msTransition: 'all' // 'ms' is the only lowercase vendor prefix
-};
 const styles = (theme: any) => ({
   root: {
     //dense: true,
@@ -45,8 +35,8 @@ class SelectedPanel extends React.Component<any, any> {
   let type = isNode ? "Node" : "Edge";
   return (
     <div className={classes.root}>
-      <div>
-        <h3>SELECTION</h3>
+      <div style={{fontSize: '0.9em', color: '#444444'}}>
+        Properties:
       </div>
       <div> 
         {typeof isNode==="undefined"

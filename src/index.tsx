@@ -5,13 +5,15 @@ import "../style/index.css";
 import { cxToJs, cyNetworkUtils } from "cytoscape-cx2js";
 import * as React from "react";
 import * as ReactDOM from "react-dom";
-import RootComponent, { JGraph } from "./Components";
-import { element } from "prop-types";
+import WidgetBase from "./Components/WidgetBase";
+
+import CyGraph from './Models/CyGraph'
 
 const MIME_TYPE = "application/cx";
 const CLASS_NAME = "mimerenderer-cx";
 
 let NetworkName: any = null;
+
 
 //the class translation from cx to json
 export class cy2js {
@@ -41,12 +43,29 @@ export class OutputWidget extends Widget implements IRenderMime.IRenderer {
     this.addClass(CLASS_NAME);
   }
 
+  isCx = (data: any) => {
+    let dataLen = data.length;
+    while(dataLen--) {
+      const entry = data[dataLen]
+        if(entry['nodeAttributes']) {
+          return true
+        }
+    }
+    return false
+  };
+
+
   convertData = (data: any) => {
     let elements: any;
     let style: any;
-    const L = data.length;
 
-    if (L == 13 || L == 12) {
+    const keys = Object.keys(data);
+    keys.forEach(key => {
+      console.log(data[key]);
+    });
+
+    const isCxData = this.isCx(data)
+    if (isCxData) {
       const utils = new cyNetworkUtils();
       let jsonObject = data;
       const niceCX = utils.rawCXtoNiceCX(jsonObject);
@@ -55,6 +74,7 @@ export class OutputWidget extends Widget implements IRenderMime.IRenderer {
       elements = cx2Js.cyElementsFromNiceCX(niceCX, attributeNameMap);
       style = cx2Js.cyStyleFromNiceCX(niceCX, attributeNameMap);
     } else {
+      // This is Cytoscape data
       elements = data.elements;
       style = data.style;
     }
@@ -65,32 +85,35 @@ export class OutputWidget extends Widget implements IRenderMime.IRenderer {
    * Render cx into this widget's node.
    */
   renderModel(model: IRenderMime.IMimeModel): Promise<void> {
-
+    console.log("* Model start");
     return new Promise<void>((resolve, reject) => {
-      let data_raw = model.data[this._mimeType] as any;
+      let rawData = model.data[this._mimeType] as any;
       const metadata = (model.metadata[this._mimeType] as any) || {};
 
-      const [data_js, style_js] = this.convertData(data_raw);
+      console.log("* Model data", rawData, metadata);
+      const [data_js, style_js] = this.convertData(rawData);
+
+      console.log("* Converted", data_js, style_js);
       let networkname = null;
-      var keys = Object.keys(data_raw);
+      var keys = Object.keys(rawData);
       for (let i = 0; i < keys.length; i++) {
-        if ("networkAttributes" in data_raw[i]) {networkname = data_raw[i].networkAttributes[0].v; }
+        if ("networkAttributes" in rawData[i]) {
+          networkname = rawData[i].networkAttributes[0].v;
+        }
       }
 
-      const data: JGraph = {
+      const data: CyGraph = {
         elements: data_js,
         style: style_js
       };
-      
+
       const props = {
         data,
         metadata,
         theme: "cm-s-jupyter",
-        registerCy,
-        selection,
         networkname
       };
-      const component = <RootComponent {...props} />;
+      const component = <WidgetBase {...props} />;
       ReactDOM.render(component, this.node, () => {
         resolve();
       });
@@ -99,16 +122,6 @@ export class OutputWidget extends Widget implements IRenderMime.IRenderer {
 
   private _mimeType: string;
 }
-
-let cyRef: any = null;
-let selection: any = null;
-const registerCy = (cy: any) => {
-  cyRef = cy;
-
-  cyRef.on("tap", "node", (evt: any) => {
-    selection = evt.target.data();
-  });
-};
 
 /**
  * A mime renderer factory for cx data.
