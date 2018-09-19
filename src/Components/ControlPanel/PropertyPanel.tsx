@@ -11,7 +11,7 @@ class PropertyPanel extends React.Component<any, any> {
 
   render() {
     const elements = this.props.elements
-      if(!elements) {
+      if(!elements || !elements.nodes || !elements.edges) {
           return <div/>
       }
     return (

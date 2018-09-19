@@ -9,8 +9,7 @@ const CSS_CLASS = "jp-RenderedCX";
 
 import cx2cyjs from "./Utilities/cx2cyjs";
 
-class CytoscapejsWidget extends Widget implements IRenderMime.IRenderer {
-
+export class CytoscapejsWidget extends Widget implements IRenderMime.IRenderer {
   constructor(options: IRenderMime.IRendererOptions) {
     super();
     this._mimeType = options.mimeType;
@@ -18,18 +17,40 @@ class CytoscapejsWidget extends Widget implements IRenderMime.IRenderer {
     this.addClass(CSS_CLASS);
   }
 
+  renderCyjs = (
+    elements: object,
+    style: object,
+    networkName: string = "N/A"
+  ) => {
+    console.log("render called2 :");
+    const data = {
+      elements,
+      style
+    };
+    const props = {
+      data,
+      theme: "cm-s-jupyter",
+      networkName
+    };
+    const component = <WidgetBase {...props} />;
+    ReactDOM.render(component, this.node);
+  };
+
   renderModel(model: IRenderMime.IMimeModel): Promise<void> {
     return new Promise<void>((resolve, reject) => {
       let rawData = model.data[this._mimeType] as any;
       const metadata = (model.metadata[this._mimeType] as any) || {};
       const data: any = cx2cyjs(rawData);
-      let networkName = '-'
+      let networkName = "-";
       let keys = Object.keys(rawData);
-      keys.forEach(key =>  {
+      keys.forEach(key => {
         if ("networkAttributes" in rawData[key]) {
           networkName = rawData[key].networkAttributes[0].v;
         }
-      })
+      });
+      if (networkName === "-") {
+        networkName = data.data.name;
+      }
 
       const props = {
         data,
@@ -46,5 +67,3 @@ class CytoscapejsWidget extends Widget implements IRenderMime.IRenderer {
 
   private readonly _mimeType: string;
 }
-
-export default CytoscapejsWidget;

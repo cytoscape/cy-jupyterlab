@@ -1,6 +1,6 @@
 import { IRenderMime } from "@jupyterlab/rendermime-interfaces";
 import "../style/index.css";
-import CytoscapejsWidget from './CytoscapejsWidget'
+import { CytoscapejsWidget } from "./CytoscapejsWidget";
 const MIME_TYPE = "application/cx";
 
 export const rendererFactory: IRenderMime.IRendererFactory = {
@@ -8,6 +8,8 @@ export const rendererFactory: IRenderMime.IRendererFactory = {
   mimeTypes: [MIME_TYPE],
   createRenderer: options => new CytoscapejsWidget(options)
 };
+
+export * from "./CytoscapejsWidget";
 
 const extension: IRenderMime.IExtension = {
   id: "cytoscapejs-renderer:plugin",
@@ -31,5 +33,3 @@ const extension: IRenderMime.IExtension = {
 };
 
 export default extension;
-
-export * from './CytoscapejsWidget'
