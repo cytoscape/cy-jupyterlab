@@ -14,6 +14,7 @@ const _isCx = (data: any) => {
 const cx2cyjs = (data: any) => {
     let elements: any;
     let style: any;
+    let networkAttr: any;
 
     const isCxData = _isCx(data)
     if (isCxData) {
@@ -28,10 +29,12 @@ const cx2cyjs = (data: any) => {
         // This is Cytoscape.js data
         elements = data.elements;
         style = data.style;
+        networkAttr = data.data
     }
     return {
         elements,
-        style
+        style,
+        data: networkAttr
     };
 };
 

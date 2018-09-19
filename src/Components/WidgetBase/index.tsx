@@ -68,19 +68,11 @@ class WidgetBase extends React.Component<any, any> {
   render() {
     return (
       <div style={containerStyle}>
-        <div style={{position: 'absolute', top: 0, left: 0, zIndex: 100}}>
+        <div style={{ position: "absolute", top: 0, right: 0, zIndex: 100 }}>
           <IconButton aria-label="Delete">
             <OpenIcon fontSize="small" />
           </IconButton>
         </div>
-        <NetworkPanel
-          style={networkPanelStyle}
-          elements={this.props.data.elements}
-          visualStyle={this.props.data.style}
-          clickAction={this.clickAction}
-          isNode={this.isNode}
-          addCyRefAction={this.addCyRefAction}
-        />
         <ControlPanel
           style={controlPanelStyle}
           elements={this.props.data.elements}
@@ -89,6 +81,14 @@ class WidgetBase extends React.Component<any, any> {
           networkName={this.props.networkName}
           fitAction={this.fitAction}
           layoutAction={this.layoutAction}
+        />
+        <NetworkPanel
+          style={networkPanelStyle}
+          elements={this.props.data.elements}
+          visualStyle={this.props.data.style}
+          clickAction={this.clickAction}
+          isNode={this.isNode}
+          addCyRefAction={this.addCyRefAction}
         />
       </div>
     );

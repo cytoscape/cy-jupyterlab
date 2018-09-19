@@ -28,6 +28,7 @@ class NetworkPanel extends React.Component<any, any> {
       this.props.clickAction(selected);
       this.props.isNode(isNode);
     });
+
   }
   render() {
     return <div ref={cyjs => (this.cyjs = cyjs)} style={this.props.style} />;
