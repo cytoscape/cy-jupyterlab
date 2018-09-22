@@ -9,7 +9,29 @@ const CSS_CLASS = "jp-RenderedCX";
 
 import cx2cyjs from "./Utilities/cx2cyjs";
 
+import { VDomModel, VDomRenderer } from '@jupyterlab/apputils';
+
+
+class CytoscapeModel extends VDomModel {
+  get value(): string {
+    return this._value;
+  }
+
+  set value(newValue: string) {
+    this._value = newValue;
+    this.stateChanged.emit(void 0);
+  }
+
+  private _value = '';
+}
+
+
 export class CytoscapejsWidget extends Widget implements IRenderMime.IRenderer {
+  private resizeMsg: Widget.ResizeMessage;
+  private readonly _mimeType: string;
+
+  private cytoscapeModel: object;
+
   constructor(options: IRenderMime.IRendererOptions) {
     super();
     this._mimeType = options.mimeType;
@@ -17,12 +39,17 @@ export class CytoscapejsWidget extends Widget implements IRenderMime.IRenderer {
     this.addClass(CSS_CLASS);
   }
 
+  protected onResize(msg: Widget.ResizeMessage): void {
+    console.log("** panel resize called", msg);
+    this.resizeMsg = msg;
+    ReactDOM.render(<WidgetBase {...this.cytoscapeModel} />, this.node);
+  }
+
   renderCyjs = (
     elements: object,
     style: object,
     networkName: string = "N/A"
   ) => {
-    console.log("render called2 :");
     const data = {
       elements,
       style
@@ -37,6 +64,7 @@ export class CytoscapejsWidget extends Widget implements IRenderMime.IRenderer {
   };
 
   renderModel(model: IRenderMime.IMimeModel): Promise<void> {
+
     return new Promise<void>((resolve, reject) => {
       let rawData = model.data[this._mimeType] as any;
       const metadata = (model.metadata[this._mimeType] as any) || {};
@@ -56,14 +84,17 @@ export class CytoscapejsWidget extends Widget implements IRenderMime.IRenderer {
         data,
         metadata,
         theme: "cm-s-jupyter",
-        networkName
+        networkName,
+        resizeMsg: this.resizeMsg
       };
+
+
+      this.cytoscapeModel = props;
+
       const component = <WidgetBase {...props} />;
       ReactDOM.render(component, this.node, () => {
         resolve();
       });
     });
   }
-
-  private readonly _mimeType: string;
 }
