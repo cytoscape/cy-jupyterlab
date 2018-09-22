@@ -37,10 +37,11 @@ class WidgetBase extends React.Component<any, any> {
     };
   }
 
+
+
   componentDidUpdate() {
     if (this.state.cy) {
       this.state.cy.resize();
-      console.log("** resize called");
     }
   }
 

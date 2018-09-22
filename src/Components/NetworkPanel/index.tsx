@@ -31,6 +31,7 @@ class NetworkPanel extends React.Component<any, any> {
 
   }
   render() {
+    console.log('Rendering CyJS:')
     return <div ref={cyjs => (this.cyjs = cyjs)} style={this.props.style} />;
   }
 
