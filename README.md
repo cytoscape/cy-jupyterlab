@@ -7,7 +7,7 @@
 
 ## Introduction
 
-*Cy-JupyterLab* is a Jupyter Lab *extension* for interactive graph visualization. Current version supports the following data types: 
+*Cy-JupyterLab* is a Jupyter Lab *extension* for interactive graph visualization. Current version supports the following data types: 
 
 * Cytoscape eXchange format ([.cx](http://www.home.ndexbio.org/data-model/))
 * [Cytoscape.js](http://js.cytoscape.org/) JSON (.cyjs)
