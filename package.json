@@ -1,11 +1,11 @@
 {
   "name": "cy-jupyterlab",
   "version": "0.6.0",
-  "description": "A JupyterLab extension for visualizing graph (network) data.",
+  "description": "JupyterLab extension for graph (network) visualization.",
   "author": "Hideki Akazawa <>",
   "contributors": [
     "Kaito Uemura <>",
-    "Keiichiro Ono <>"
+    "Keiichiro Ono <kono@ucsd.edu>"
   ],
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
