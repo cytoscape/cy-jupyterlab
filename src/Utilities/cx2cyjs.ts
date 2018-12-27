@@ -1,4 +1,4 @@
-import { cxToJs, cyNetworkUtils } from "cytoscape-cx2js";
+import { CxToJs, CyNetworkUtils } from "cytoscape-cx2js"
 
 const _isCx = (data: any) => {
     let dataLen = data.length;
@@ -18,10 +18,10 @@ const cx2cyjs = (data: any) => {
 
     const isCxData = _isCx(data)
     if (isCxData) {
-        const utils = new cyNetworkUtils();
-        let jsonObject = data;
-        const niceCX = utils.rawCXtoNiceCX(jsonObject);
-        const cx2Js = new cxToJs(utils);
+        const utils = new CyNetworkUtils();
+        // let jsonObject = data;
+        const niceCX = utils.rawCXtoNiceCX(data);
+        const cx2Js = new CxToJs(utils);
         const attributeNameMap = {};
         elements = cx2Js.cyElementsFromNiceCX(niceCX, attributeNameMap);
         style = cx2Js.cyStyleFromNiceCX(niceCX, attributeNameMap);

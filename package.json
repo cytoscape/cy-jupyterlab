@@ -38,29 +38,29 @@
     "extension:disable": "jupyter labextension disable cy-jupyterlab"
   },
   "dependencies": {
-    "@jupyterlab/application": "^0.18.5",
-    "@jupyterlab/apputils": "^0.18.4",
-    "@jupyterlab/coreutils": "^2.1.4",
-    "@jupyterlab/rendermime-interfaces": "^1.1.7",
-    "@material-ui/core": "^3.1.0",
+    "@jupyterlab/application": "^0.19.1",
+    "@jupyterlab/apputils": "^0.19.1",
+    "@jupyterlab/coreutils": "^2.2.1",
+    "@jupyterlab/rendermime-interfaces": "^1.2.1",
+    "@material-ui/core": "^3.7.1",
     "@material-ui/icons": "^3.0.1",
-    "cytoscape": "^3.2.16",
-    "cytoscape-cx2js": "^0.2.1",
+    "@phosphor/widgets": "^1.6.0",
+    "cytoscape": "^3.3.1",
+    "cytoscape-cx2js": "^0.4.0",
     "prop-types": "^15.6.2",
-    "typeface-roboto": "^0.0.54",
-    "@phosphor/widgets": "^1.6.0"
+    "typeface-roboto": "^0.0.54"
   },
   "devDependencies": {
     "rimraf": "^2.6.2",
     "typescript": "~2.9.2",
-    "prettier": "^1.14.2",
-    "eslint": "^5.6.0",
-    "webpack": "^4.19.1",
-    "webpack-cli": "^3.1.0"
+    "prettier": "^1.15.3",
+    "eslint": "^5.11.1",
+    "webpack": "^4.28.2",
+    "webpack-cli": "^3.1.2"
   },
   "resolutions": {
-    "@types/react": "~16.4.13",
-    "react": "~16.4.2",
-    "react-dom": "~16.4.2"
+    "@types/react": "^16.7.8",
+    "react": "~16.7.8",
+    "react-dom": "~16.7.8"
   }
 }
