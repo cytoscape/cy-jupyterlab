@@ -1,4 +1,4 @@
-import { CxToJs, CyNetworkUtils } from "cytoscape-cx2js"
+import { CxToJs, CyNetworkUtils } from '@js4cytoscape/cx2js'
 
 const _isCx = (data: any) => {
     let dataLen = data.length;

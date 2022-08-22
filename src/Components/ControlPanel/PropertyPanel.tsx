@@ -16,10 +16,10 @@ class PropertyPanel extends React.Component<any, any> {
       }
     return (
       <div style={containerStyle}>
-        <Typography variant="subheading">
+        <Typography variant="subtitle1">
           Number of nodes: {elements.nodes.length}
         </Typography>
-        <Typography variant="subheading">
+        <Typography variant="subtitle1">
           Number of edges: {elements.edges.length}
         </Typography>
       </div>

@@ -1,5 +1,5 @@
 import { IRenderMime } from "@jupyterlab/rendermime-interfaces";
-import { Widget } from "@phosphor/widgets";
+import { Widget } from "@lumino/widgets";
 import * as React from "react";
 import * as ReactDOM from "react-dom";
 import WidgetBase from "./Components/WidgetBase";
