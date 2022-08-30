@@ -16,7 +16,7 @@ const cx2cyjs = (data: any) => {
     let style: any;
     let networkAttr: any;
 
-    const isCxData = _isCx(data)
+    const isCxData = true; //_isCx(data)
     if (isCxData) {
         const utils = new CyNetworkUtils();
         // let jsonObject = data;

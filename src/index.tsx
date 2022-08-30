@@ -20,14 +20,14 @@ const extension: IRenderMime.IExtension = {
     {
       name: "cx",
       mimeTypes: [MIME_TYPE],
-      extensions: [".cx", ".cyjs"]
+      extensions: [".cx"]
     }
   ],
 
   documentWidgetFactoryOptions: {
     name: "CX Viewer",
     primaryFileType: "cx",
-    fileTypes: ["cx", "cyjs"],
+    fileTypes: ["cx"],
     defaultFor: ["cx"]
   }
 };

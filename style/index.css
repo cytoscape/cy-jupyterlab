@@ -3,10 +3,7 @@
   Distributed under the terms of the Modified BSD License.
 */
 
-/* Add CSS variables to :root */
-:root {
-  /*--jp-private-json-variable: 16px;*/
-}
+
 
 /* Base styles */
 .jp-RenderedCX {

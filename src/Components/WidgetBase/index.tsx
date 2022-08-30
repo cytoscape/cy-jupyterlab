@@ -14,7 +14,7 @@ const containerStyle = {
 };
 
 const networkPanelStyle = {
-  width: "70%",
+  width: "100%",
   height: "100%",
   background: "#FAFAFA"
 };
@@ -69,20 +69,6 @@ class WidgetBase extends React.Component<any, any> {
   render() {
     return (
       <div style={containerStyle}>
-        <div style={{ position: "absolute", top: 0, right: 0, zIndex: 100 }}>
-          <IconButton aria-label="Delete">
-            <OpenIcon fontSize="small" />
-          </IconButton>
-        </div>
-        <ControlPanel
-          style={controlPanelStyle}
-          elements={this.props.data.elements}
-          selected={this.state.selected}
-          isNode={this.state.isNode}
-          networkName={this.props.networkName}
-          fitAction={this.fitAction}
-          layoutAction={this.layoutAction}
-        />
         <NetworkPanel
           style={networkPanelStyle}
           elements={this.props.data.elements}
