@@ -37,6 +37,9 @@ export class CytoscapejsWidget extends Widget implements IRenderMime.IRenderer {
     this._mimeType = options.mimeType;
     this.addClass(CLASS_NAME);
     this.addClass(CSS_CLASS);
+
+    //const cyDiv = document.createElement('div');
+    //this.node.appendChild(cyDiv);
   }
 
   protected onResize(msg: Widget.ResizeMessage): void {
@@ -45,7 +48,7 @@ export class CytoscapejsWidget extends Widget implements IRenderMime.IRenderer {
     ReactDOM.render(<WidgetBase {...this.cytoscapeModel} />, this.node);
   }
 
-  renderCyjs = (
+  /*renderCyjs = (
     elements: object,
     style: object,
     networkName: string = "N/A"
@@ -61,7 +64,7 @@ export class CytoscapejsWidget extends Widget implements IRenderMime.IRenderer {
     };
     const component = <WidgetBase {...props} />;
     ReactDOM.render(component, this.node);
-  };
+  };*/
 
   renderModel(model: IRenderMime.IMimeModel): Promise<void> {
 
@@ -70,15 +73,15 @@ export class CytoscapejsWidget extends Widget implements IRenderMime.IRenderer {
       const metadata = (model.metadata[this._mimeType] as any) || {};
       const data: any = cx2cyjs(rawData);
       let networkName = "-";
-      let keys = Object.keys(rawData);
+     /* let keys = Object.keys(rawData);
       keys.forEach(key => {
         if ("networkAttributes" in rawData[key]) {
           networkName = rawData[key].networkAttributes[0].v;
         }
-      });
-      if (networkName === "-") {
+      }); */
+      /*if (networkName === "-") {
         networkName = data.data.name;
-      }
+      } */
 
       const props = {
         data,

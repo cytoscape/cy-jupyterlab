@@ -1,8 +1,5 @@
 import React from "react";
-import ControlPanel from "../ControlPanel";
 import NetworkPanel from "../NetworkPanel";
-import IconButton from "@material-ui/core/IconButton";
-import OpenIcon from "@material-ui/icons/OpenInNew";
 
 const containerStyle = {
   margin: 0,
@@ -19,13 +16,6 @@ const networkPanelStyle = {
   background: "#FAFAFA"
 };
 
-const controlPanelStyle = {
-  display: "flex",
-  flexDirection: "column",
-  width: "30%",
-  height: "100%",
-  background: "#EEEEEE"
-};
 
 class WidgetBase extends React.Component<any, any> {
   constructor(props: any) {
