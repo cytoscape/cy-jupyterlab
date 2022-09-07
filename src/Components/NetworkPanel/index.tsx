@@ -17,7 +17,7 @@ class NetworkPanel extends React.Component<any, any> {
         elements: this.props.elements,
         style: this.props.visualStyle,
         layout: {
-          name: "preset"
+          name: this.props.layout
         }
       })
     );

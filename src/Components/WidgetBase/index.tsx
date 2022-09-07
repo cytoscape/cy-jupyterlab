@@ -63,6 +63,7 @@ class WidgetBase extends React.Component<any, any> {
           style={networkPanelStyle}
           elements={this.props.data.elements}
           visualStyle={this.props.data.style}
+          layout = {this.props.data.layout}
           clickAction={this.clickAction}
           isNode={this.isNode}
           addCyRefAction={this.addCyRefAction}
