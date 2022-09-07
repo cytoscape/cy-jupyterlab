@@ -51,15 +51,15 @@ jupyter labextension install cy-jupyterlab
 To build the extension from the source, please do the following in the cloned directory:
 
 ```bash
-npm install
-npm run build
+jlpm install
+jlpm build
 jupyter labextension link .
 ```
 
 To rebuild the package and the JupyterLab app:
 
 ```bash
-npm run build
+jlpm build
 jupyter lab build
 ```
 
