@@ -57,13 +57,22 @@ class WidgetBase extends React.Component<any, any> {
   };
 
   render() {
+    const { data } = this.props
+    let {elements, style, layout} = data
+    
+    if(layout === undefined) {
+      layout = 'cose'
+    }
+    if(style === undefined) {
+      style = {}
+    }
     return (
       <div style={containerStyle}>
         <NetworkPanel
           style={networkPanelStyle}
-          elements={this.props.data.elements}
-          visualStyle={this.props.data.style}
-          layout = {this.props.data.layout}
+          elements={elements}
+          visualStyle={style}
+          layout = {layout}
           clickAction={this.clickAction}
           isNode={this.isNode}
           addCyRefAction={this.addCyRefAction}

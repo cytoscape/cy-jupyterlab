@@ -71,7 +71,12 @@ export class CytoscapejsWidget extends Widget implements IRenderMime.IRenderer {
     return new Promise<void>((resolve, reject) => {
       let rawData = model.data[this._mimeType] as any;
       const metadata = (model.metadata[this._mimeType] as any) || {};
-      const data: any = cx2cyjs(rawData);
+
+      let data = rawData
+      // Do not run converter if not CX (CYJS object)
+      if(Array.isArray(rawData)) {
+        data = cx2cyjs(rawData);
+      }
       let networkName = "-";
      /* let keys = Object.keys(rawData);
       keys.forEach(key => {
