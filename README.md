@@ -3,7 +3,7 @@
 **A Jupyter Lab extension for interactive graph (network) data visualization**
 
 
-![tab](https://github.com/idekerlab/cy-jupyterlab/blob/images/screenshot-01.png)  
+![tab](https://user-images.githubusercontent.com/1568884/195467656-6db34de5-cca4-4f08-afc8-604b6f15bb7c.png)
 
 ## Introduction
 
@@ -12,21 +12,19 @@
 * Cytoscape eXchange format ([.cx](http://www.home.ndexbio.org/data-model/))
 * [Cytoscape.js](http://js.cytoscape.org/) JSON (.cyjs)
 
-![cell](https://github.com/idekerlab/cy-jupyterlab/blob/images/screenshot-02.png)
+![cell](https://user-images.githubusercontent.com/1568884/195467711-f9ec19a8-8dd0-4ded-9de0-612badab9b53.png)
 
 ## Features
 
 * Interactive network visualization in Panels.
 * Supports visualization in Jupyter Notebook cells
 * Full support for Cytoscape.js compatible *styles*
-* Support for data from [NDEx](http://www.ndexbio.org/)) database.
-* Simple node/edge property panel
-  * Display filename, number of nodes and edges (elements) in graph
+* Support for data from [NDEx](https://www.ndexbio.org/)) database.
 * Automatic layouts
 
 ## Requirments
 
-* JupyterLab - Tested on v0.34.10
+* JupyterLab - Tested on v3.4
 
 ### Optional
 
@@ -51,15 +49,15 @@ jupyter labextension install cy-jupyterlab
 To build the extension from the source, please do the following in the cloned directory:
 
 ```bash
-npm install
-npm run build
+jlpm install
+jlpm build
 jupyter labextension link .
 ```
 
 To rebuild the package and the JupyterLab app:
 
 ```bash
-npm run build
+jlpm build
 jupyter lab build
 ```
 
@@ -71,6 +69,6 @@ The prototype was developed by the following students as a summer project 2018:
 * Kaito Uemura (University of Osaka, Japan)
 
 ----
-&copy; 2018 University of California, San Diego
+&copy; 2022 University of California, San Diego
 
 [Trey Ideker Lab](https://medschool.ucsd.edu/som/medicine/research/labs/ideker/Pages/default.aspx)
