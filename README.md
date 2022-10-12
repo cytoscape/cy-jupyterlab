@@ -19,14 +19,12 @@
 * Interactive network visualization in Panels.
 * Supports visualization in Jupyter Notebook cells
 * Full support for Cytoscape.js compatible *styles*
-* Support for data from [NDEx](http://www.ndexbio.org/)) database.
-* Simple node/edge property panel
-  * Display filename, number of nodes and edges (elements) in graph
+* Support for data from [NDEx](https://www.ndexbio.org/)) database.
 * Automatic layouts
 
 ## Requirments
 
-* JupyterLab - Tested on v0.34.10
+* JupyterLab - Tested on v3.4
 
 ### Optional
 
@@ -71,6 +69,6 @@ The prototype was developed by the following students as a summer project 2018:
 * Kaito Uemura (University of Osaka, Japan)
 
 ----
-&copy; 2018 University of California, San Diego
+&copy; 2022 University of California, San Diego
 
 [Trey Ideker Lab](https://medschool.ucsd.edu/som/medicine/research/labs/ideker/Pages/default.aspx)

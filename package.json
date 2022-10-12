@@ -5,7 +5,8 @@
   "author": "Hideki Akazawa <>",
   "contributors": [
     "Kaito Uemura <>",
-    "Keiichiro Ono <kono@ucsd.edu>"
+    "Keiichiro Ono <kono@ucsd.edu>",
+    "Jing Chen <jic002@ucsd.edu>"
   ],
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
