@@ -3,7 +3,7 @@
 **A Jupyter Lab extension for interactive graph (network) data visualization**
 
 
-![tab](https://github.com/idekerlab/cy-jupyterlab/blob/images/screenshot-01.png)  
+![tab](https://user-images.githubusercontent.com/1568884/195467656-6db34de5-cca4-4f08-afc8-604b6f15bb7c.png)
 
 ## Introduction
 
@@ -12,7 +12,7 @@
 * Cytoscape eXchange format ([.cx](http://www.home.ndexbio.org/data-model/))
 * [Cytoscape.js](http://js.cytoscape.org/) JSON (.cyjs)
 
-![cell](https://github.com/idekerlab/cy-jupyterlab/blob/images/screenshot-02.png)
+![cell](https://user-images.githubusercontent.com/1568884/195467711-f9ec19a8-8dd0-4ded-9de0-612badab9b53.png)
 
 ## Features
 
